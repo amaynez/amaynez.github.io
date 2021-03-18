@@ -7,8 +7,6 @@ img: TicTacToe.jpg
 tags: [Machine Learning, Artificial Intelligence, Reinforcement Learning, Coding, Python]
 author: Armando Maynez
 ---
-# Deep Q Learning TicTacToe
-
 <center><img src='/assets/img/Game_Screen.png' width="310" height="300"></center>
 
 Inspired by Deep Mind's astonishing feats of having their Alpha Go, Alpha Zero and Alpha Star programs learn (and be amazing at it) Go, Chess, Atari games and lately Starcraft; I set myself to the task of programming a neural network that will learn by itself how to play the ancient game of tic tac toe (or noughts and crosses).
@@ -70,10 +68,10 @@ Initially I tested with only 1000 games to see if the new activation function wa
 
 With the cycling learning rate in place, still no luck after a quick 1,000 games training round; so I decided to implement on top a decaying learning rate as per the following formula:
 
-<center><img src='/assets/lr_formula.jpeg'></center>
+<center><img src='/assets/img/lr_formula.jpeg'></center>
 
 The resulting learning rate combining the cycles and decay per epoch is:
-<center><img src='/assets/LR_cycle_decay.png'></center>
+<center><img src='/assets/img/LR_cycle_decay.png'></center>
 <center>Learning Rate = 0.1, Decay = 0.0001, Cycle = 2048 epochs,<br>
         max Learning Rate factor = 10x</center><br>
 
