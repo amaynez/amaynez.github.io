@@ -70,10 +70,10 @@ Initially I tested with only 1000 games to see if the new activation function wa
 
 With the cycling learning rate in place, still no luck after a quick 1,000 games training round; so I decided to implement on top a decaying learning rate as per the following formula:
 
-<center><img src="lr_formula.jpeg"></center>
+<center><img src='/assets/lr_formula.jpeg'></center>
 
 The resulting learning rate combining the cycles and decay per epoch is:
-<center><img src="LR_cycle_decay.png"></center>
+<center><img src='/assets/LR_cycle_decay.png'></center>
 <center>Learning Rate = 0.1, Decay = 0.0001, Cycle = 2048 epochs,<br>
         max Learning Rate factor = 10x</center><br>
 
