@@ -1,4 +1,5 @@
 .github-link {
+  will-change: transform;
   text-align: center;
   transition: 0.25s;
   border-color: hsl(227, 10%, 10%);
@@ -6,7 +7,7 @@
 
 .github-link:hover,
 .github-link:focus {
-  box-shadow: 0 0.5em 0.5em -0.4em var(--hover) #888888;
+  box-shadow: 0 0.5em 0.5em -0.4em #888888;
   transform: translateY(-0.25em);
 }
 
