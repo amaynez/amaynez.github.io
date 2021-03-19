@@ -7,7 +7,7 @@ img: TicTacToe.jpg
 tags: [Machine Learning, Artificial Intelligence, Reinforcement Learning, Coding, Python]
 author: Armando Maynez
 ---
-<center><a href="https://github.com/amaynez/TicTacToe"><img src='/assets/img/view_on_github.png'></a></center>
+<center><a href="https://github.com/amaynez/TicTacToe"><img src='/assets/img/view_on_github.png' width = "240"></a></center>
 <center><img src='/assets/img/Game_Screen.png' width="310" height="300"></center>
 
 Inspired by Deep Mind's astonishing feats of having their Alpha Go, Alpha Zero and Alpha Star programs learn (and be amazing at it) Go, Chess, Atari games and lately Starcraft; I set myself to the task of programming a neural network that will learn by itself how to play the ancient game of tic tac toe (or noughts and crosses).
