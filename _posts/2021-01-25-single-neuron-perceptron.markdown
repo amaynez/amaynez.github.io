@@ -74,6 +74,6 @@ In this particular case, I coded the learning_rate to decrease with every iterat
 
 this is important to ensure that once the weights are nearing the optimal values the adjustment in each iteration is subsequently more subtle.
 
-<center><img src='/assets/img/Learning_1000_points_per_iteration.png'></center>
+<center><img src='/assets/img/Learning_1000_points_per_iteration.jpg'></center>
 
 In the end, the perceptron always converges into a solution and finds with great precision the line we are looking for.
