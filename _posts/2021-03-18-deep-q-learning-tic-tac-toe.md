@@ -10,7 +10,13 @@ author: Armando Maynez
 <a href="https://github.com/amaynez/TicTacToe"><img class="github-link" src='/assets/img/view_on_github.png' width = "180"></a>
 <center><img src='/assets/img/Game_Screen.png' width="310" height="300"></center>
 
-Inspired by Deep Mind's astonishing feats of having their Alpha Go, Alpha Zero and Alpha Star programs learn (and be amazing at it) Go, Chess, Atari games and lately Starcraft; I set myself to the task of programming a neural network that will learn by itself how to play the ancient game of tic tac toe (or noughts and crosses).
+After many years of a corporate career (17) diverging from computer science, I have now decided to learn Machine Learning and in the process return to coding (something I have always loved!).
+
+To fully grasp the essence of ML I decided to start by coding a ML library myself so I can fully understand the inner workings, linear algebra and calculus involved in Stochastic Gradient Descent. And on top learn Python (I used to code in C++ 20 years ago).
+
+I built a general purpose basic ML library that creates a Neural Network (only DENSE layers), saves and loads the weights into a file, does forward propagation and training (optimization of weights and biases) using SGD. I tested the ML library with the XOR problem to make sure it worked fine.
+
+For the next challenge I am interested in reinforcement learning greately inspired by Deep Mind's astonishing feats of having their Alpha Go, Alpha Zero and Alpha Star programs learn (and be amazing at it) Go, Chess, Atari games and lately Starcraft; I set myself to the task of programming a neural network that will learn by itself how to play the ancient game of tic tac toe (or noughts and crosses).
 
 How hard could it be?
 
