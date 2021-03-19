@@ -36,7 +36,7 @@ I restricted the model to be sequential, and the layers to be only dense / fully
 
 With my neural network coded, I tested it with a very basic problem, the famous XOR problem.
 
-XOR is a logical operation that cannot be solved by a single perceptron because its linearity restriction:
+XOR is a logical operation that cannot be solved by a single perceptron because of its linearity restriction:
 
 <center><img src="/assets/img/xor_problem.jpg"></center>
 
