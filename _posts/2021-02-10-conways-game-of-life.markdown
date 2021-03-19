@@ -7,7 +7,7 @@ img: Game_of_Life.jpg
 tags: [Coding, Python]
 author: Armando Maynez
 ---
-<div class="github-link"><a href="https://github.com/amaynez/GameOfLife"><img src='/assets/img/view_on_github.png' width = "180"></a></div>
+<a href="https://github.com/amaynez/GameOfLife"><img class="github-link" src='/assets/img/view_on_github.png' width = "180"></a>
 
 <p>I&nbsp;am lately trying to take on coding again. It had always been a part of my life since my early years when I&nbsp;learned to program a Tandy Color Computer at the age of 8, the good old days.</p>
 
