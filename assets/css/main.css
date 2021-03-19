@@ -1,5 +1,7 @@
 .github-link {
   text-align: center;
+  transition: 0.25s;
+  border-color: hsl(227, 10%, 10%);
 }
 
 .github-link:hover,
