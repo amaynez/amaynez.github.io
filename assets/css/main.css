@@ -6,7 +6,7 @@
 
 .github-link:hover,
 .github-link:focus {
-  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover) #888888;
   transform: translateY(-0.25em);
 }
 
