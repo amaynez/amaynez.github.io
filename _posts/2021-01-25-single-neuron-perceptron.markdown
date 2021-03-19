@@ -79,3 +79,7 @@ this is important to ensure that once the weights are nearing the optimal values
 <center><img src='/assets/img/Learning_1000_points_per_iteration.jpg'></center>
 
 In the end, the perceptron always converges into a solution and finds with great precision the line we are looking for.
+
+Perceptrons are quite a revelation in that they can resolve equations by learning, however they are very limited. By their nature they can only resolve linear equations, so their problem space is quite narrow. 
+
+Nowadays the neural networks consist of combinations of many perceptrons, in many layers, and other types of "neurons", like convolution, recurrent, etc. increasing significantly the types of problems they solve.
