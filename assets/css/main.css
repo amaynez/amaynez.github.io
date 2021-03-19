@@ -1,8 +1,11 @@
 .github-link {
   will-change: transform;
-  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   transition: 0.25s;
   border-color: hsl(227, 10%, 10%);
+  width: 180px
 }
 
 .github-link:hover,

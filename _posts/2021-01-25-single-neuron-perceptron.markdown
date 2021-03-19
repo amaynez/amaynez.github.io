@@ -7,7 +7,7 @@ img: Perceptron.jpg
 tags: [Machine Learning, Coding, Neural Networks]
 author: Armando Maynez
 ---
-<div class="github-link"><a href="https://github.com/amaynez/Perceptron"><img src='/assets/img/view_on_github.png' width = "180"></a></div>
+<a href="https://github.com/amaynez/Perceptron"><img class="github-link" src='/assets/img/view_on_github.png' width = "180"></a>
 
 As an entry point to learning python and getting into Machine Learning, I decided to code from scratch the Hello World! of the field, a single neuron perceptron.
 
