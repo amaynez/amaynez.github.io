@@ -1,7 +1,6 @@
 title: My personal blog - Armando Maynez
-email: armando.maynez@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Ideas, projects, thoughts and experiments...
+  Projects, thoughts, research and more...
 permalink: ':title/'
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://amaynez.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
@@ -9,7 +8,7 @@ url: "https://amaynez.github.io/" # the base hostname & protocol for your site, 
 # Author settings
 author: Armando Maynez # add your name
 author-pic: Myself_Neon.jpg
-about-author: My name is Armando Maynez. I’m a full-time thinker and technology enthusiast.
+about-author: Engineer, industry executive, research enthusiast. Avid learner with diverse interests in coding, machine learning, artificial intelligence and reinforcement learning. 17+ years of experience working in multinational corporations.
 
 # Contact links
 email: armando.maynez@gmail.com # Add your Email address
