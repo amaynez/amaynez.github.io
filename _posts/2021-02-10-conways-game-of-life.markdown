@@ -82,4 +82,4 @@ for cell in alive_neighbors:
 
 <p>I&nbsp;found it very interesting to implement the Game of Life like this, it was quite a refreshing challenge and I am beginning to feel my coding skills ramping up again.</p>
 
-<center><a href="https://amaynez.files.wordpress.com/2021/03/gameoflife2.png"><img src="https://amaynez.files.wordpress.com/2021/03/gameoflife2.png?w=506" alt="" class="wp-image-115"/></a></center>
+<center><a href="https://github.com/amaynez/GameOfLife"><img src="https://amaynez.files.wordpress.com/2021/03/gameoflife2.png?w=506" alt=""/></a></center>
