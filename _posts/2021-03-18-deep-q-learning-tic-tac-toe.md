@@ -61,7 +61,7 @@ As you can see in the chart, the calculated loss not even plateaued, but it seem
 
 After not getting the results I wanted, I decided to change the output activation function to linear, since the output is supposed to be a Q value, and not a probability of an action.
 
-<center><img src='/assets/img/Loss_function_and_Illegal_moves4.png' width="540">
+<center><img src='/assets/img/Loss_function_and_Illegal_moves4.png' width="540"><br>
 Wins: 47.60% Losses: 39% Ties: 13.4%</center><br>
 
 Initially I tested with only 1000 games to see if the new activation function was working, the loss function appears to be decreasing, however it reached a plateau around a value of 1, hence still not learning as expected. I came across a <a href="https://github.com/bckenstler/CLR">technique by Brad Kenstler, Carl Thome and Jeremy Jordan</a> called Cyclical Learning Rate, which appears to solve some cases of stagnating loss functions in this type of networks. So I gave it a go using their Triangle 1 model.
@@ -95,7 +95,7 @@ c.LR_STEP_SIZE = the number of epochs each cycle lasts
 ```
 <br>With these many changes, I decided to restart with a fresh set of random weights and biases and try training more (much more) games.
 
-<center><img src='/assets/img/Loss_function_and_Illegal_moves6.png' width="540">
+<center><img src='/assets/img/Loss_function_and_Illegal_moves6.png' width="540"><br>
 1,000,000 episodes, 7.5 million epochs with batches of 64 moves each</center><br>
 <center>Wins: 52.66% Losses: 36.02% Ties: 11.32%</center><br>
 
@@ -113,8 +113,8 @@ After all the failures I figured I had to rethink the topology of the network an
 
 I had to increase to 200 neurons each hidden layer. In spite of this great improvement the loss function was still in a plateau at around 0.1 (Mean Squared Error). Which, although it is greatly reduced from what we had, still was giving out only 77% win rate vs. a random player, the network was playing tic tac toe as a toddler!
 
-<center><img src='/assets/img/Game_Screen2.png' width="240" height="240"></center>
-*I can still beat the network most of the time! (I am playing with the red X)*
+<center><img src='/assets/img/Game_Screen2.png' width="240" height="240"><br>
+*I can still beat the network most of the time! (I am playing with the red X)*</center>
 
 <center><img src='/assets/img/Loss_function_and_Illegal_moves10.png' width="540">
 100,000 more episodes, 620,000 epochs with batches of 64 moves each</center><br>
@@ -236,6 +236,6 @@ This meant that I was training now effectively 10 (or the number of epochs selec
 
 After still playing around with some hyperparameters I managed to get similar performance as I got before, reaching 83.15% win rate vs. the random player, so I decided to keep training in rounds of 2,000 games each to evaluate performance. With almost every round I could see improvement:
 
-<center><img src='/assets/img/Model7HyperParameters.png' width="480"><br>
+<center><img src='/assets/img/Model7HyperParameters.png' width="540"><br>
 <img src='/assets/img/Model7.png' width="480">
 </center><br>
