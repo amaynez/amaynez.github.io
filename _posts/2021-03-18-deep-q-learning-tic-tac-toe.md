@@ -153,9 +153,7 @@ I [reached out to the reddit community](https://www.reddit.com/r/MachineLearning
 - Adam: Adaptive Moment Estimation
 - and keep my old vanilla Gradient Descent (vGD) ☺
 
-Out of those, and as per [this paper](https://github.com/shubhamvipul/Neural-networks/blob/master/Report.pdf), **Adam** seems to be the one that shows the most promise, hence it will be the first one I will explore.
-
-<a name='optimization'></a>[Click here for a detailed explanation and code of all the implemented optimization algorithms.](optimization.md)
+<a name='optimization'></a>[Click here for a detailed explanation and code of all the implemented optimization algorithms.](https://amaynez.github.io/neural-network-optimization-methods/)
 
 So far, I have not been able to get better results with Model 4, I have tried all the momentum optimization algorithms with little to no success.
 <a name='Model5'></a>
