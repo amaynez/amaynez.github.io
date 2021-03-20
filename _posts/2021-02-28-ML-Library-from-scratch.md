@@ -56,7 +56,7 @@ NN = nn.NeuralNetwork(inputs, hidden_layers, outputs, learning_rate)
 
 The three inputs I decided to use (after a lot of trial and error) are the X and Y coordinate of a point (between X = 0, X = 1, Y = 0 and Y = 1) and as the third input the multiplication of both X and Y. Apparently it gives the network more information, and it ends up converging much more quickly with this third input.
 
-Then there are two layers, one with 2 neurons and the other one with just one, and one output value, that will represent False if the value is closer to 0 or True if the value is closer to 1.
+Then there is a single hidden layer with 2 neurons and one output value, that will represent False if the value is closer to 0 or True if the value is closer to 1.
 
 Then I created the learning data, which is quite trivial for this problem, since we know very easily how to compute XOR.
 
