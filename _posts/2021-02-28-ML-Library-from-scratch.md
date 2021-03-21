@@ -6973,5 +6973,3 @@ So my baby ML library is completed for now, but still I would like to enhance it
 - save and load trained model to file
 
 I will get to it soon...
-
-<a href="https://github.com/amaynez/GenericNeuralNetwork"><img class="github-link" src='/assets/img/view_on_github.png' width = "180"></a>
