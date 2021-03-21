@@ -12,11 +12,11 @@ author: Armando Maynez
 
 After many years of a corporate career (17) diverging from computer science, I have now decided to learn Machine Learning and in the process return to coding (something I have always loved!).
 
-To fully grasp the essence of ML I decided to start by coding a ML library myself so I can fully understand the inner workings, linear algebra and calculus involved in Stochastic Gradient Descent. And on top learn Python (I used to code in C++ 20 years ago).
+To fully grasp the essence of ML I decided to start by [coding an ML library myself](https://amaynez.github.io/ML-Library-from-scratch/), so I can fully understand the inner workings, linear algebra and calculus involved in Stochastic Gradient Descent. And on top learn Python (I used to code in C++ 20 years ago).
 
-I built a general purpose basic ML library that creates a Neural Network (only DENSE layers), saves and loads the weights into a file, does forward propagation and training (optimization of weights and biases) using SGD. I tested the ML library with the XOR problem to make sure it worked fine.
+I built a general purpose basic ML library that creates a Neural Network (only DENSE layers), saves and loads the weights into a file, does forward propagation and training (optimization of weights and biases) using SGD. I tested the ML library with the XOR problem to make sure it worked fine. You can read the blog post for it [here](https://amaynez.github.io/ML-Library-from-scratch/).
 
-For the next challenge I am interested in reinforcement learning greately inspired by Deep Mind's astonishing feats of having their Alpha Go, Alpha Zero and Alpha Star programs learn (and be amazing at it) Go, Chess, Atari games and lately Starcraft; I set myself to the task of programming a neural network that will learn by itself how to play the ancient game of tic tac toe (or noughts and crosses).
+For the next challenge I am interested in reinforcement learning greatly inspired by Deep Mind's astonishing feats of having their Alpha Go, Alpha Zero and Alpha Star programs learn (and be amazing at it) Go, Chess, Atari games and lately Starcraft; I set myself to the task of programming a neural network that will learn by itself how to play the ancient game of tic tac toe (or noughts and crosses).
 
 How hard could it be?
 
@@ -27,7 +27,7 @@ I created the game quite openly, in such a way that it can be played by two huma
 While training, the visuals of the game can be disabled to make training much faster.
 Now, for the fun part, for training the network, I followed Deep Mind's own DQN recommendations:
 
-<ul><li>The network will be a function approximation for the Q value function or Bellman equation, meaning that the network will be trained to predict the "value" of each move available in a given game state.</li><li>A replay experience memory was implemented. This meant that the neural network will not be trained after each move. Each move will be recorded in a special "memory" alongside with the state of the board and the reward it received for taking such an action (move).</li><li>After the memory is sizable enough, batches of random experiences sampled from the replay memory are used for every training round</li><li>A secondary neural network (identical to the main one) is used to calculate part of the Q value function (Bellman equation), in particular the future Q values. And then it is updated with the main network's weights every <em>n</em> games. This is done so that we are not chasing a moving target.</li></ul>
+<ul><li>The network will be an approximation for the Q value function or Bellman equation, meaning that the network will be trained to predict the "value" of each move available in a given game state.</li><li>A replay experience memory was implemented. This meant that the neural network will not be trained after each move. Each move will be recorded in a special "memory" alongside with the state of the board and the reward it received for taking such an action (move).</li><li>After the memory is sizable enough, batches of random experiences sampled from the replay memory are used for every training round</li><li>A secondary neural network (identical to the main one) is used to calculate part of the Q value function (Bellman equation), in particular the future Q values. And then it is updated with the main network's weights every <em>n</em> games. This is done so that we are not chasing a moving target.</li></ul>
 
 
 ## Neural Network Model
@@ -110,7 +110,7 @@ After **24 hours!**, my computer was able to run 1,000,000 episodes (games playe
 <a name='Model3'></a>
 ### Model 3 - New Network Topology
 
-After all the failures I figured I had to rethink the topology of the network and play around with combinations of different networks and learning rates; after many iterations and tests, a network as follows was the one that showed more promise:
+After all the failures I figured I had to rethink the topology of the network and play around with combinations of different networks and learning rates; after many iterations and tests, a network as follows showed some promise:
 
 <center><img src='/assets/img/Neural_Network_Topology2.png' width="540"></center>
 
@@ -133,12 +133,10 @@ After more training rounds and some experimenting with the learning rate and oth
 
 These have been the results so far:
 
-<a name='summary' href='TrainingSummary.html'>
-        <center><img src='/assets/img/Models1to3.png' width="540"></center>
-        <center>click for details</center>
-</a><br>
+<center><img src='/assets/img/Models1to3.png' width="540"></center>
+<br>
 
-It is quite interesting to learn how the many parameters (hyper-parameters as some authors call them) of a neural network model affect its training performance, I have played with:
+It is quite interesting to learn how the many parameters (hyper-parameters as most authors call them) of a neural network model affect its training performance, I have played with:
 - the learning rate
 - the network topology and activation functions
 - the cycling and decaying learning rate parameters
@@ -165,13 +163,13 @@ I [reached out to the reddit community](https://www.reddit.com/r/MachineLearning
 So far, I have not been able to get better results with Model 4, I have tried all the momentum optimization algorithms with little to no success.
 <a name='Model5'></a>
 ### Model 5 - Implementing One Hot encoding and changing topology (again)
-I came across an [interesting project in Github](https://github.com/AxiomaticUncertainty/Deep-Q-Learning-for-Tic-Tac-Toe/blob/master/tic_tac_toe.py) that deals exactly with Deep Q Learning and I noticed that he used one hot encoding for the input as opposed to directly entering the values of the player into the 9 input slots. So I decided to give it a try and at the same time change my topology to match his:
+I came across an [interesting project in Github](https://github.com/AxiomaticUncertainty/Deep-Q-Learning-for-Tic-Tac-Toe/blob/master/tic_tac_toe.py) that deals exactly with Deep Q Learning, and I noticed that he used "one-hot" encoding for the input as opposed to directly entering the values of the player into the 9 input slots. So I decided to give it a try and at the same time change my topology to match his:
 
 <center><img src='/assets/img/Neural_Network_Topology3.jpeg' width="540"></center>
 
-So, 'one hot' encoding is basically changing the input of a single square in the tic tac toe board to three numbers, so that each state is represented with different inputs, thus the network can clearly differenciate the three of them. As the original author puts it, the way I was encoding, having 0 for empty, 1 for X and 2 for O, the network couldn't tell that for instance O and X both meant occupied states, because one is two times as far from 0 as the other. So with the new encoding, the empty state will be 3 inputs: (1,0,0), the X will be (0,1,0) and the O (0,0,1).
+So, 'one hot' encoding is basically changing the input of a single square in the tic tac toe board to three numbers, so that each state is represented with different inputs, thus the network can clearly differentiate the three of them. As the original author puts it, the way I was encoding, having 0 for empty, 1 for X and 2 for O, the network couldn't easily tell that, for instance, O and X both meant occupied states, because one is two times as far from 0 as the other. With the new encoding, the empty state will be 3 inputs: (1,0,0), the X will be (0,1,0) and the O (0,0,1) as in the diagram.
 
-Still no luck even with Model 5, so I am starting to think that there could be a bug in my code.
+Still, no luck even with Model 5, so I am starting to think that there could be a bug in my code.
 
 To test this hypothesis, I decided to implement the same model using Tensorflow / Keras.
 
@@ -217,7 +215,7 @@ history = self.PolicyNetwork.fit(np.asarray(states_to_train),
                                  shuffle=True)
 ```
 
-With Tensorflow implemented, the first thing I noticed, was that I had an error in the calculation of the loss, although this was only for reporting purposes and it didn't change a thing on the training of the network so the results kept being the same, **the loss function was still stagnating! My code was not the issue.**
+With Tensorflow implemented, the first thing I noticed, was that I had an error in the calculation of the loss, although this only affected reporting and didn't change a thing on the training of the network, so the results kept being the same, **the loss function was still stagnating! My code was not the issue.**
 <a name='Model7'></a>
 ### Model 7 - New training schedule
 Next I tried to change the way the network was training as per [u/elBarto015](https://www.reddit.com/user/elBarto015) [advised me on reddit](https://www.reddit.com/r/reinforcementlearning/comments/lzzjar/i_created_an_ai_for_super_hexagon_based_on/gqc8ka6?utm_source=share&utm_medium=web2x&context=3).
@@ -244,3 +242,7 @@ After still playing around with some hyperparameters I managed to get similar pe
 <center><img src='/assets/img/Model7HyperParameters.png' width="540"><br>
 <img src='/assets/img/Model7.png' width="480">
 </center><br>
+
+As of today, my best result so far is 87.5%, I will leave it rest for a while and keep investigating to find a reason for not being able to reach at least 90%. I read about [self play](https://medium.com/applied-data-science/how-to-train-ai-agents-to-play-multiplayer-games-using-self-play-deep-reinforcement-learning-247d0b440717), and it looks like a viable option to test and a fun coding challenge. However, before embarking in yet another big change I want to ensure I have been thorough with the model and have tested every option correctly.
+
+I feel the end is near... should I continue to update this post as new events unfold or shall I make it a multi post thread?

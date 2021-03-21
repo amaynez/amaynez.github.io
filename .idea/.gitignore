@@ -7,3 +7,9 @@ _site
 node_modules/
 yarn.lock
 /.idea/amaynez.github.io.iml
+/amaynez.github.io.iml
+/misc.xml
+/modules.xml
+/inspectionProfiles/profiles_settings.xml
+/inspectionProfiles/Project_Default.xml
+/vcs.xml
