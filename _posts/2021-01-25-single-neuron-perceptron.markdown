@@ -12,7 +12,7 @@ author: Armando Maynez
 <span class="github-btn github-btn-large" id="github-btn">
   <a class="gh-btn" id="gh-btn" href="https://github.com/amaynez/Perceptron" target="_blank" aria-label="Open on GitHub">
     <span class="gh-ico" aria-hidden="true"></span>
-    <span class="gh-text" id="gh-text">Star</span>
+    <span class="gh-text" id="gh-text">view on github</span>
   </a>
 </span>
 
