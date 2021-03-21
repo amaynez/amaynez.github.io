@@ -61,6 +61,10 @@ span#github-btn {
     transform: translateY(-0.25em);
     }
 
+.page-buttons{
+    margin: 20px;
+}
+
 .highlight {
   background-color: #faf9f9;
   -webkit-border-radius: 3px;
