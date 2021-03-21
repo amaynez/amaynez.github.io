@@ -66,12 +66,12 @@ span#github-btn {
 }
 
 .gh-btn {
+    will-change: transform;
     background-color:#eee;
     background-image:linear-gradient(to bottom, #fcfcfc 0, #eee 100%);
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#eeeeee', GradientType=0);
     background-repeat:no-repeat;
-    border:1px solid #d5d5d5
-    will-change: transform;
+    border:1px solid #d5d5d5;
     transition: 0.25s;
     }
 
@@ -80,7 +80,7 @@ span#github-btn {
     background-color:#ddd;
     background-image:linear-gradient(to bottom, #eee 0, #ddd 100%);
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#dddddd', GradientType=0);
-    border-color:#ccc:
+    border-color: #ccc;
     box-shadow: 0 0.5em 0.5em -0.4em #545454;
     transform: translateY(-0.25em);
     }
@@ -88,7 +88,7 @@ span#github-btn {
     background-image:none;
     background-color:#dcdcdc;
     border-color:#b5b5b5;
-    box-shadow:inset 0 2px 4px rgba(0,0,0,0.15)
+    box-shadow:inset 0 2px 4px rgba(0,0,0,0.15);
     box-shadow: 0 0.5em 0.5em -0.4em #545454;
     transform: translateY(-0.25em);
     }
