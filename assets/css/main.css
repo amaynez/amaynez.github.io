@@ -21,39 +21,24 @@ span#github-btn {
     justify-content: center;
 }
 
-.github-btn-large {
-    height: 30px;
-}
-
 .github-btn {
     font: bold 11px/14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    height: 30px;
-    overflow: hidden;
-}
-
-.github-btn-large .gh-btn, .github-btn-large{
-    padding: 3px 10px 3px 8px;
-    font-size: 16px;
-    line-height: 22px;
-    border-radius: 4px;
+    height: 35px;
 }
 
 .gh-btn{
-    padding: 2px 5px 2px 4px;
+    padding: 3px 10px 3px 8px;
     color: #333;
+    font-size: 16px;
+    line-height: 22px;
     text-decoration: none;
     white-space: nowrap;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 .gh-btn, .gh-ico {
   float:left;
-}
-
-.github-btn-large .gh-ico {
-    width: 20px;
-    height: 20px;
 }
 
 .gh-ico {
@@ -84,6 +69,7 @@ span#github-btn {
     box-shadow: 0 0.5em 0.5em -0.4em #545454;
     transform: translateY(-0.25em);
     }
+
 .gh-btn:active{
     background-image:none;
     background-color:#dcdcdc;
