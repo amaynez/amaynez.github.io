@@ -6,14 +6,8 @@ description: Single neuron perceptron that classifies elements learning quite qu
 img: MLLibrary.jpg 
 tags: [Machine Learning, Coding, Neural Networks, Python]
 author: Armando Maynez
+github: amaynez/GenericNeuralNetwork/
 ---
-<span class="github-btn" id="github-btn">
-  <a class="gh-btn" id="gh-btn" href="https://github.com/amaynez/GenericNeuralNetwork" target="_blank" aria-label="Open on GitHub">
-    <span class="gh-ico" aria-hidden="true"></span>
-    <span>view on <b>GitHub</b></span>
-  </a>
-</span>
-<br>
 <center><img src="/assets/img/ML_cloud.jpg"></center>
 
 It must sound crazy that in this day and age, when we have such a myriad of amazing machine learning libraries and toolkits all open sourced, all quite well documented and easy to use, I decided to create my own ML library from scratch.

@@ -6,15 +6,8 @@ description: Single neuron perceptron that classifies elements learning quite qu
 img: Perceptron.jpg 
 tags: [Machine Learning, Coding, Neural Networks]
 author: Armando Maynez
+github: amaynez/Perceptron/
 ---
-<span class="github-btn" id="github-btn">
-  <a class="gh-btn" id="gh-btn" href="https://github.com/amaynez/Perceptron" target="_blank" aria-label="Open on GitHub">
-    <span class="gh-ico" aria-hidden="true"></span>
-    <span>view on <b>GitHub</b></span>
-  </a>
-</span>
-
-
 As an entry point to learning python and getting into Machine Learning, I decided to code from scratch the Hello World! of the field, a single neuron perceptron.
 
 ##What is a perceptron?

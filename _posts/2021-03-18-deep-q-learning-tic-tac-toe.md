@@ -6,13 +6,8 @@ description: Inspired by Deep Mind's astonishing feats of having their Alpha Go,
 img: TicTacToeSml.jpg
 tags: [Machine Learning, Artificial Intelligence, Reinforcement Learning, Coding, Python]
 author: Armando Maynez
+github: amaynez/TicTacToe/
 ---
-<span class="github-btn" id="github-btn">
-  <a class="gh-btn" id="gh-btn" href="https://github.com/amaynez/TicTacToe" target="_blank" aria-label="Open on GitHub">
-    <span class="gh-ico" aria-hidden="true"></span>
-    <span>view on <b>GitHub</b></span>
-  </a>
-</span>
 <center><img src='/assets/img/Game_Screen.png' width="310" height="300"></center>
 
 After many years of a corporate career (17) diverging from computer science, I have now decided to learn Machine Learning and in the process return to coding (something I have always loved!).
