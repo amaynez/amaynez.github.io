@@ -23,7 +23,7 @@ span#github-btn {
 
 .github-btn {
     font: bold 11px/14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    height: 35px;
+    height: 30px;
 }
 
 .gh-btn{
@@ -42,8 +42,8 @@ span#github-btn {
 }
 
 .gh-ico {
-    width: 14px;
-    height: 14px;
+    width: 20px;
+    height: 20px;
     margin-right: 4px;
     background-image: url(/assets/img/github_icon.png);
     background-size: 100% 100%;
