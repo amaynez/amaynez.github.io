@@ -22,7 +22,7 @@ instagram: # Add your Instagram handle
 pinterest: # Add your Pinterest handle
 
 # Newsletter
-mailchimp: 8ece198b3eb260e6838461a60/d20d9fb9aad962399025da52e
+mailchimp: https://chimpstatic.com/mcjs-connected/js/users/8ece198b3eb260e6838461a60/d20d9fb9aad962399025da52e.js
 
 # Disqus
 discus_identifier: amaynez-github-io # Add your discus identifier
