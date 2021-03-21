@@ -1276,7 +1276,7 @@ pre code {
 
 .header-page {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 1em;
 }
 
 .header-page h1 {
@@ -1284,7 +1284,7 @@ pre code {
   font-weight: 400;
   font-size: 36px;
   text-align: center;
-  margin: 0 0 20px;
+  margin: 0 0 10px;
   color: #311e3e;
 }
 
@@ -1737,7 +1737,7 @@ pre code {
     padding: 15px;
   }
   .header-page {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .header-page h1 {
     font-size: 27px;
