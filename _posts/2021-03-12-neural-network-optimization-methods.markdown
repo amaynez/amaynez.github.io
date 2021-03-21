@@ -14,8 +14,12 @@ MathJax.Hub.Config({
         processEscapes: true
     }
 });</script>
-<a href="https://github.com/amaynez/TicTacToe/blob/7bf83b3d5c10adccbeb11bf244fe0af8d9d7b036/entities/Neural_Network.py#L199"><img class="github-link" src='/assets/img/view_on_github.png' width = "180"></a>
-
+<span class="github-btn" id="github-btn">
+  <a class="gh-btn" id="gh-btn" href="https://github.com/amaynez/TicTacToe/blob/7bf83b3d5c10adccbeb11bf244fe0af8d9d7b036/entities/Neural_Network.py#L199" target="_blank" aria-label="Open on GitHub">
+    <span class="gh-ico" aria-hidden="true"></span>
+    <span>view on <b>GitHub</b></span>
+  </a>
+</span>
 For the seemingly small project I undertook of creating a machine learning neural network that could learn by itself to play tic-tac-toe, I bumped into the necesity of implementing at least one momentum algorithm for the optimization of the network during backpropagation.
 
 And since my original post for the TicTacToe project is quite large already, I decided to post separately these optimization methods and how did I implement them in my code.

@@ -7,7 +7,12 @@ img: Game_of_Life.jpg
 tags: [Coding, Python]
 author: Armando Maynez
 ---
-<a href="https://github.com/amaynez/GameOfLife"><img class="github-link" src='/assets/img/view_on_github.png' width = "180"></a>
+<span class="github-btn" id="github-btn">
+  <a class="gh-btn" id="gh-btn" href="https://github.com/amaynez/GameOfLife" target="_blank" aria-label="Open on GitHub">
+    <span class="gh-ico" aria-hidden="true"></span>
+    <span>view on <b>GitHub</b></span>
+  </a>
+</span>
 
 <p>I&nbsp;am lately trying to take on coding again. It had always been a part of my life since my early years when I&nbsp;learned to program a Tandy Color Computer at the age of 8, the good old days.</p>
 

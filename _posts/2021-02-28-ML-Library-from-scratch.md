@@ -7,7 +7,12 @@ img: MLLibrary.jpg
 tags: [Machine Learning, Coding, Neural Networks, Python]
 author: Armando Maynez
 ---
-<a href="https://github.com/amaynez/GenericNeuralNetwork"><img class="github-link" src='/assets/img/view_on_github.png' width = "180"></a>
+<span class="github-btn" id="github-btn">
+  <a class="gh-btn" id="gh-btn" href="https://github.com/amaynez/GenericNeuralNetwork" target="_blank" aria-label="Open on GitHub">
+    <span class="gh-ico" aria-hidden="true"></span>
+    <span>view on <b>GitHub</b></span>
+  </a>
+</span>
 <br>
 <center><img src="/assets/img/ML_cloud.jpg"></center>
 

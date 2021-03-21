@@ -7,12 +7,10 @@ img: Perceptron.jpg
 tags: [Machine Learning, Coding, Neural Networks]
 author: Armando Maynez
 ---
-<a href="https://github.com/amaynez/Perceptron"><img class="github-link" src='/assets/img/view_on_github.png' width = "180"></a>
-
 <span class="github-btn" id="github-btn">
   <a class="gh-btn" id="gh-btn" href="https://github.com/amaynez/Perceptron" target="_blank" aria-label="Open on GitHub">
     <span class="gh-ico" aria-hidden="true"></span>
-    <span class="gh-text" id="gh-text">view on <b>GitHub</b></span>
+    <span>view on <b>GitHub</b></span>
   </a>
 </span>
 
