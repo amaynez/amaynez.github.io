@@ -22,6 +22,10 @@ span#github-btn {
     margin-top: 5px;
 }
 
+.github-btn-large {
+    height: 30px;
+}
+
 .github-btn {
     font: bold 11px/14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
     height: 20px;
@@ -45,7 +49,7 @@ span#github-btn {
 }
 
 .gh-btn, .gh-count, .gh-ico {
-    float: left;
+    float: center;
 }
 
 .github-btn-large .gh-ico {
