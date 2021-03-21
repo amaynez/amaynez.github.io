@@ -6,14 +6,8 @@ description: Taking on the challenge of picking up coding again through interest
 img: Game_of_Life.jpg
 tags: [Coding, Python]
 author: Armando Maynez
+github:amaynez/GameOfLife/
 ---
-<span class="github-btn" id="github-btn">
-  <a class="gh-btn" id="gh-btn" href="https://github.com/amaynez/GameOfLife" target="_blank" aria-label="Open on GitHub">
-    <span class="gh-ico" aria-hidden="true"></span>
-    <span>view on <b>GitHub</b></span>
-  </a>
-</span>
-
 <p>I&nbsp;am lately trying to take on coding again. It had always been a part of my life since my early years when I&nbsp;learned to program a Tandy Color Computer at the age of 8, the good old days.</p>
 
 <center><img src="https://uploads-ssl.webflow.com/60535753234cc817ed863828/605361c3e46d294313573eba_300px-TRS-80_Color_Computer_3.jpg" alt="Tandy Color Computer TRS80 III"/></center><center>Tandy Color Computer TRS80 III</center><br>
