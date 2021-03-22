@@ -33,7 +33,7 @@ In more mathematical terms, a perceptron is an array of values (let's call them 
 
 For instance a perceptron could get 3 different inputs as in the image, lets pretend that the inputs it receives as signal are (1, 2 and 3), if it's weights are (0.5, 1 and -1) respectively, then what the perceptron will do when the signal is received is to multiply each input value by its corresponding weight, then add them up. In this case:
 
-$$0.5 * 1 + 1 * 2 + -1 * 3 = 0.5 + 2 - 3 = -0.5$$
+$$\left(0.5 * 1\right) + \left(1 * 2\right) + \left(-1 * 3\right) = 0.5 + 2 - 3 = -0.5$$
 
 <p>
 0.5 * 1 + 1 * 2 + -1 * 3 = 0.5 + 2 - 3 = **-0.5**.
