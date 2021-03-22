@@ -47,7 +47,7 @@ td.archive-date {
 
 td.archive-post {
     text-align: left;
-    padding-left: 1em;
+    padding-left: 0.65em;
 }
 
 /* = = = = = = = = = = Github Link Button = = = = = = = = = = */
@@ -1689,7 +1689,7 @@ pre code {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 12px;
-  margin-bottom: 10px;
+  padding-right: 0.65em;
 }
 
 .blog-tags .tag-list span a:hover {
