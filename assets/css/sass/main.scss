@@ -2,7 +2,6 @@
 @import "syntax";
 @import "tools/normalize";
 
-
 /* = = = = = = = = = = Main Styles = = = = = = = = = = */
 
 *, *::after, *::before {
@@ -146,4 +145,7 @@ pre {
 @import "parts/animate";
 
 /* = = = = = = = = = = Media = = = = = = = = = = */
-@import "media"
+@import "media";
+
+/* = = = = = = = = = = Archive = = = = = = = = = = */
+@import "archive";
