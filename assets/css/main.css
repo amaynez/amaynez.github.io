@@ -1665,7 +1665,7 @@ pre code {
 }
 
 .blog-tags table.tags-table {
-    border-spacing: 0;
+    border-spacing: 0 5px;
     border-collapse: collapse;
 }
 
@@ -1679,8 +1679,8 @@ pre code {
 }
 
 .blog-tags td.tag-word a {
-    font-size: 20px;
-    font-color: #343434;
+    font-size: 17px;
+    color: #343434;
 }
 
 .blog-tags .tag-list span a {
