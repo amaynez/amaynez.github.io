@@ -7,14 +7,8 @@ img: Perceptron.jpg
 tags: [Machine Learning, Coding, Neural Networks]
 author: Armando Maynez
 github:  amaynez/Perceptron/
+mathjax: yes
 ---
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [["$", "$"], ["\\(", "\\)"]],
-        processEscapes: true
-    }
-});</script>
 As an entry point to learning python and getting into Machine Learning, I decided to code from scratch the Hello World! of the field, a single neuron perceptron.
 
 ## What is a perceptron?
