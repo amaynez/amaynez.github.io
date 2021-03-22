@@ -1669,6 +1669,11 @@ pre code {
     border-collapse: collapse;
 }
 
+.blog-tags td.tag-row {
+    vertical-align: text-top;
+    padding-left: .65em;
+}
+
 .blog-tags td.tag-word {
     vertical-align: text-top;
     text-align: right;
@@ -1689,7 +1694,6 @@ pre code {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 12px;
-  padding-right: 0.65em;
 }
 
 .blog-tags .tag-list span a:hover {
