@@ -1715,7 +1715,9 @@ pre code {
   line-height: 15px;
   padding: 2px 5px 5px 2px;
   }
-
+  .github-btn {
+    height: auto;
+  }
   .post-card-box li {
     width: 100%;
     margin-bottom: 20px;
@@ -1754,6 +1756,9 @@ pre code {
     font-size: 10px;
     line-height: 12px;
     padding: 0px 5px 5px;
+  }
+  .github-btn {
+    height: auto;
   }
   .page-content {
     margin-top: -50px;
