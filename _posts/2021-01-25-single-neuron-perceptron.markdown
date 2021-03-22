@@ -10,7 +10,7 @@ github:  amaynez/Perceptron/
 ---
 As an entry point to learning python and getting into Machine Learning, I decided to code from scratch the Hello World! of the field, a single neuron perceptron.
 
-##What is a perceptron?
+## What is a perceptron?
 
 A perceptron is the basic building block of a neural network, it can be compared to a neuron, And its conception is what detonated the vast field of Artificial Intelligence nowadays.
 
