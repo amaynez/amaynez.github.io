@@ -14,7 +14,7 @@ permalink: /archive/
 		<a href="/tags/#{{ this_word | cgi_escape }}" class="tag">{{ this_word }} <span>({{ site.tags[this_word].size }})</span></a>,
 		{% endunless %}{% endfor %}
 	</div>
-	<table class="archive-table">
+	<table class="archive-table" cellspacing="0">
 	{% for post in site.posts %}
 		<tr class="archive-row">
 			<td class="archive-date">{{ post.date | date: "%Y, %B %d" }}</td>

@@ -24,6 +24,11 @@ div.tag-cloud{
     text-decoration: underline;
 }
 
+table.archive-table {
+  border-spacing:0;
+  border-collapse: collapse;
+}
+
 tr.archive-row {
     height: 3em;
     vertical-align: text-top;
