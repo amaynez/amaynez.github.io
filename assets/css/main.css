@@ -1649,19 +1649,6 @@ pre code {
 }
 
 /* = = = = = = = = = = Tags Styles = = = = = = = = = = */
-.blog-tags {
-  margin: 100px 0 100px;
-}
-
-.blog-tags h1 {
-  text-align: left;
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 36px;
-  text-align: center;
-  margin: 0 0 30px;
-  color: #311e3e;
-}
 
 .blog-tags .tags {
   margin: 0;
@@ -1672,10 +1659,13 @@ pre code {
 .blog-tags .tags li a {
   display: inline-block;
   color: #311e3e;
+  text-decoration: none;
+    font-size: 14px;
 }
 
 .blog-tags .tags li a:hover {
   opacity: .8;
+  text-decoration: underline;
 }
 
 .blog-tags .tag-list span a {
