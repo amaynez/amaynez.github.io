@@ -20,6 +20,11 @@
     text-decoration: underline;
 }
 
+.archive-date {
+    font-style: italic;
+    color: #cccccc;
+}
+
 /* = = = = = = = = = = Github Link Button = = = = = = = = = = */
 span#github-btn {
     display: flex;
