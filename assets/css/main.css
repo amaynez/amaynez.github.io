@@ -1,5 +1,9 @@
 
 /* = = = = = = = = = = Archive Page Styles = = = = = = = = = = */
+div.tag-cloud{
+    margin-bottom: 1em;
+}
+
 .archive .tag{
   text-decoration: none;
   font-size: 12px;
