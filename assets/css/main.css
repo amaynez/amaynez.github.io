@@ -1650,20 +1650,15 @@ pre code {
 
 /* = = = = = = = = = = Tags Styles = = = = = = = = = = */
 
-.blog-tags .tags {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 
-.blog-tags .tags li a {
+.blog-tags .tag-cloud a {
   display: inline-block;
   color: #311e3e;
   text-decoration: none;
     font-size: 14px;
 }
 
-.blog-tags .tags li a:hover {
+.blog-tags .tag-cloud a:hover {
   opacity: .8;
   text-decoration: underline;
 }
