@@ -20,7 +20,7 @@
     text-decoration: underline;
 }
 
-.archive-date {
+span#archive-date {
     font-style: italic;
     color: #cccccc;
 }
