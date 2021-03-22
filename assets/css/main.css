@@ -11,16 +11,6 @@
     font-weight: bolder;
 }
 
-.archive ul {
-    padding: 15px 0 0;
-    margin: 0;
-    list-style: none;
-}
-
-.archive li {
-    margin-bottom: 1em
-}
-
 .archive a {
     text-decoration: none;
     line-height: 1em;
@@ -29,6 +19,10 @@
 .archive a:hover {
     text-decoration: underline;
     font-weight: bolder;
+}
+
+tr.archive-table{
+    margin-bottom: 1em
 }
 
 td.archive-date {
