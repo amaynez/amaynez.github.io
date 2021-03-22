@@ -4,14 +4,18 @@
     border: 1px solid #aaa;
     display: table;
     font-size: 90%;
-    padding: 20px;
+    padding: 5px 20px;
     width: auto;
     margin: auto;
     margin-bottom: 1em;
 }
 
-ul#my_toc.inline_toc{
-    padding-inline-start: 2em;
+ul.toc_list{
+    padding-inline-start: 0;
+}
+
+ul.inline_toc{
+    padding-inline-start: 0;
 }
 
 .toc_container a {
