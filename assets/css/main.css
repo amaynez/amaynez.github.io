@@ -1,5 +1,17 @@
 
 /* = = = = = = = = = = Archive Page Styles = = = = = = = = = = */
+.archive .tag{
+  text-decoration: none;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.archive .tag:hover{
+    text-decoration: underline;
+    font-style: bolder;
+}
+
 .archive ul {
     padding: 15px 0 0;
     margin: 0;
