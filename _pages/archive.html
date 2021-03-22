@@ -5,8 +5,14 @@ permalink: /archive/
 ---
 <div class="archive">
   <h1 class="archive-title">Posts archive</h1>
-  <ul>
-    {% for post in site.posts %}
+
+	{% for item in (0..site.tags.size) %}{% unless forloop.last %}
+	{% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+	<a href="/tags/#{{ this_word | cgi_escape }}" class="tag">{{ this_word }} <span>({{ site.tags[this_word].size }})</span></a>,
+	{% endunless %}{% endfor %}
+
+	<ul>
+	{% for post in site.posts %}
 		<li>
 		{{ post.date | date: "%B %d, %Y" }}: <a href="{{ post.url }}">{{ post.title }}</a>
 		</li>
