@@ -2,14 +2,13 @@
 /* = = = = = = = = = = Archive Page Styles = = = = = = = = = = */
 .archive .tag{
   text-decoration: none;
-  font-size: 10px;
+  font-size: 12px;
   text-transform: uppercase;
-  color: #fff;
+  color: #646464;
 }
 
 .archive .tag:hover{
-    text-decoration: underline;
-    font-style: bolder;
+    font-weight: bolder;
 }
 
 .archive ul {
@@ -24,17 +23,17 @@
 
 .archive a {
     text-decoration: none;
-    color: black;
     line-height: 1em;
 }
 
 .archive a:hover {
     text-decoration: underline;
+    font-weight: bolder;
 }
 
-span#archive-date {
+span.archive-date {
     font-style: italic;
-    color: #cccccc;
+    color: #969696;
 }
 
 /* = = = = = = = = = = Github Link Button = = = = = = = = = = */
