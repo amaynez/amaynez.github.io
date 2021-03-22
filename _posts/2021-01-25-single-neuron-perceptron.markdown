@@ -31,12 +31,12 @@ Imagine you have a 'neuron' and to 'activate' it, you pass through several input
 
 In more mathematical terms, a perceptron is an array of values (let's call them weights), and the rules to apply such values to an input signal.
 
-For instance a perceptron could get 3 different inputs as in the image, lets pretend that the inputs it receives as signal are (1, 2 and 3), if it's weights are (0.5, 1 and -1) respectively, then what the perceptron will do when the signal is received is to multiply each input value by its corresponding weight, then add them up. In this case:
+For instance a perceptron could get 3 different inputs as in the image, lets pretend that the inputs it receives as signal are: $x_1 = 1, x_2 = 2 and x_3 = 3$, if it's weights are $w_1 = 0.5, w_2 = 1, w_3 = -1$ respectively, then what the perceptron will do when the signal is received is to multiply each input value by its corresponding weight, then add them up.
 
 <p style="text-align:center">\(<br>
 \begin{align}
 \begin{split}
-\left(i_1 * w_1\right) + \left(i_2 * w_2\right) + \left(i_3 * w_3\right)
+\left(x_1 * w_1\right) + \left(x_2 * w_2\right) + \left(x_3 * w_3\right)
 \end{split}
 \end{align}
 \)</p>
