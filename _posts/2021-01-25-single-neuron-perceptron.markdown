@@ -6,7 +6,7 @@ description: Single neuron perceptron that classifies elements learning quite qu
 img: Perceptron.jpg 
 tags: [Machine Learning, Coding, Neural Networks]
 author: Armando Maynez
-github:
+github:  amaynez/Perceptron/
 ---
 As an entry point to learning python and getting into Machine Learning, I decided to code from scratch the Hello World! of the field, a single neuron perceptron.
 
