@@ -88,7 +88,9 @@ sidebar__right{
 
 @media (min-width: 64em){
     .toc__menu{
-        font-size:.6875em}}
+        font-size:.6875em;
+        list-style: none;
+        padding-inline-start:0}}
     .toc__menu a{
         display:block;
         padding:0.25rem 0.75rem;
