@@ -3,11 +3,11 @@
     background: #f9f9f9 none repeat scroll 0 0;
     border: 1px solid #aaa;
     display: table;
-    font-size: 95%;
-    margin-bottom: 1em;
+    font-size: 85%;
     padding: 20px;
     width: auto;
     margin: auto;
+    margin-bottom: 1em;
 }
 
 .toc_container a {
@@ -16,7 +16,7 @@
 
 .toc_container a:hover {
     text-decoration: underline;
-    color: #646464
+    color: #5480a9
 }
 
 .toc_title {
