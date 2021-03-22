@@ -44,3 +44,12 @@ $(function () {
     }
   })
 })
+
+   function popup(url, title)
+   {
+    newwindow=window.open('https://www.facebook.com/sharer/sharer.php?u='+url+'&t='+title+'&display=popup&ref=plugin&src=like&kid_directed_site=0&app_id=113869198637480','share in facebook','height=300,width=650,screenX=600,screenY=500');
+
+    if (window.focus) {newwindow.focus()}
+    return false;
+   }
+
