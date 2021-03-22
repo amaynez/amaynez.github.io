@@ -1,6 +1,7 @@
 /* = = = = = = = = = = Sidebar TOC Styles = = = = = = = = = = */
 
-sidebar__right{margin-bottom:1em}
+aside.sidebar__right.sticky{margin-bottom:1em}
+
 @media (min-width: 64em){
     .sidebar__right{
         position:absolute;
