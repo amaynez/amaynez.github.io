@@ -1661,7 +1661,7 @@ pre code {
 .blog-tags .tag-cloud a:hover {
   opacity: .8;
   text-decoration: underline;
-  text-weight: bolder;
+  font-weight: bolder;
 }
 
 .blog-tags table.tags-table {
