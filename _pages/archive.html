@@ -16,7 +16,7 @@ permalink: /archive/
 	</div>
 	<table class="archive-table">
 	{% for post in site.posts %}
-		<tr>
+		<tr class="archive-row">
 			<td class="archive-date">{{ post.date | date: "%Y, %B %d" }}</td>
 			<td class="archive-post"><a href="{{ post.url }}">{{ post.title }}</a></td>
 		</tr>
