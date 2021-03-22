@@ -31,17 +31,15 @@ td.archive-date {
     font-size: 13px;
     text-align: right;
     max-width: 5em;
-    float: left;
     padding-right: 1em;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #848484;
 }
 
 td.archive-post {
     text-align: left;
     padding-left: 1em;
-    display: flow-root;
-    border-left-width: 1px;
-    border-left-style: solid;
-    border-left-color: darkblue;
 }
 
 /* = = = = = = = = = = Github Link Button = = = = = = = = = = */
