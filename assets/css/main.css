@@ -143,6 +143,7 @@
 .article-list .article:hover {
   overflow: visible;
   z-index: 10;
+  height: auto;
 }
 .article-list .article:hover, .article-list .article:hover .article-content, .article-list .article:hover .post-content {
   background: white;
