@@ -34,16 +34,20 @@ In more mathematical terms, a perceptron is an array of values (let's call them 
 For instance a perceptron could get 3 different inputs as in the image, lets pretend that the inputs it receives as signal are (1, 2 and 3), if it's weights are (0.5, 1 and -1) respectively, then what the perceptron will do when the signal is received is to multiply each input value by its corresponding weight, then add them up. In this case:
 
 <p style="text-align:center">\(<br>
+\begin{align}
+\begin{split}
+\left(i_1 * w_1\right) + \left(i_2 * w_2\right) + \left(i_3 * w_3\right)
+\end{split}
+\end{align}
+\)</p>
+
+<p style="text-align:center">\(<br>
 \begin{align}<br>
 \begin{split}<br>
 \left(0.5 * 1\right) + \left(1 * 2\right) + \left(-1 * 3\right) = 0.5 + 2 - 3 = -0.5
 \end{split}<br>
 \end{align}<br>
 \)</p>
-
-<p>
-0.5 * 1 + 1 * 2 + -1 * 3 = 0.5 + 2 - 3 = **-0.5**.
-</p>
 
 Typically when this value is obtained, we need to apply an "activation" function to smooth the output, but let's say that our activation function is linear, meaning that we keep the value as it is, then that's it, that is the output of the perceptron, -0.5.
 
