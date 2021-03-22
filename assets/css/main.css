@@ -1681,11 +1681,11 @@ pre code {
     border-right-width: 1px;
     border-right-style: solid;
     border-right-color: #848484;
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .blog-tags td.tag-word a {
-    font-size: 17px;
+    font-size: 15px;
     color: #343434;
 }
 
