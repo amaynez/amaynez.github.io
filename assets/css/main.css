@@ -31,7 +31,7 @@
     font-weight: bolder;
 }
 
-div.archive-date {
+td.archive-date {
     font-style: italic;
     color: #969696;
     font-size: 13px;
@@ -41,7 +41,7 @@ div.archive-date {
     padding-right: 1em;
 }
 
-div.archive-post {
+td.archive-post {
     text-align: left;
     padding-left: 1em;
     display: flow-root;
