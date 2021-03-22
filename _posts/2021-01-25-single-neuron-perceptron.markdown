@@ -8,6 +8,13 @@ tags: [Machine Learning, Coding, Neural Networks]
 author: Armando Maynez
 github:  amaynez/Perceptron/
 ---
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [["$", "$"], ["\\(", "\\)"]],
+        processEscapes: true
+    }
+});</script>
 As an entry point to learning python and getting into Machine Learning, I decided to code from scratch the Hello World! of the field, a single neuron perceptron.
 
 ## What is a perceptron?
@@ -24,7 +31,13 @@ Imagine you have a 'neuron' and to 'activate' it, you pass through several input
 
 In more mathematical terms, a perceptron is an array of values (let's call them weights), and the rules to apply such values to an input signal.
 
-For instance a perceptron could get 3 different inputs as in the image, lets pretend that the inputs it receives as signal are (1, 2 and 3), if it's weights are (0.5, 1 and -1) respectively, then what the perceptron will do when the signal is received i to multiply each input value by its corresponding weight, then add them up. In this case 0.5 * 1 + 1 * 2 + -1 * 3 = 0.5 + 2 - 3 = **-0.5**.
+For instance a perceptron could get 3 different inputs as in the image, lets pretend that the inputs it receives as signal are (1, 2 and 3), if it's weights are (0.5, 1 and -1) respectively, then what the perceptron will do when the signal is received is to multiply each input value by its corresponding weight, then add them up. In this case:
+
+$$0.5 * 1 + 1 * 2 + -1 * 3 = 0.5 + 2 - 3 = -0.5$$
+
+<p>
+0.5 * 1 + 1 * 2 + -1 * 3 = 0.5 + 2 - 3 = **-0.5**.
+</p>
 
 Typically when this value is obtained, we need to apply an "activation" function to smooth the output, but let's say that our activation function is linear, meaning that we keep the value as it is, then that's it, that is the output of the perceptron, -0.5.
 
