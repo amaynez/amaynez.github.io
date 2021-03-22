@@ -8,12 +8,12 @@ permalink: /archive/
 
 <div class="archive">
   <h1 class="archive-title">Posts archive</h1>
-
-	{% for item in (0..site.tags.size) %}{% unless forloop.last %}
-	{% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-	<a href="/tags/#{{ this_word | cgi_escape }}" class="tag">{{ this_word }} <span>({{ site.tags[this_word].size }})</span></a>,
-	{% endunless %}{% endfor %}
-
+	<div class="tag-cloud">
+		{% for item in (0..site.tags.size) %}{% unless forloop.last %}
+		{% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+		<a href="/tags/#{{ this_word | cgi_escape }}" class="tag">{{ this_word }} <span>({{ site.tags[this_word].size }})</span></a>,
+		{% endunless %}{% endfor %}
+	</div>
 	<table class="archive-table">
 	{% for post in site.posts %}
 		<tr>
