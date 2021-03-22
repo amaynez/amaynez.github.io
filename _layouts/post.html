@@ -25,7 +25,7 @@ layout: default
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title">&nbsp;&nbsp;<i class="fa fa-list-alt"></i>&nbsp;&nbsp;on this page:</h4></header>
-              {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
+              {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" id="toc__menu" skip_no_ids=true %}
             </nav>
           </aside>
         {% elsif page.toc %}

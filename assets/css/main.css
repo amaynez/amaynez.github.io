@@ -2,6 +2,11 @@
 
 aside.sidebar__right.sticky{margin-bottom:1em}
 
+#toc__menu ul {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
 @media (min-width: 64em){
     .sidebar__right{
         position:absolute;
@@ -61,7 +66,8 @@ sidebar__right{
     border:1px solid #f2f3f3;
     border-radius:4px;
     -webkit-box-shadow:0 1px 1px rgba(0,0,0,0.125);
-    box-shadow:0 1px 1px rgba(0,0,0,0.125)}
+    box-shadow:0 1px 1px rgba(0,0,0,0.125);
+    }
 
 .toc .nav__title{
     color:#fff;
@@ -83,14 +89,11 @@ sidebar__right{
     margin:0;
     padding:0;
     width:100%;
-    list-style:none;
     font-size:.75em}
 
 @media (min-width: 64em){
     .toc__menu{
-        font-size:.6875em;
-        list-style: none;
-        padding-inline-start:0}}
+        font-size:.6875em;}}
     .toc__menu a{
         display:block;
         padding:0.25rem 0.75rem;
@@ -98,21 +101,18 @@ sidebar__right{
         font-weight:bold;
         line-height:1.5;
         border-bottom:1px solid #f2f3f3;
-        text-decoration: none;
-        list-style: none;
+        text-decoration: none
         }
     .toc__menu a:hover{
         color:#3d4144
         text-decoration: underline;
         font-weight:bolder}
     .toc__menu li ul>li a{
-        padding-left:1.25rem;
-        font-weight:normal;
-        padding-inline-start:0}
-    .toc__menu li ul li ul>li a{padding-left:1.75rem;padding-inline-start:0}
-    .toc__menu li ul li ul li ul>li a{padding-left:2.25rem;padding-inline-start:0}
-    .toc__menu li ul li ul li ul li ul>li a{padding-left:2.75rem;padding-inline-start:0}
-    .toc__menu li ul li ul li ul li ul li ul>li a{padding-left:3.25rem;padding-inline-start:0}
+        padding-left:1.25rem;}
+    .toc__menu li ul li ul>li a{padding-left:1.75rem}
+    .toc__menu li ul li ul li ul>li a{padding-left:2.25rem}
+    .toc__menu li ul li ul li ul li ul>li a{padding-left:2.75rem}
+    .toc__menu li ul li ul li ul li ul li ul>li a{padding-left:3.25rem}
 }
 
 /* = = = = = = = = = = Inline TOC Styles = = = = = = = = = = */
