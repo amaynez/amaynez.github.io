@@ -3,6 +3,9 @@ layout: home-page
 title: Archive
 permalink: /archive/
 ---
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign tag_words = site_tags | split:',' | sort %}
+
 <div class="archive">
   <h1 class="archive-title">Posts archive</h1>
 
