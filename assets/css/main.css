@@ -6,6 +6,236 @@
     list-style: none;
 }
 
+.fadein {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.fadein.lazyloaded {
+  opacity: 1;
+}
+
+.blur-up {
+  will-change: filter, opacity, transform;
+  filter: blur(3px);
+  transition: transform 1s, opacity 1s, blur 0.3s;
+  opacity: 0;
+  transform: scale(0.95);
+  transform-origin: center;
+}
+.blur-up:not(.lazyload) {
+  opacity: 1;
+  transform: scale(1);
+}
+.blur-up.lazyloaded {
+  filter: blur(0);
+}
+.spinner {
+  background: rgba(0, 0, 0, 0.03) url("../images/ui/spinner.svg") no-repeat center;
+}
+::-moz-selection {
+  color: white;
+  background: black;
+  text-shadow: none;
+}
+::selection {
+  color: white;
+  background: black;
+  text-shadow: none;
+}
+.custom-background:after {
+  content: "";
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: inherit;
+  z-index: -3;
+  background-attachment: scroll;
+  min-height: 100vh;
+  height: calc(100vw * 16 / 9);
+}
+@media (orientation: landscape) {
+  .custom-background:after {
+    height: calc(100vw * 3 / 4);
+  }
+}
+.article-list .article-content > *:first-child:not(img):not(form):not(figure):not(div), [id=footer] .container > *:first-child:not(img):not(form):not(figure):not(div), [id=sidebar] > * > *:first-child:not(img):not(form):not(figure):not(div), [id=wrapper] .page-header > *:first-child:not(img):not(form):not(figure):not(div) {
+  margin-top: -0.25em;
+}
+.article-list .article-content > *:last-child:not(img):not(form):not(figure):not(div), [id=footer] .container > *:last-child:not(img):not(form):not(figure):not(div), [id=sidebar] > * > *:last-child:not(img):not(form):not(figure):not(div), [id=wrapper] .page-header > *:last-child:not(img):not(form):not(figure):not(div) {
+  margin-bottom: -0.25em;
+}
+.article-list .article-title, fieldset legend {
+  font-weight: 600;
+  line-height: 1.375;
+}
+.article-list .article-title, fieldset legend {
+  font-size: 1.214767763rem;
+}
+@media screen and (min-width: 37.5rem) {
+  .article-list .article-title, fieldset legend {
+    font-size: calc(1.214767763rem + 1.153825274 * ((100vw - 37.5rem) / 42.5));
+  }
+}
+@media screen and (min-width: 80rem) {
+  .article-list .article-title, fieldset legend {
+    font-size: 2.368593037rem;
+  }
+}
+
+.article-list .article-date {
+  display: block;
+  color: #4a4a4a;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 0.1em;
+  line-height: 1;
+}
+.article-list .article-date .updated {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.article-list {
+  position: relative;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+.article-list:before {
+  content: "";
+  background: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+@media (min-width: 640px) {
+  .article-list:before {
+    margin: calc((.75rem + 1.25vw)*-1);
+  }
+}
+@media (max-width: 480px) {
+  .article-list {
+    margin-left: calc((.75rem + 1.25vw)*-1);
+    margin-right: calc((.75rem + 1.25vw)*-1);
+  }
+}
+.article-list:hover:before {
+  background: rgba(0, 0, 0, 0.02);
+}
+.article-list:hover > *[class] {
+  background: rgba(0, 0, 0, 0);
+}
+.article-list:hover > * > * {
+  opacity: 0.075;
+}
+
+.article-list .article-image {
+  width: calc((.75rem + 1.25vw) * 4);
+}
+
+.article-list .article-date {
+  position: absolute;
+  top: calc(.75rem + 1.25vw);
+  right: calc(.75rem + 1.25vw);
+}
+@media (max-width: 640px) {
+  .article-list .article-date {
+    display: none;
+  }
+}
+
+.article-list .article-category {
+  position: absolute;
+  top: calc(.75rem + 1.25vw);
+  left: calc(.75rem + 1.25vw);
+}
+@media (max-width: 640px) {
+  .article-list .article-category {
+    display: none;
+  }
+}
+
+.article-list .article-title {
+  line-height: 1.25;
+  transition: all 0.2s ease;
+  margin: 0 0 -0.3em 0;
+  align-self: flex-end;
+}
+@media (min-width: 640px) {
+  .article-list .article-title {
+    margin-top: calc(1rem + .5em);
+  }
+}
+
+.article-list .article-content {
+  opacity: 0;
+  font-family: "Droid Serif";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  padding: 0 calc(.75rem + 1.25vw) calc(.75rem + 1.25vw);
+  background: rgba(0, 0, 0, 0.02);
+  margin: 0 calc((.75rem + 1.25vw)*-1);
+  border-bottom: calc(.75rem + 1.25vw) solid rgba(0, 0, 0, 0.02);
+  border-left: calc(.75rem + 1.25vw) solid rgba(0, 0, 0, 0.02);
+  border-right: calc(.75rem + 1.25vw) solid rgba(0, 0, 0, 0.02);
+}
+
+.article-list .article {
+  overflow: hidden;
+  position: relative;
+  transition: all 0.2s ease;
+  padding: calc(.75rem + 1.25vw);
+  background: rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.article-list .article:before, .article-list .article:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: calc(.75rem + 1.25vw);
+}
+.article-list .article:before {
+  bottom: 100%;
+}
+.article-list .article:after {
+  top: 100%;
+}
+.article-list .article h1, .article-list .article h2, .article-list .article fieldset legend, fieldset .article-list .article legend, .article-list fieldset .article legend, .article-list .article .article-title, .article-list .article p {
+  width: calc(100% - (.75rem + 1.25vw) * 5);
+}
+.article-list .article img, .article-list .article h1, .article-list .article h2, .article-list .article fieldset legend, fieldset .article-list .article legend, .article-list fieldset .article legend, .article-list .article .article-title, .article-list .article .article-content, .article-list .article .post-content {
+  transition: all 0.2s ease;
+}
+.article-list .article:hover {
+  overflow: visible;
+  z-index: 10;
+}
+.article-list .article:hover, .article-list .article:hover .article-content, .article-list .article:hover .post-content {
+  background: white;
+}
+.article-list .article:hover > * {
+  opacity: 1;
+  will-change: opacity;
+}
+.article-list .article + * {
+  margin-top: calc(.75rem + 1.25vw);
+}
+
+.article-list .article-image ~ .article-category {
+  left: calc((.75rem + 1.25vw) * 6);
+}
+
 /* = = = = = = = = = = Github Link Button = = = = = = = = = = */
 span#github-btn {
     display: flex;
