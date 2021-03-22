@@ -18,11 +18,11 @@
 
 .archive a:hover {
     text-decoration: underline;
-    font-weight: bolder;
 }
 
 tr.archive-row {
-    margin-bottom: 1em
+    height: 3em;
+    vertical-align: text-top;
 }
 
 td.archive-date {
