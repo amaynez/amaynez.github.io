@@ -1678,6 +1678,11 @@ pre code {
     border-right-color: #848484;
 }
 
+.blog-tags td.tag-word a {
+    font-size: 20px;
+    font-color: #343434;
+}
+
 .blog-tags .tag-list span a {
   display: inline-block;
   color: #87314e;
