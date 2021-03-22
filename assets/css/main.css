@@ -1666,7 +1666,7 @@ pre code {
 
 .blog-tags table.tags-table {
     border-spacing: 0 1em;
-    border-collapse: collapse;
+    border-collapse: separate;
 }
 
 .blog-tags td.tag-row {
