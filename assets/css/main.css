@@ -36,7 +36,7 @@ div.archive-date {
     color: #969696;
     font-size: 13px;
     text-align: right;
-    width: 20%;
+    max-width: 5em;
     float: left;
     padding-right: 1em;
 }
