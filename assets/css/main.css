@@ -7,6 +7,16 @@
     margin-bottom: 1em;
     padding: 20px;
     width: auto;
+    margin: auto;
+}
+
+.toc_container a {
+    text-decoration: none;
+}
+
+.toc_container a:hover {
+    text-decoration: underline;
+    color: #646464
 }
 
 .toc_title {
