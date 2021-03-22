@@ -10,6 +10,10 @@
     margin-bottom: 1em;
 }
 
+ul#my_toc.inline_toc{
+    padding-inline-start: 2em;
+}
+
 .toc_container a {
     text-decoration: none;
 }
