@@ -7,7 +7,7 @@ img: TicTacToeSml.jpg
 tags: [Machine Learning, Artificial Intelligence, Reinforcement Learning, Coding, Python]
 author: Armando Maynez
 github: amaynez/TicTacToe/
-toc: yes
+toc: sticky
 ---
 <center><img src='/assets/img/Game_Screen.png' width="310" height="300"></center>
 
