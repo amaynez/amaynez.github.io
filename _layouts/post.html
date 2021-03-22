@@ -22,7 +22,12 @@ layout: default
         </span>
         {% endif %}
         {% if page.toc %}
-          {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=3 %}
+          <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-list-alt"></i>"On this page"</h4></header>
+              {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" skip_no_ids=true %}
+            </nav>
+          </aside>
         {% endif %}
         {{page.content | markdownify}}
         {% if page.github %}
