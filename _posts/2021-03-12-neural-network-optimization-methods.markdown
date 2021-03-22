@@ -8,6 +8,7 @@ tags: [Coding, Machine Learning, Optimization, Deep Neural Networks]
 author: Armando Maynez
 github: amaynez/TicTacToe/blob/7bf83b3d5c10adccbeb11bf244fe0af8d9d7b036/entities/Neural_Network.py#L199
 mathjax: yes
+toc: yes
 ---
 For the seemingly small project I undertook of creating a machine learning neural network that could learn by itself to play tic-tac-toe, I bumped into the necesity of implementing at least one momentum algorithm for the optimization of the network during backpropagation.
 
@@ -184,6 +185,7 @@ self.bias[i] -= (eta * (np.array(self.bias_gradients[i])
                 )
 ```
 
+### Complete code
 All in all the code ended up like this:
 [view on github](https://github.com/amaynez/TicTacToe/blob/b429e5637fe5f61e997f04c01422ad0342565640/entities/Neural_Network.py#L1)
 
