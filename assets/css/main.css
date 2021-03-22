@@ -1664,6 +1664,20 @@ pre code {
   text-weight: bolder;
 }
 
+.blog-tags table.tags-table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.blog-tags td.tag-word {
+    vertical-align: text-top;
+    text-align: right;
+    padding-right: 0.65em;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #848484;
+}
+
 .blog-tags .tag-list span a {
   display: inline-block;
   color: #87314e;
