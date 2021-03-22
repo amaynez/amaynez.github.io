@@ -99,6 +99,7 @@ sidebar__right{
         line-height:1.5;
         border-bottom:1px solid #f2f3f3;
         text-decoration: none;
+        list-style: none;
         }
     .toc__menu a:hover{
         color:#3d4144
@@ -107,12 +108,11 @@ sidebar__right{
     .toc__menu li ul>li a{
         padding-left:1.25rem;
         font-weight:normal;
-        text-decoration: none;
         padding-inline-start:0}
-    .toc__menu li ul li ul>li a{padding-left:1.75rem;padding-inline-start:0;text-decoration: none}
-    .toc__menu li ul li ul li ul>li a{padding-left:2.25rem;padding-inline-start:0;text-decoration: none}
-    .toc__menu li ul li ul li ul li ul>li a{padding-left:2.75rem;padding-inline-start:0;text-decoration: none}
-    .toc__menu li ul li ul li ul li ul li ul>li a{padding-left:3.25rem;padding-inline-start:0;text-decoration: none}
+    .toc__menu li ul li ul>li a{padding-left:1.75rem;padding-inline-start:0}
+    .toc__menu li ul li ul li ul>li a{padding-left:2.25rem;padding-inline-start:0}
+    .toc__menu li ul li ul li ul li ul>li a{padding-left:2.75rem;padding-inline-start:0}
+    .toc__menu li ul li ul li ul li ul li ul>li a{padding-left:3.25rem;padding-inline-start:0}
 }
 
 /* = = = = = = = = = = Inline TOC Styles = = = = = = = = = = */
