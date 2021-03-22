@@ -16,7 +16,7 @@ permalink: /tags/
   {% endunless %}{% endfor %}
   </div>
 <!--cycles through tag list and creates subheader for each tag name...-->
-  <table class="tags-table">
+  <table class="tags-table" cellspacing="0">
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
   <tr>
@@ -28,9 +28,9 @@ permalink: /tags/
         <span><a href="{{ post.url }}">{{ post.title }}</a></span>
         <small><span>| {{ post.date | date_to_string }}</span></small>
       </div>
-    </td>
     {% endif %}{% endfor %}
-    </tr>
+     </td>
+  </tr>
   {% endunless %}{% endfor %}
     </table>
 </section>
