@@ -1665,17 +1665,17 @@ pre code {
 }
 
 .blog-tags table.tags-table {
-    border-spacing: 0 5px;
+    border-spacing: 0 1em;
     border-collapse: collapse;
 }
 
 .blog-tags td.tag-row {
-    vertical-align: text-top;
+    vertical-align: top;
     padding-left: .65em;
 }
 
 .blog-tags td.tag-word {
-    vertical-align: text-top;
+    vertical-align: top;
     text-align: right;
     padding-right: 0.65em;
     border-right-width: 1px;
