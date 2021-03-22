@@ -13,25 +13,3 @@ permalink: /archive/
 		{% endfor %}
 	</ul>
 </div>
-
-<div class='article-list'>
-	{% for post in site.posts %}
-		<article class='article'>
-			<img class='article-image' height='200' src='{{"/assets/img/" | prepend: site.baseurl | append : post.img}}' width='200'>
-			{% for tag in post.tags %}
-			<ul class='article-category'>
-				<li>
-					<a href="{{site.baseurl}}/tags#{{tag}}" class="article-category">|&#32;{{ tag }}</a>
-				</li>
-			</ul>
-			{% endfor %}
-			<h3 class='article-title'>
-				<a href='{{post.url | prepend: site.baseurl}}'>{{post.title}}</a>
-			</h3>
-		<time class='article-date'>{{ post.date | date: "%B %d, %Y" }}</time>
-		<div class='article-content'>
-		  <p>{{ post.description }}</p>
-		</div>
-		</article>
-	{% endfor %}
-</div>
