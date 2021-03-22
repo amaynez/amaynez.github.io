@@ -1705,10 +1705,15 @@ pre code {
   .main-header .logo a {
     font-size: 24px;
   }
-
-    .gh-btn{
+  .gh-ico {
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+  }
+  .gh-btn{
   font-size: 13px;
   }
+
   .post-card-box li {
     width: 100%;
     margin-bottom: 20px;
@@ -1737,9 +1742,13 @@ pre code {
   .wrapper {
     max-width: 95%;
   }
-
+  .gh-ico {
+    width: 12px;
+    height: 12px;
+    margin-right: 2px;
+  }
   .gh-btn{
-  font-size: 10px;
+    font-size: 10px;
   }
   .page-content {
     margin-top: -50px;
