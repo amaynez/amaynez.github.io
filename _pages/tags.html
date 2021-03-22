@@ -20,7 +20,7 @@ permalink: /tags/
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
   <tr>
-    <td class="tag-word"><h2 id="{{ this_word | cgi_escape }}">{{ this_word }}</h2></td>
+    <td class="tag-word"><h3 id="{{ this_word | cgi_escape }}">{{ this_word }}</h3></td>
 <!--  lists all posts corresponding to specific tag...-->
     <td>
     {% for post in site.tags[this_word] %}{% if post.title != null %}
