@@ -31,9 +31,10 @@
     font-weight: bolder;
 }
 
-span.archive-date {
+.archive-date {
     font-style: italic;
     color: #969696;
+    font-size: 13px;
 }
 
 /* = = = = = = = = = = Github Link Button = = = = = = = = = = */
