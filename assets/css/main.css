@@ -109,7 +109,7 @@ sidebar__right{
     .toc__menu li ul li ul li ul li ul li ul>li a{padding-left:3.25rem}
 }
 
-/* = = = = = = = = = = TOC Styles = = = = = = = = = = */
+/* = = = = = = = = = = Inline TOC Styles = = = = = = = = = = */
 #toc_container {
     background: #f9f9f9 none repeat scroll 0 0;
     border: 1px solid #aaa;
@@ -199,9 +199,10 @@ td.archive-post {
 }
 
 /* = = = = = = = = = = Github Link Button = = = = = = = = = = */
-span#github-btn {
+span.github-btn {
     display: flex;
     justify-content: center;
+    margin: auto;
     margin-bottom: 1em;
 }
 
