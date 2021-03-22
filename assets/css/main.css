@@ -1713,7 +1713,7 @@ pre code {
   .gh-btn{
   font-size: 13px;
   line-height: 15px;
-  padding: 2px 5px 5px 2px;
+  padding: 5px 5px 5px;
   }
   .github-btn {
     height: auto;
@@ -1755,7 +1755,7 @@ pre code {
   .gh-btn{
     font-size: 10px;
     line-height: 12px;
-    padding: 0px 5px 5px;
+    padding: 5px 5px 5px;
   }
   .github-btn {
     height: auto;
