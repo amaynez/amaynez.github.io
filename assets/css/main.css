@@ -35,6 +35,19 @@ div.archive-date {
     font-style: italic;
     color: #969696;
     font-size: 13px;
+    text-align: right;
+    width: 20%;
+    float: left;
+    padding-right: 1em;
+}
+
+div.archive-post {
+    text-align: left;
+    padding-left: 1em;
+    display: flow-root;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: darkblue;
 }
 
 /* = = = = = = = = = = Github Link Button = = = = = = = = = = */
