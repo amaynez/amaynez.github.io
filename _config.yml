@@ -37,6 +37,9 @@ paginate_path: /page:num/
 # Build settings
 markdown: kramdown
 
+sass:
+  style: compact
+
 plugins:
   - jekyll-paginate
   - jekyll-feed
