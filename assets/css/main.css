@@ -98,18 +98,20 @@ sidebar__right{
         font-weight:bold;
         line-height:1.5;
         border-bottom:1px solid #f2f3f3;
-        text-decoration: none;}
+        text-decoration: none;
+        }
     .toc__menu a:hover{
         color:#3d4144
         text-decoration: underline;
         font-weight:bolder}
     .toc__menu li ul>li a{
         padding-left:1.25rem;
-        font-weight:normal}
-    .toc__menu li ul li ul>li a{padding-left:1.75rem}
-    .toc__menu li ul li ul li ul>li a{padding-left:2.25rem}
-    .toc__menu li ul li ul li ul li ul>li a{padding-left:2.75rem}
-    .toc__menu li ul li ul li ul li ul li ul>li a{padding-left:3.25rem}
+        font-weight:normal;
+        padding-inline-start:0}
+    .toc__menu li ul li ul>li a{padding-left:1.75rem;padding-inline-start:0}
+    .toc__menu li ul li ul li ul>li a{padding-left:2.25rem;padding-inline-start:0}
+    .toc__menu li ul li ul li ul li ul>li a{padding-left:2.75rem;padding-inline-start:0}
+    .toc__menu li ul li ul li ul li ul li ul>li a{padding-left:3.25rem;padding-inline-start:0}
 }
 
 /* = = = = = = = = = = Inline TOC Styles = = = = = = = = = = */
