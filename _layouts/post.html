@@ -75,10 +75,10 @@ layout: default
   {% include footer.html %}
 </div>
 <script>
-	var spy = new Gumshoe("#toc__menu a", {
+	var spy = new Gumshoe("nav.toc a", {
 	                        navClass:"active",
 	                        contentClass:"active",
-                            nested:!1,
+                            nested:1,
                             nestedClass:"active",
                             offset:100,
                             reflow:!0,
