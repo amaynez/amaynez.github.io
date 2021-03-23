@@ -26,10 +26,10 @@ function popup(url){
 </script>
 
 <script>
-function toggle_show(str) {
-  document.getElementById(str).classList.toggle("show");
-  document.getElementById("toc_button").classList.toggle("fa-angle-double-left");
-  document.getElementById("toc_button").classList.toggle("fa-angle-double-down");
+function toggle_show(id_to_show, id_icon, hidden_icon, shown_icon) {
+  document.getElementById(id_to_show).classList.toggle("show");
+  document.getElementById(id_icon).classList.toggle(hidden_icon);
+  document.getElementById(id_icon).classList.toggle(shown_icon);
 }
 </script>
 
