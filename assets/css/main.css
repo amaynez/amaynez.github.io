@@ -134,12 +134,6 @@ h4.nav__title {
 .sticky::after{clear:both;content:"";display:table}
 .sticky>*{display:block}}
 .sticky{overflow-y:auto;max-height:calc(100vh - 2em - 2em)}}
-@media (min-width: 80em){.sidebar{width:calc(300px - 1em)}}
-.sidebar>*{margin-top:1em;margin-bottom:1em}
-.sidebar h2,.sidebar h3,.sidebar h4,.sidebar h5,.sidebar h6{margin-bottom:0;font-family:-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif}
-.sidebar p,.sidebar li{font-family:-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;font-size:.75em;line-height:1.5}
-.sidebar img{width:100%}
-.sidebar img.emoji{width:20px;height:20px}
 .sidebar__right{margin-bottom:1em}
 @media (min-width: 64em){
     .sidebar__right{position:absolute;top:0;right:0;width:200px;margin-right:-200px;padding-left:1em;z-index:10}
@@ -147,12 +141,7 @@ h4.nav__title {
     .sidebar__right.sticky::after{clear:both;content:"";display:table}}
 @media (min-width: 80em){.sidebar__right{width:300px;margin-right:-300px}}
 @media (min-width: 64em){.splash .sidebar__right{position:relative;float:right;margin-right:0}}
-@media (min-width: 80em){.splash .sidebar__right{margin-right:0}}.author__avatar{display:table-cell;vertical-align:top;width:36px;height:36px}
-@media (min-width: 64em){.author__avatar{display:block;width:auto;height:auto}}
-.author__avatar img{max-width:110px;border-radius:50%}
-@media (min-width: 64em){.author__avatar img{padding:5px;border:1px solid #f2f3f3}}
-.author__content{display:table-cell;vertical-align:top;padding-left:15px;padding-right:25px;line-height:1}
-@media (min-width: 64em){.author__content{display:block
+@media (min-width: 80em){.splash .sidebar__right{margin-right:0}}
 .sticky{float:none}}
 @media (min-width: 80em){.wide .sidebar__right{width:initial;margin-right:initial}}
 
