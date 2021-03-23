@@ -96,6 +96,11 @@ h4.nav__title {
   padding-inline-start: 0px;
 }
 
+#toc__menu li.active a {
+	font-weight: bold;
+	background: #646464;
+}
+
 @media (min-width: 64em){
     .toc__menu{
         font-size:.6875em;}}
