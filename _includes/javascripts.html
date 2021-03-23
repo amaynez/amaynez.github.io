@@ -25,4 +25,12 @@ function popup(url){
     }
 </script>
 
+<script>
+function toggle_show(str) {
+  document.getElementById(str).classList.toggle("show");
+  document.getElementById("toc_button").classList.toggle("fa fa-angle-double-left");
+  document.getElementById("toc_button").classList.toggle("fa fa-angle-double-down");
+}
+</script>
+
 <script src="{{site.baseurl}}/assets/js/main.js"></script>
