@@ -74,3 +74,15 @@ layout: default
   {% include search.html %}
   {% include footer.html %}
 </div>
+{% if page.toc == "sticky" %}
+  <script>
+      var spy = new Gumshoe("nav.toc a", {
+                              navClass:"active",
+                              contentClass:"active",
+                              nested:!1,
+                              nestedClass:"active",
+                              offset:20,
+                              reflow:!0,
+                              events:!0});
+  </script>
+{% endif %}
