@@ -90,7 +90,7 @@ h4.nav__title {
     background-color:#e2e4e5;
     color:#3d4144}
 
-.show {display:block;}
+#toc__menu.show {display:block;}
 
 .toc__menu{
     display: none;
