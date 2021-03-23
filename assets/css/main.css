@@ -71,6 +71,7 @@ sidebar__right{
 
 h4.nav__title {
   padding:5px;
+  cursor: pointer;
 }
 
 .toc .nav__title{
