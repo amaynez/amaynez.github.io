@@ -30,10 +30,10 @@ function toggle_show(id_to_show, id_icon, hidden_icon, shown_icon) {
   document.getElementById(id_to_show).classList.toggle("show");
   document.getElementById(id_icon).classList.toggle(hidden_icon);
   document.getElementById(id_icon).classList.toggle(shown_icon);
-  if (document.getElementById(id_to_show).style.opacity === 0) {
-    document.getElementById(id_to_show).style.opacity = 1
+  if (document.getElementById(id_to_show).style.opacity == "0") {
+    document.getElementById(id_to_show).style.opacity = "1"
   } else {
-    document.getElementById(id_to_show).style.opacity = 0;
+    document.getElementById(id_to_show).style.opacity = "0";
   }
 }
 </script>
