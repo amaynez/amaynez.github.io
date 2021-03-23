@@ -100,7 +100,8 @@ h4.nav__title {
     padding:0;
     width:100%;
     font-size:.75em;
-    list-style:none}
+    list-style:none;
+    transition: all 0.5s}
 
 #toc__menu ul {
   list-style: none;
