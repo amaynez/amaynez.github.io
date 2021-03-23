@@ -98,7 +98,7 @@ h4.nav__title {
 
 #toc__menu li.active a {
 	font-weight: bold;
-	background: #646464;
+	background: #CCCCCC;
 }
 
 @media (min-width: 64em){
