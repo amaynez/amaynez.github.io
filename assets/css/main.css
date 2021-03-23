@@ -2,11 +2,6 @@
 
 aside.sidebar__right.sticky{margin-bottom:1em}
 
-#toc__menu ul {
-  list-style: none;
-  padding-inline-start: 0px;
-}
-
 @media (min-width: 64em){
     .sidebar__right{
         position:absolute;
@@ -89,7 +84,13 @@ sidebar__right{
     margin:0;
     padding:0;
     width:100%;
-    font-size:.75em}
+    font-size:.75em;
+    list-style:none}
+
+#toc__menu ul {
+  list-style: none;
+  padding-inline-start: 0px;
+}
 
 @media (min-width: 64em){
     .toc__menu{
