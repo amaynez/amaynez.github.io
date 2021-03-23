@@ -78,5 +78,8 @@ layout: default
 <script src="https://cdn.jsdelivr.net/gh/cferdinandi/gumshoe@5.1.1/dist/gumshoe.polyfills.min.js"></script>
 
 <script>
-	var spy = new Gumshoe('ul.toc__menu a');
+	var spy = new Gumshoe('ul.toc__menu a'{
+                            nested: true,
+                            nestedClass: 'active',
+                            reflow: true});
 </script>
