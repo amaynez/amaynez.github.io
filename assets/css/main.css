@@ -1467,6 +1467,7 @@ pre code {
 }
 
 .page-content {
+  margin: auto;
   margin-top: -80px;
   margin-bottom: 100px;
   background-color: #fff;
@@ -1477,6 +1478,7 @@ pre code {
           border-top-right-radius: 20px;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
 }
 
 .header-page {
