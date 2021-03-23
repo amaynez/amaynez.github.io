@@ -97,8 +97,8 @@ h4.nav__title {
 }
 
 #toc__menu li.active a {
-	font-weight: bold;
 	background: #CCCCCC;
+	text-decoration: none
 }
 
 @media (min-width: 64em){
