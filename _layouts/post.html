@@ -29,7 +29,7 @@ layout: default
                   on this page
                 </div>
                 <div style="text-align:right;">
-                  <a onclick="toggle_show('toc__menu')"><i class="fa fa-angle-double-left" id="toc_button" aria-hidden="true"></i></a>
+                  <i class="fa fa-angle-double-left" id="toc_button" aria-hidden="true" onclick="toggle_show('toc__menu')"></i>
                 </div>
               </h4>
               {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" id="toc__menu" skip_no_ids=true %}
