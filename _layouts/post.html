@@ -24,7 +24,14 @@ layout: default
         {% if page.toc == "sticky" %}
           <aside class="sidebar__right sticky">
             <nav class="toc">
-              <header><h4 class="nav__title">&nbsp;&nbsp;<i class="fa fa-list-alt"></i>&nbsp;&nbsp;on this page:</h4></header>
+              <h4 class="nav__title">
+                <div style="text-align:left; float:left;">
+                  on this page
+                </div>
+                <div style="text-align:right;">
+                  <i class="fa fa-list-alt" aria-hidden="true"></i>
+                </div>
+              </h4>
               {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" id="toc__menu" skip_no_ids=true %}
             </nav>
           </aside>
