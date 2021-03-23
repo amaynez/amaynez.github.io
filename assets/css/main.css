@@ -1,6 +1,8 @@
 /* = = = = = = = = = = Sidebar TOC Styles = = = = = = = = = = */
 
-aside.sidebar__right.sticky{margin-bottom:1em}
+aside.sidebar__right.sticky{
+    max-width: max-content;
+    margin-bottom: 1em}
 
 @media (min-width: 64em){
     .sidebar__right{

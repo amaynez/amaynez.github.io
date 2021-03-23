@@ -36,7 +36,7 @@ layout: default
             </nav>
           </aside>
         {% elsif page.toc %}
-          {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=1 h_max=6 skip_no_ids=true %}
+          {% include toc_inline.html html=content sanitize=true class="inline_toc" h_min=1 h_max=6 skip_no_ids=true %}
         {% endif %}
         {{page.content | markdownify}}
         {% if page.github %}
