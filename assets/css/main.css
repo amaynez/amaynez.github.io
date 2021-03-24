@@ -26,8 +26,8 @@
 
 /* = = = = = = = = = = Comments Styles = = = = = = = = = = */
 
-#disqus_thread.show {display:block}
-#comment-curtain.hide {display:none}
+.show {display:block}
+.hide {display:none}
 
 .comments {
     margin-bottom: 2em;
