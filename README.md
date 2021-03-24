@@ -10,6 +10,12 @@
 - added a Table of Contents for the posts page (can be both sticky + collapsable or static + fixed and it is optional per post)
 - added MathJax support (optional per post)
 - added view on github link button for posts (optional per post)
+- _in progress_ add sidebar with tags and share links (share links appear on hover of the share icon)
+- _future plans_ add gallery posibility (like ghost)
+- _future plans_ check highlight color
+- _future plans_ add read time
+- _future plans_ add meta tags to post pages
+- _future plans_ fix facebook link so it opens up in the app when in mobile
 
 # The original Adam Blog is a minimal clear theme for Jekyll
 
