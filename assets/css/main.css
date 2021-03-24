@@ -208,15 +208,15 @@ h4.nav__title {
     .toc__menu li ul li ul li ul li ul li ul>li a{padding-left:3.25rem;font-weight:100}
 }
 
-.sticky{clear:both;position:-webkit-sticky;position:sticky;top:2em}
-.sticky::after{clear:both;content:"";display:table}
 .sticky>*{display:block}
-.sticky{overflow-y:auto;max-height:calc(100vh - 2em - 2em)}
+.sticky{
+    overflow-y:auto;
+    float:none;
+    max-height:calc(100vh - 2em - 2em)}
 .sidebar__right{margin-bottom:1em}
 @media (min-width: 80em){.sidebar__right{width:300px;margin-right:-300px}}
 @media (min-width: 64em){.splash .sidebar__right{position:relative;float:right;margin-right:0}}
 @media (min-width: 80em){.splash .sidebar__right{margin-right:0}}
-.sticky{float:none}
 @media (min-width: 80em){.wide .sidebar__right{width:initial;margin-right:initial}}
 
 /* = = = = = = = = = = Inline TOC Styles = = = = = = = = = = */
