@@ -28,6 +28,7 @@
 
 .show {display:block}
 .hide {display:none}
+#disqus_thread {display:none}
 
 .comments {
     margin-bottom: 2em;
@@ -64,10 +65,6 @@
     transition-timing-function: cubic-bezier(0.2,1,0.3,1);
     text-decoration: none;
     cursor: pointer;
-}
-
-.article-comments {
-    display: none;
 }
 
 /* = = = = = = = = = = Right Sidebar TOC Styles = = = = = = = = = = */
