@@ -51,9 +51,11 @@ layout: default
         <div class="page-footer">
           <div class="page-tag">
             <span>Tags:</span>
-            {% for tag in page.tags %}
-            <li class="tags"><a href="{{site.baseurl}}/tags#{{tag}}" class="tags">{{ tag }}</a></li>
-            {% endfor %}
+              <ul class="tags">
+                {% for tag in page.tags %}
+                <li><a href="{{site.baseurl}}/tags#{{tag}}">{{ tag }}</a></li>
+                {% endfor %}
+              </ul>
           </div><!-- End Tags -->
           <div class="page-share">
             <span>Share:</span>
