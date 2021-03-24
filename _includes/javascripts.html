@@ -35,7 +35,7 @@ function toggle_show(id_to_show, id_icon, hidden_icon, shown_icon) {
             document.getElementById(id_to_show).classList.remove('show');
         }, {capture: false, once: true, passive: false});
     } else {
-    box.classList.add('show');
+    document.getElementById(id_to_show).classList.add('show');
     setTimeout(function () {
       document.getElementById(id_to_show).style.opacity = 1;
     }, 20);
