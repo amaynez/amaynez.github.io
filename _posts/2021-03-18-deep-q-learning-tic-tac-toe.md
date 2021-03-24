@@ -33,7 +33,7 @@ Now, for the fun part, training the network, I followed Deep Mind's own DQN reco
 
 ## Neural Network Model
 
-<center><img src='/assets/img/Neural_Network_Topology.png' width="540"></center><br>
+<center><img src='/assets/img/posts/Neural_Network_Topology.png' width="540"></center><br>
 
 The Neural Network chosen takes 9 inputs (the current state of the game) and outputs 9 Q values for each of the 9 squares in the board of the game (possible actions). Obviously some squares are illegal moves, hence while training there was a negative reward given to illegal moves hoping that the model would learn not to play illegal moves in a given position.
 
@@ -78,7 +78,7 @@ With the cycling learning rate in place, still no luck after a quick 1,000 games
 <center><img src='/assets/img/posts/lr_formula.jpeg' width="280"></center>
 
 The resulting learning rate combining the cycles and decay per epoch is:
-<center><img src='/assets/img/LR_cycle_decay.png'  width="480"></center>
+<center><img src='/assets/img/posts/LR_cycle_decay.png'  width="480"></center>
 <center>Learning Rate = 0.1, Decay = 0.0001, Cycle = 2048 epochs,<br>
         max Learning Rate factor = 10x</center><br>
 
