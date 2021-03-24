@@ -2,10 +2,10 @@
 layout: post
 title:  Starting the adventure
 date:   2021-03-24
-description: Midlife career change; a disaster or a new opportunity?
 img: /posts/starting_adventure.jpg
 tags: [general_blogging, thoughts, life]
 author: Armando Maynez
+description: "Midlife career change: a disaster or a new opportunity?"
 ---
 In the midst of a global pandemic caused by the SARS-COV2 coronavirus; I decided to start blogging. I wanted to blog since a long time, I have always enjoyed writing, but many unknowns and having "no time" for it prevented me from taking it up. Things like: "I don't really know my target audience", "what would my topic or topics be?", "I don't think I am a world-class expert in anything", and many more kept stopping me from setting up my own blog. Now seemed like a good time as any so with those any tons of other questions in my head I decided it was time to start.
 
