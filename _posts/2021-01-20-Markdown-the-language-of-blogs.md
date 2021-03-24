@@ -178,6 +178,7 @@ Here is an example for a table with a table header row, two table bodies and a t
 |-----------------+------------+-----------------+----------------|
 
 ```
+
 |-----------------+------------+-----------------+----------------|
 | Default aligned |Left aligned| Center aligned  | Right aligned  |
 |-----------------|:-----------|:---------------:|---------------:|
@@ -190,6 +191,7 @@ Here is an example for a table with a table header row, two table bodies and a t
 |=================+============+=================+================|
 | Footer row      |            |                 |                |
 |-----------------+------------+-----------------+----------------|
+{: .tablelines}
 
 The above example table is rather time-consuming to create without the help of an ASCII table editor. However, the table syntax is flexible and the above table could also be written like this:
 ```markdown
