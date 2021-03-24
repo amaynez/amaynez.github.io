@@ -1,6 +1,6 @@
 /* = = = = = = = = = = Comments Styles = = = = = = = = = = */
 
-.show {display:block;}
+#disqus_thread.show {display:block;}
 
 .comments {
     margin-bottom: 2em;
@@ -146,6 +146,8 @@ h4.nav__title {
     font-size:.75em;
     list-style:none;
     transition: all 0.25s}
+
+#toc__menu.show {display:block;}
 
 #toc__menu ul {
   list-style: none;
