@@ -14,17 +14,13 @@ Funnily, this is not my first post. The birth of the blog came very natural as a
 - I want to start coding again! I used to code a long time ago, starting when I was 8 years old in a Tandy Color Computer hooked up to my parent's TV.
 - Machine Learning is a vast, wide subject, I want to learn the generals, but also to select a few areas to focus on.
 - Setting up a blog to document my journey and share it:
-    - decide on the hosting platform
-    - decide on the site generator
-    - design the website or find a template
-    - setting it all up
 - Establish a learning and blogging routine. If I don't do this, I am sure this endeavour will die off soon.
 
 As for the focus areas I will start with:
-    - Neural Networks fundamentals: history, basic architecture and math behind them
-    - Deep Neural Networks
-    - Reinforcement Learning
-    - Current state of the art: what is at the cutting edge now in terms of Deep Neural Networks and Reinforcement Learning?
+- Neural Networks fundamentals: history, basic architecture and math behind them
+- Deep Neural Networks
+- Reinforcement Learning
+- Current state of the art: what is at the cutting edge now in terms of Deep Neural Networks and Reinforcement Learning?
   
 I selected the above areas to focus on based on my personal interests, I have been fascinated by the developments in reinforcement learning for a long time, in particular [Deep Mind's](https://deepmind.com/blog) awesome [Go](https://deepmind.com/blog/article/innovations-alphago), [Chess](https://deepmind.com/blog/article/alphazero-shedding-new-light-grand-games-chess-shogi-and-go) and [Starcraft](https://deepmind.com/blog/article/AlphaStar-Grandmaster-level-in-StarCraft-II-using-multi-agent-reinforcement-learning) playing agents. Therefore, I started reading a lot about it and even started a personal project for coding a [tic-tac-toe learning agent](https://amaynez.github.io/deep-q-learning-tic-tac-toe/).
 
@@ -66,7 +62,7 @@ I started with the web interfaced generators with included hosting in their offe
 
 I have tried [wix](https://www.wix.com/) and [squarespace](https://www.squarespace.com/) before, they are fantastic for quick and easy website generation, but their free offering has ads, so again, a big no for me.
 
-I discovered [ghost](https://ghost.org/) as the platform used by one of the bloggers I follow ([Sebastian Ruder](https://ruder.io/)), turns out is a fantastic evolution over wordpress. It runs in the latest technologies, its interface is quite modern, and it is focused on one thing only: publishing. They have a paid hosting service, but the software is open sourced, therefore free to use in any hosting.
+I discovered [ghost](https://ghost.org/) as the platform used by one of the bloggers I follow ([Sebastian Ruder](https://ruder.io/)), turns out is a fantastic evolution over wordpress. It runs on the latest technologies, its interface is quite modern, and it is focused on one thing only: publishing. They have a paid hosting service, but the software is open sourced, therefore free to use in any hosting.
 
 Next were the generators that don't have a web interface, but can be easily set up:
 
@@ -74,10 +70,10 @@ The first I tried was [netlify](https://www.netlify.com/), I also set up a [test
 
 I also tested [gatsby](https://www.gatsbyjs.com/docs/glossary/static-site-generator/) with it's own Gatsby Cloud hosting service, [here is my test site](https://amaynez.gatsbyjs.io/). They also use GitHub as a base to host the source files to build the website, so you create a repository, and it is connected to it. I found the free template offerings quite limited for what I was looking for.
 
-Finally it came the turn for [jekyll](https://jekyllrb.com/), although an older, and slower generator (compared to Hugo and Gatsby), it was created by one of the founders of GitHub, so it's integration with GitHub Pages is quite natural and painless, so much that to use them together you don't have to install Jekyll in your machine! You have two choices:
+Finally it came the turn for [jekyll](https://jekyllrb.com/), although an older, and slower generator (compared to Hugo and Gatsby), it was created by one of the founders of GitHub, so it's integration with GitHub Pages is quite natural and painless, so much so, that to use them together you don't have to install Jekyll in your machine! You have two choices:
 1. keep it all online, by having one repository in Github keep all the source files, modify or add them online, and having Jekyll build and publish your site to the special _gh-pages_ repository everytime you change or add a new file to the source repository.
-2. Have a synchronized local copy of the source files for the website, this way you can edit your blog and customize it in your choice of IDE (Integrated Development Environment). So, when you update any file on your computer, you just "push" the changes to GitHub, and GitHub Pages automatically uses Jekyll to build and publish your site.
-I chose the latter option, specially because I can manipulate files, like images, in my laptop, and everytime I sync my local repository with GitHub, they are updated and published automatically. Quite convenient.
+2. Have a synchronized local copy of the source files for the website, this way you can edit your blog and customize it in your choice of IDE (Integrated Development Environment). Then, when you update any file on your computer, you just "push" the changes to GitHub, and GitHub Pages automatically uses Jekyll to build and publish your site.
+I chose this option, specially because I can manipulate files, like images, in my laptop, and everytime I sync my local repository with GitHub, they are updated and published automatically. Quite convenient.
    
 After testing with several templates to get the feel for it, I decided to keep Jekyll for my blog for several reasons: the convenience of not having to install anything extra on my computer to build my blog, the integration with GitHub Pages, the ease of use, the future proofing via integration with modern technologies such as react or vue and the vast online community that has produced tons of templates and useful information for issue resolution, customization and added functionality.
 
@@ -85,15 +81,18 @@ I picked up a template, just forked the repository and started modifying the fil
 - automatic [sitemap.xml](http://amaynez.github.io/sitemap.xml)
 - automatic [archive page](http://amaynez.github.io/archive/)
 - changed the styling of the [tags page](http://amaynez.github.io/tags/)
+- added the tags and archive pages to the main menu with icons
 - included linkedin and reddit in the share post icons
 - included linkedin icon in the contact info
-- added a Table of Contents for the posts page (can be both sticky + collapsable or static + fixed and it is optional per post)
-- added MathJax support (optional per post)
-- added view on github link button for posts (optional per post)
+- added a responsive and automatic _Table of Contents_ for the posts page (optional per post and with the choice of being sticky or inline)
+- added MathJax support for math equations in the posts (optional per post)
+- added "view on github" link button for posts (optional per post)
+- added a "curtain" to keep the disqus comment section masked until the reader clicks it.
+- _in progress:_ add a sidebar for the post tags and share links
 
 As a summary, Hugo and Gatsby might be much faster than Jekyll to build the sites, but their complexity I think makes them useful for a big site with plenty of posts. For a small site like mine, Jekyll provides sufficient functionality and power without the hassle.
 
-Let me know in the comments or feel free to contact me if you are interested in a detailed walkthrough on how to set it all up.
+I created a [clean version of my site as a template for others to use here](https://github.com/amaynez/amaynez.github.io/tree/clean_template). Let me know in the comments or feel free to contact me if you are interested in a detailed walkthrough on how to set it all up. 
 
 #### Hosting
-Since I decided on Jekyll to generate my site, the choice for hosting was quite obvious, **Github Pages** is very nicely integrated with it, it is free, and it has no ads! Plus the domain name isn't too terrible ([amaynez.github,io](https://amaynez.github.io)).
+Since I decided on Jekyll to generate my site, the choice for hosting was quite obvious, **[Github Pages](https://pages.github.com)** is very nicely integrated with it, it is free, and it has no ads! Plus the domain name isn't too terrible ([amaynez.github.io](https://amaynez.github.io)).
