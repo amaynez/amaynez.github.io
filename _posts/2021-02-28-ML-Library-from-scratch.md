@@ -31,13 +31,13 @@ The library started very narrowly, with just the following functionality:
 
 I restricted the model to be sequential, and the layers to be only dense / fully connected, this means that every neuron is connected to every neuron of the following layer. Also, as a restriction, the only activation function I implemented was sigmoid:
 
-<center><img src="/assets/img/nn_diagram.jpg"></center>
+<center><img src="/assets/img/nn_diagram.png"></center>
 
 With my neural network coded, I tested it with a very basic problem, the famous XOR problem.
 
 XOR is a logical operation that cannot be solved by a single perceptron because of its linearity restriction:
 
-<center><img src="/assets/img/xor_problem.jpg"></center>
+<center><img src="/assets/img/xor_problem.png"></center>
 
 As you can see, when plotted in an X,Y plane, the logical operators AND and OR have a line that can clearly separate the points that are false from the ones that are true, hence a perceptron can easily learn to classify them; however, for XOR there is no single straight line that can do so, therefore a multilayer perceptron is needed for the task.
 

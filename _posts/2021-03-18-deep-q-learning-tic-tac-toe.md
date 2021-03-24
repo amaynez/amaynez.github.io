@@ -33,7 +33,7 @@ Now, for the fun part, training the network, I followed Deep Mind's own DQN reco
 
 ## Neural Network Model
 
-<center><img src='/assets/img/Neural_Network_Topology.jpg' width="540"></center><br>
+<center><img src='/assets/img/Neural_Network_Topology.png' width="540"></center><br>
 
 The Neural Network chosen takes 9 inputs (the current state of the game) and outputs 9 Q values for each of the 9 squares in the board of the game (possible actions). Obviously some squares are illegal moves, hence while training there was a negative reward given to illegal moves hoping that the model would learn not to play illegal moves in a given position.
 
@@ -164,7 +164,7 @@ So far, I have not been able to get better results with Model 4, I have tried al
 ### Model 5 - Implementing One Hot encoding and changing topology (again)
 I came across an [interesting project in Github](https://github.com/AxiomaticUncertainty/Deep-Q-Learning-for-Tic-Tac-Toe/blob/master/tic_tac_toe.py) that deals exactly with Deep Q Learning, and I noticed that he used "one-hot" encoding for the input as opposed to directly entering the values of the player into the 9 input slots. So I decided to give it a try and at the same time change my topology to match his:
 
-<center><img src='/assets/img/Neural_Network_Topology3.jpg' width="540"></center>
+<center><img src='/assets/img/Neural_Network_Topology3.png' width="540"></center>
 
 So, 'one hot' encoding is basically changing the input of a single square in the tic tac toe board to three numbers, so that each state is represented with different inputs, thus the network can clearly differentiate the three of them. As the original author puts it, the way I was encoding, having 0 for empty, 1 for X and 2 for O, the network couldn't easily tell that, for instance, O and X both meant occupied states, because one is two times as far from 0 as the other. With the new encoding, the empty state will be 3 inputs: (1,0,0), the X will be (0,1,0) and the O (0,0,1) as in the diagram.
 
@@ -226,7 +226,7 @@ The way I was training initially was:
 - Every move from either player generates a new training round, again with a random sample from the replay memory.
 - This continues until the number of games set up conclude.
 
-<center><img src='/assets/img/ReplayMemoryBefore.jpeg' width="540"></center>
+<center><img src='/assets/img/ReplayMemoryBefore.png' width="540"></center>
 
 The first change was to train only after every game concludes with the same ammount of data (a batch). This was still not giving any good results.
 
@@ -234,7 +234,7 @@ The second change was more drastic, it introduced the concept of epochs for ever
 
 This meant that I was training now effectively 10 (or the number of epochs selected) times more per game, but in batches of the same size and randomly shuffling the experiences each epoch.
 
-<center><img src='/assets/img/ReplayMemoryAfter.jpeg' width="540"></center><br>
+<center><img src='/assets/img/ReplayMemoryAfter.png' width="540"></center><br>
 
 After still playing around with some hyperparameters I managed to get similar performance as I got before, reaching 83.15% win rate vs. the random player, so I decided to keep training in rounds of 2,000 games each to evaluate performance. With almost every round I could see improvement:
 
