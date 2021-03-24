@@ -2,7 +2,7 @@
 layout: post
 title:  Starting the adventure
 date:   2021-03-24
-description: Midlife career change: a disaster or a new opportunity?
+description: Midlife career change; a disaster or a new opportunity?
 img: /posts/starting_adventure.jpg
 tags: [general_blogging, thoughts, life]
 author: Armando Maynez
