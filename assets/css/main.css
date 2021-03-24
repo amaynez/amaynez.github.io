@@ -264,17 +264,6 @@ div.tag-cloud{
     margin-bottom: 1em;
 }
 
-.archive .tag{
-  text-decoration: none;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #696764;
-}
-
-.archive .tag:hover{
-    font-weight: bolder;
-}
-
 .archive a {
     text-decoration: none;
     line-height: 1em;
@@ -1914,20 +1903,6 @@ pre code {
 }
 
 /* = = = = = = = = = = Tags Styles = = = = = = = = = = */
-
-
-.blog-tags .tag-cloud a {
-  display: inline-block;
-  color: #311e3e;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-.blog-tags .tag-cloud a:hover {
-  opacity: .8;
-  text-decoration: underline;
-  font-weight: bolder;
-}
 
 .blog-tags table.tags-table {
     border-spacing: 0 1em;
