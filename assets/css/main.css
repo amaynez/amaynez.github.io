@@ -22,7 +22,8 @@
 .tags li a:hover {
     background: transparent;
     border: 2px solid #87314e;
-    color: #87314e !important;}
+    color: #87314e !important;
+    text-decoration: none}
 
 /* = = = = = = = = = = Comments Styles = = = = = = = = = = */
 
