@@ -26,9 +26,9 @@
 
 /* = = = = = = = = = = Comments Styles = = = = = = = = = = */
 
-.show {display:block}
 .hide {display:none}
 #disqus_thread {display:none}
+#disqus_thread.show {display:block}
 
 .comments {
     margin-bottom: 2em;
