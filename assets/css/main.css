@@ -12,7 +12,7 @@
     line-height: 20px;
     font-size: 12px;
     color: #999999;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     background: #efefef;
     border-radius: 15px;
     padding: 3px 15px;
@@ -21,7 +21,7 @@
 
 .tags li a:hover {
     background: transparent;
-    border: 1px solid #311e3e;
+    border: 2px solid #311e3e;
     color: #87314e;
 /* = = = = = = = = = = Comments Styles = = = = = = = = = = */
 
