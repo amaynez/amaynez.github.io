@@ -3,7 +3,7 @@ layout: post
 title: >
     Markdown, the language of blogs
 date: 2021-01-20
-description: A simple cheat sheet for markdown.
+description: A simple cheat sheet for markdown and kramdown.
 img: /posts/Markdown.png
 tags: [general_blogging]
 author: Armando Maynez
@@ -12,42 +12,30 @@ toc: sticky
 If you have worked on any GitHub repository or have your own blog, chances are you have seen a README.md file, this is the markdown file where you can describe your repo. Markdown is easy to learn. It is helpful in writing questions on forums like StackOverflow,
 useful in commenting on Pull Request in Github, and of course publish your blog posts. It is a quick way to generated formatted text.
 
-# Basics of Markdown
-Markdown is the most popular markup language that can be used to format documents. It can be used to create *websites*,*ebooks*,*email*,*chats in discussions forums*.
+This post in particular deals with the differences found in Kramdown, the default markdown parser for Jekyll, so if you are thinking of setting up a blog, or already have one, this might be usefull for you.
 
-## Topics
-1. Paragraphs 
+The kramdown syntax is based on the Markdown syntax and has been enhanced with features that are found in other Markdown implementations like Maruku, PHP Markdown Extra and Pandoc. However, it strives to provide a strict syntax with definite rules and therefore isn’t completely compatible with Markdown. Nonetheless, most Markdown documents should work fine when parsed with kramdown. All places where the kramdown syntax differs from the Markdown syntax are highlighted.
 
-    MD expects a full line space to show texts in a different line else it joins text in the same line.
-2.  Text decorations
+* * *
+## Specifying a Header ID
 
-    MD can write **bold** texts, ~~italiic~~ *italic*  texts
-3. Headings
-    No of #'s represent the type of heading. Github will automatically add id's to headings, so the text will be automatically linked. 
-    ## This is h2
-    ### This is h3
-4. Links
+```markdown
+Hello        {#id}
+-----
 
-   [My Github](https://github.com/bhupendra1011 "all repos") account.[Bhupendra][1] github repo.
+# Hello      {#id}
 
-5. Images
-    Images can be used just like links.
+# Hello #    {#id}
+```
 
-    !["cat Img"](http://placekitten.com/200/200)
+Hello        {#id}
+-----
 
-    Thumbnails images can also be used which links to larger image 
-    [<img src="http://placekitten.com/20/20">](http://placekitten.com/200/200)
-   
-    
+# Hello      {#id}
 
-## Horizontal Rules
+# Hello #    {#id}
 
-___
-
----
-
-***
-
+* * *
 
 ## Typographic replacements
 
@@ -171,7 +159,6 @@ console.log(foo(5));
 
 Tables can be generated with headings and text alignment option
 
-
 | Option | Description |
 | ------ | ----------- |
 | data   | path to data files to supply the data that will be passed into templates. |
@@ -186,14 +173,89 @@ Right aligned columns
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
 
+Here is an example for a table with a table header row, two table bodies and a table footer row:
 
-## Links
+```markdown
+|-----------------+------------+-----------------+----------------|
+| Default aligned |Left aligned| Center aligned  | Right aligned  |
+|-----------------|:-----------|:---------------:|---------------:|
+| First body part |Second cell | Third cell      | fourth cell    |
+| Second line     |foo         | **strong**      | baz            |
+| Third line      |quux        | baz             | bar            |
+|-----------------+------------+-----------------+----------------|
+| Second body     |            |                 |                |
+| 2 line          |            |                 |                |
+|=================+============+=================+================|
+| Footer row      |            |                 |                |
+|-----------------+------------+-----------------+----------------|
 
-[link text](http://dev.nodeca.com)
+```
+|-----------------+------------+-----------------+----------------|
+| Default aligned |Left aligned| Center aligned  | Right aligned  |
+|-----------------|:-----------|:---------------:|---------------:|
+| First body part |Second cell | Third cell      | fourth cell    |
+| Second line     |foo         | **strong**      | baz            |
+| Third line      |quux        | baz             | bar            |
+|-----------------+------------+-----------------+----------------|
+| Second body     |            |                 |                |
+| 2 line          |            |                 |                |
+|=================+============+=================+================|
+| Footer row      |            |                 |                |
+|-----------------+------------+-----------------+----------------|
 
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+The above example table is rather time-consuming to create without the help of an ASCII table editor. However, the table syntax is flexible and the above table could also be written like this:
+```markdown
+|---
+| Default aligned | Left aligned | Center aligned | Right aligned
+|-|:-|:-:|-:
+| First body part | Second cell | Third cell | fourth cell
+| Second line |foo | **strong** | baz
+| Third line |quux | baz | bar
+|---
+| Second body
+| 2 line
+|===
+| Footer row
+```
 
-Autoconverted link: https://github.com/nodeca/pica
+```markdown
+$$
+\begin{aligned}
+  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
+      \vdots & \ddots & \vdots \\
+      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{aligned}
+$$
+```
+## Math Blocks
+The following kramdown fragment
+
+renders (using Javascript library MathJax) as
+$$
+\begin{aligned}
+  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
+      \vdots & \ddots & \vdots \\
+      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{aligned}
+$$
 
 
 ## Images
@@ -209,9 +271,130 @@ With a reference later in the document defining the URL location:
 
 [id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
 
+## Definition lists
+Simple definition list:
+```markdown
+kramdown
+: A Markdown-superset converter
+
+Maruku
+:     Another Markdown-superset converter
+```
+kramdown
+: A Markdown-superset converter
+
+Maruku
+:     Another Markdown-superset converter
+
+```markdown
+definition term 1
+definition term 2
+: This is the first line. Since the first non-space characters appears in
+column 3, all other lines have to be indented 2 spaces (or lazy syntax may
+  be used after an indented line). This tells kramdown that the lines
+  belong to the definition.
+:       This is the another definition for the same term. It uses a
+        different number of spaces for indentation which is okay but
+        should generally be avoided.
+   : The definition marker is indented 3 spaces which is allowed but
+     should also be avoided.
+```
+definition term 1
+definition term 2
+: This is the first line. Since the first non-space characters appears in
+column 3, all other lines have to be indented 2 spaces (or lazy syntax may
+  be used after an indented line). This tells kramdown that the lines
+  belong to the definition.
+:       This is the another definition for the same term. It uses a
+        different number of spaces for indentation which is okay but
+        should generally be avoided.
+   : The definition marker is indented 3 spaces which is allowed but
+     should also be avoided.
+
+```markdown
+definition term
+: This definition will just be text because it would normally be a
+  paragraph and the there is no preceding blank line.
+
+  > although the definition contains other block-level elements
+
+: This definition *will* be a paragraph since it is preceded by a
+  blank line.
+```
+definition term
+: This definition will just be text because it would normally be a
+  paragraph and the there is no preceding blank line.
+
+  > although the definition contains other block-level elements
+
+: This definition *will* be a paragraph since it is preceded by a
+  blank line.
+
+```markdown
+{:#term} Term with id="term"
+: {:.cls} Definition with class "cls"
+
+{:#term1} First term
+{:#term2} Second term
+: {:.cls} Definition
+```
+{:#term} Term with id="term"
+: {:.cls} Definition with class "cls"
+
+{:#term1} First term
+{:#term2} Second term
+: {:.cls} Definition
+
+
+## Typographic Symbols
+```markdown
+--- will become an em-dash (like this —)
+-- will become an en-dash (like this –)
+... will become an ellipsis (like this …)
+<< will become a left guillemet (like this «) – an optional following space will become a non-breakable space
+>> will become a right guillemet (like this ») – an optional leading space will become a non-breakable space
+```
+--- will become an em-dash (like this —)
+-- will become an en-dash (like this –)
+... will become an ellipsis (like this …)
+<< will become a left guillemet (like this «) – an optional following space will become a non-breakable space
+>> will become a right guillemet (like this ») – an optional leading space will become a non-breakable space
+
+## Footnotes
+```markdown
+[^1]: Some *crazy* footnote definition.
+
+[^footnote]:
+    > Blockquotes can be in a footnote.
+
+        as well as code blocks
+
+    or, naturally, simple paragraphs.
+
+[^other-note]:       no code block here (spaces are stripped away)
+
+[^codeblock-note]:
+        this is now a code block (8 spaces indentation)
+```
+
+[^1]: Some *crazy* footnote definition.
+
+[^footnote]:
+    > Blockquotes can be in a footnote.
+
+        as well as code blocks
+
+    or, naturally, simple paragraphs.
+
+[^other-note]:       no code block here (spaces are stripped away)
+
+[^codeblock-note]:
+        this is now a code block (8 spaces indentation)
+
 ## Cool Tips 
 
- * [Grammarly](https://marketplace.visualstudio.com/items?itemName=znck.grammarly) extension can eliminate typo and grammar mistakes
- * [ScreenTOGif](https://www.screentogif.com/) to record videos in GIF format
- * Upload GIF's to [giphy](https://giphy.com/) to embed them into blog posts.
- * [Stackedit](https://stackedit.io/) for Markdown Editing in Browser.
+* [Kramdown syntax](https://kramdown.gettalong.org/syntax.html#automatic-links) - for Jekyll users
+* [Grammarly](https://marketplace.visualstudio.com/items?itemName=znck.grammarly) extension can eliminate typo and grammar mistakes
+* [ScreenTOGif](https://www.screentogif.com/) to record videos in GIF format
+* Upload GIF's to [giphy](https://giphy.com/) to embed them into blog posts.
+* [Stackedit](https://stackedit.io/) for Markdown Editing in Browser.
