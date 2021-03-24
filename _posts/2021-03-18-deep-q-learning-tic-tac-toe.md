@@ -226,7 +226,7 @@ The way I was training initially was:
 - Every move from either player generates a new training round, again with a random sample from the replay memory.
 - This continues until the number of games set up conclude.
 
-<center><img src='/assets/img/ReplayMemoryBefore.png' width="540"></center>
+<center><img src='/assets/img/ReplayMemoryBefore.jpeg' width="540"></center>
 
 The first change was to train only after every game concludes with the same ammount of data (a batch). This was still not giving any good results.
 
@@ -234,7 +234,7 @@ The second change was more drastic, it introduced the concept of epochs for ever
 
 This meant that I was training now effectively 10 (or the number of epochs selected) times more per game, but in batches of the same size and randomly shuffling the experiences each epoch.
 
-<center><img src='/assets/img/ReplayMemoryAfter.png' width="540"></center><br>
+<center><img src='/assets/img/ReplayMemoryAfter.jpeg' width="540"></center><br>
 
 After still playing around with some hyperparameters I managed to get similar performance as I got before, reaching 83.15% win rate vs. the random player, so I decided to keep training in rounds of 2,000 games each to evaluate performance. With almost every round I could see improvement:
 
