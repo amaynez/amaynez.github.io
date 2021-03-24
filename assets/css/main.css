@@ -50,7 +50,7 @@
 
 .comments-trigger {
     position: relative;
-    background: #F0F0F0;
+    background: #efefef;
     color: #3e3e40;
     outline: 0;
     display: block;
@@ -148,7 +148,7 @@ h4.nav__title {
 .toc .nav__title{
     color:#fff;
     font-size:.85em;
-    background:#6f777d;
+    background:#696764;
     border-top-left-radius:4px;
     border-top-right-radius:4px;
     font-weight: bold;
@@ -181,13 +181,13 @@ h4.nav__title {
 }
 
 #toc__menu li.active a {
-	background: #CCCCCC;
+	background: #cccccc;
 	text-decoration: none
 }
 
 @media (min-width: 64em){
     .toc__menu{
-        font-size:.6875em;}}
+        font-size:.6875em;}
     .toc__menu a{
         display:block;
         padding:0.25rem 0.75rem;
@@ -201,7 +201,6 @@ h4.nav__title {
         color:#3e3e40;
         opacity:.6;
         text-decoration: underline}
-
     .toc__menu li ul>li a{
         padding-left:1.25rem;
         font-weight:normal}
@@ -213,18 +212,18 @@ h4.nav__title {
 
 .sticky{clear:both;position:-webkit-sticky;position:sticky;top:2em}
 .sticky::after{clear:both;content:"";display:table}
-.sticky>*{display:block}}
-.sticky{overflow-y:auto;max-height:calc(100vh - 2em - 2em)}}
+.sticky>*{display:block}
+.sticky{overflow-y:auto;max-height:calc(100vh - 2em - 2em)}
 .sidebar__right{margin-bottom:1em}
 @media (min-width: 80em){.sidebar__right{width:300px;margin-right:-300px}}
 @media (min-width: 64em){.splash .sidebar__right{position:relative;float:right;margin-right:0}}
 @media (min-width: 80em){.splash .sidebar__right{margin-right:0}}
-.sticky{float:none}}
+.sticky{float:none}
 @media (min-width: 80em){.wide .sidebar__right{width:initial;margin-right:initial}}
 
 /* = = = = = = = = = = Inline TOC Styles = = = = = = = = = = */
 #toc_container {
-    background: #f9f9f9 none repeat scroll 0 0;
+    background: #efefef none repeat scroll 0 0;
     border: 1px solid #aaa;
     display: table;
     font-size: 90%;
@@ -235,11 +234,11 @@ h4.nav__title {
 }
 
 ul.toc_list{
-    padding-inline-start: 0;
+    padding-inline-start: 0px;
 }
 
 ul.inline_toc{
-    padding-inline-start: 0;
+    padding-inline-start: 0px;
 }
 
 .toc_container a {
