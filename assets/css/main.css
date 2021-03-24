@@ -1206,13 +1206,15 @@ table td, table th {
 }
 
 blockquote {
-    border-left: 6px solid #999999;
-    padding-left: 18px;
-    margin-left: 21px;
+    border-left: 10px solid #aaaaaa;
+    padding-left: 1em;
+    margin-left: 2.5em;
     font-style: italic;
-    color: #999999;
-    background: #efefef;
-    }
+    color: #311e3e;
+    background: hsla(0,0%,95%,0.5);
+    margin-right: 0;
+    font-weight: 100;
+}
 
 pre {
   padding: 16px 32px;
