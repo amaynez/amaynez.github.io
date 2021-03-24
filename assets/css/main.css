@@ -1171,6 +1171,17 @@ a {
   color: #87314e;
 }
 
+table {
+      border-left: 6px solid #87314e;
+}
+
+table td, table th {
+    border: 0;
+    padding: 12px;
+    text-align: left;
+    background-color: #efefef;
+}
+
 blockquote {
     border-left: 6px solid #999999;
     padding-left: 18px;
