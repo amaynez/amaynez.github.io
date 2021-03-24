@@ -8,6 +8,7 @@ img: /posts/Markdown.png
 tags: [general_blogging]
 author: Armando Maynez
 toc: sticky
+mathjax: yes
 ---
 If you have worked on any GitHub repository or have your own blog, chances are you have seen a README.md file, this is the markdown file where you can describe your repo. Markdown is easy to learn. It is helpful in writing questions on forums like StackOverflow,
 useful in commenting on Pull Request in Github, and of course publish your blog posts. It is a quick way to generated formatted text.
