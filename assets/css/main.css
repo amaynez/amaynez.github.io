@@ -1,14 +1,13 @@
 @charset "utf-8";
 
 /* = = = = = = = = = = Template Colors = = = = = = = = = = = = */
-# purple                #311e3e
-# text black            #333
-# dark grey             #3e3e40
-# light grey background #311e3e
-# light grey text       #999999
-# medium grey           #696764
-# red links             #87314e
-
+/*# purple                #311e3e
+/*# text black            #333
+/*# dark grey             #3e3e40
+/*# light grey background #311e3e
+/*# light grey text       #999999
+/*# medium grey           #696764
+/*# red links             #87314e
 /* = = = = = = = = = = Tags Styles = = = = = = = = = = = = */
 .tags {
     list-style-type: none;
