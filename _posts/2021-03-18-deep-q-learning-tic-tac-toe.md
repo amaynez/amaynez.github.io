@@ -33,7 +33,7 @@ Now, for the fun part, training the network, I followed Deep Mind's own DQN reco
 
 ## Neural Network Model
 
-<center><img src='/assets/img/Neural_Network_Topology.png' width="540"></center><br>
+<center><img src='/assets/img/Neural_Network_Topology.jpg' width="540"></center><br>
 
 The Neural Network chosen takes 9 inputs (the current state of the game) and outputs 9 Q values for each of the 9 squares in the board of the game (possible actions). Obviously some squares are illegal moves, hence while training there was a negative reward given to illegal moves hoping that the model would learn not to play illegal moves in a given position.
 
@@ -111,15 +111,13 @@ After **24 hours!**, my computer was able to run 1,000,000 episodes (games playe
 <a name='Model3'></a>
 ### Model 3 - New Network Topology
 
-After all the failures I figured I had to rethink the topology of the network and play around with combinations of different networks and learning rates; after many iterations and tests, a network as follows showed some promise:
-
-<center><img src='/assets/img/Neural_Network_Topology2.png' width="540"></center>
+After all the failures I figured I had to rethink the topology of the network and play around with combinations of different networks and learning rates.
 
 <center><img src='/assets/img/Loss_function_and_Illegal_moves7.png' width="540"></center>
 <center>100,000 episodes, 635,000 epochs with batches of 64 moves each</center><br>
 <center><b>Wins: 76.83%</b> Losses: 17.35% Ties: 5.82%</center><br>
 
-I had to increase to 200 neurons each hidden layer. In spite of this great improvement the loss function was still in a plateau at around 0.1 (Mean Squared Error). Which, although it is greatly reduced from what we had, still was giving out only 77% win rate vs. a random player, the network was playing tic tac toe as a toddler!
+I increased to 200 neurons each hidden layer. In spite of this great improvement the loss function was still in a plateau at around 0.1 (Mean Squared Error). Which, although it is greatly reduced from what we had, still was giving out only 77% win rate vs. a random player, the network was playing tic tac toe as a toddler!
 
 <center><img src='/assets/img/Game_Screen2.png' width="240" height="240"><br>
 *I can still beat the network most of the time! (I am playing with the red X)*</center>
@@ -166,7 +164,7 @@ So far, I have not been able to get better results with Model 4, I have tried al
 ### Model 5 - Implementing One Hot encoding and changing topology (again)
 I came across an [interesting project in Github](https://github.com/AxiomaticUncertainty/Deep-Q-Learning-for-Tic-Tac-Toe/blob/master/tic_tac_toe.py) that deals exactly with Deep Q Learning, and I noticed that he used "one-hot" encoding for the input as opposed to directly entering the values of the player into the 9 input slots. So I decided to give it a try and at the same time change my topology to match his:
 
-<center><img src='/assets/img/Neural_Network_Topology3.jpeg' width="540"></center>
+<center><img src='/assets/img/Neural_Network_Topology3.jpg' width="540"></center>
 
 So, 'one hot' encoding is basically changing the input of a single square in the tic tac toe board to three numbers, so that each state is represented with different inputs, thus the network can clearly differentiate the three of them. As the original author puts it, the way I was encoding, having 0 for empty, 1 for X and 2 for O, the network couldn't easily tell that, for instance, O and X both meant occupied states, because one is two times as far from 0 as the other. With the new encoding, the empty state will be 3 inputs: (1,0,0), the X will be (0,1,0) and the O (0,0,1) as in the diagram.
 
