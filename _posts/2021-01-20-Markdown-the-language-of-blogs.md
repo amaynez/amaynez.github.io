@@ -209,7 +209,7 @@ With a reference later in the document defining the URL location:
 
 [id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
 
-##Cool Tips 
+## Cool Tips 
 
  * [Grammarly](https://marketplace.visualstudio.com/items?itemName=znck.grammarly) extension can eliminate typo and grammar mistakes
  * [ScreenTOGif](https://www.screentogif.com/) to record videos in GIF format
