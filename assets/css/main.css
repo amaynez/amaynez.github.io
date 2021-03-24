@@ -1,3 +1,29 @@
+/* = = = = = = = = = = Template Colors = = = = = = = = = = = = */
+# purple                #311e3e
+# dark grey             #3e3e40
+# light grey background #efefef
+# light grey text       #999999
+# red links             #87314e
+
+
+/* = = = = = = = = = = Tags Styles = = = = = = = = = = = = */
+.tags li a {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #999999;
+    border: 1px solid transparent;
+    background: #efefef;
+    border-radius: 15px;
+    padding: 3px 15px;
+    font-weight: normal;
+    display: block;}
+
+.tags li a:hover {
+    background: transparent;
+    border: 1px solid #311e3e;
+    color: #87314e;
 /* = = = = = = = = = = Comments Styles = = = = = = = = = = */
 
 #disqus_thread.show {display:block}
@@ -26,7 +52,7 @@
 .comments-trigger {
     position: relative;
     background: #F0F0F0;
-    color: #212529;
+    color: #3e3e40;
     outline: 0;
     display: block;
     padding: 30px;
@@ -107,7 +133,7 @@ sidebar__right{
         margin-right:initial}}
 
 .toc{
-    color:#7a8288;
+    color:#999999;
     background-color:#fff;
     border:1px solid #f2f3f3;
     border-radius:4px;
@@ -135,8 +161,8 @@ h4.nav__title {
 }
 .toc .active a{
     text-decoration: underline;
-    background-color:#e2e4e5;
-    color:#3d4144}
+    background-color:#efefef;
+    color:#3e3e40}
 
 .toc__menu{
     display: none;
@@ -166,14 +192,14 @@ h4.nav__title {
     .toc__menu a{
         display:block;
         padding:0.25rem 0.75rem;
-        color:#646769;
+        color:#696764;
         font-weight:bold;
         line-height:1.5;
         border-bottom:1px solid #f2f3f3;
         text-decoration: none
         }
     .toc__menu a:hover{
-        color:#3d4144;
+        color:#3e3e40;
         opacity:.6;
         text-decoration: underline}
 
@@ -223,7 +249,7 @@ ul.inline_toc{
 
 .toc_container a:hover {
     text-decoration: underline;
-    color: #5480a9
+    color: #87314e
 }
 
 .toc_title {
@@ -244,7 +270,7 @@ div.tag-cloud{
   text-decoration: none;
   font-size: 12px;
   text-transform: uppercase;
-  color: #646464;
+  color: #696764;
 }
 
 .archive .tag:hover{
@@ -272,13 +298,13 @@ tr.archive-row {
 
 td.archive-date {
     font-style: italic;
-    color: #969696;
+    color: #999999;
     font-size: 13px;
     text-align: right;
     padding-right: 0.65em;
     border-right-width: 1px;
     border-right-style: solid;
-    border-right-color: #848484;
+    border-right-color: #696764;
 }
 
 td.archive-post {
@@ -325,7 +351,7 @@ span.github-btn {
 
 .gh-btn {
     will-change: transform;
-    background-color:#eee;
+    background-color:#311e3e;
     background-image:linear-gradient(to bottom, #fcfcfc 0, #eee 100%);
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#eeeeee', GradientType=0);
     background-repeat:no-repeat;
@@ -345,7 +371,7 @@ span.github-btn {
 
 .gh-btn:active{
     background-image:none;
-    background-color:#dcdcdc;
+    background-color:#ddd;
     border-color:#b5b5b5;
     box-shadow:inset 0 2px 4px rgba(0,0,0,0.15);
     box-shadow: 0 0.5em 0.5em -0.4em #545454;
@@ -779,10 +805,14 @@ pre {
  * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
  */
 a {
-  background-color: transparent;
+    background-color: transparent;
   /* 1 */
-  -webkit-text-decoration-skip: objects;
+    -webkit-text-decoration-skip: objects;
   /* 2 */
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+    transition-timing-function: cubic-bezier(0.2,1,0.3,1);
 }
 
 /**
@@ -1917,13 +1947,13 @@ pre code {
     padding-right: 0.65em;
     border-right-width: 1px;
     border-right-style: solid;
-    border-right-color: #848484;
+    border-right-color: #999999;
     font-weight: bold;
 }
 
 .blog-tags td.tag-word a {
     font-size: 15px;
-    color: #343434;
+    color: #3e3e40;
 }
 
 .blog-tags .tag-list span a {
