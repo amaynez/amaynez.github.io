@@ -1,6 +1,7 @@
 /* = = = = = = = = = = Comments Styles = = = = = = = = = = */
 
-#disqus_thread.show {display:block;}
+#disqus_thread.show {display:block}
+#comment-curtain.hide {display:none}
 
 .comments {
     margin-bottom: 2em;
