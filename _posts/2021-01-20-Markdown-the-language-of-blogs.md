@@ -161,53 +161,42 @@ Right aligned columns
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
 
-Here is an example for a table with a table header row, two table bodies and a table footer row:
+Here is an example:
 
 ```markdown
-|-----------------+------------+-----------------+----------------|
 | Default aligned |Left aligned| Center aligned  | Right aligned  |
 |-----------------|:-----------|:---------------:|---------------:|
 | First body part |Second cell | Third cell      | fourth cell    |
 | Second line     |foo         | **strong**      | baz            |
 | Third line      |quux        | baz             | bar            |
-|-----------------+------------+-----------------+----------------|
 | Second body     |            |                 |                |
 | 2 line          |            |                 |                |
-|=================+============+=================+================|
 | Footer row      |            |                 |                |
-|-----------------+------------+-----------------+----------------|
-
 ```
 
-|-----------------+------------+-----------------+----------------|
 | Default aligned |Left aligned| Center aligned  | Right aligned  |
 |-----------------|:-----------|:---------------:|---------------:|
 | First body part |Second cell | Third cell      | fourth cell    |
 | Second line     |foo         | **strong**      | baz            |
 | Third line      |quux        | baz             | bar            |
-|-----------------+------------+-----------------+----------------|
 | Second body     |            |                 |                |
 | 2 line          |            |                 |                |
-|=================+============+=================+================|
 | Footer row      |            |                 |                |
-|-----------------+------------+-----------------+----------------|
-{: .tablelines}
 
 The above example table is rather time-consuming to create without the help of an ASCII table editor. However, the table syntax is flexible and the above table could also be written like this:
 ```markdown
-|---
 | Default aligned | Left aligned | Center aligned | Right aligned
-|-|:-|:-:|-:
+|---|:---|:---:|---:|
 | First body part | Second cell | Third cell | fourth cell
 | Second line |foo | **strong** | baz
 | Third line |quux | baz | bar
-|---
 | Second body
 | 2 line
-|===
 | Footer row
 ```
 
+## Math Blocks
+The following kramdown fragment
 ```markdown
 $$
 \begin{aligned}
@@ -226,10 +215,8 @@ $$
 \end{aligned}
 $$
 ```
-## Math Blocks
-The following kramdown fragment
+renders (using Javascript library MathJax) as:
 
-renders (using Javascript library MathJax) as
 $$
 \begin{aligned}
   & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
@@ -246,7 +233,6 @@ $$
     \end{array} \right)
 \end{aligned}
 $$
-
 
 ## Images
 
@@ -337,18 +323,26 @@ definition term
 
 
 ## Typographic Symbols
-```markdown
---- will become an em-dash (like this —)
--- will become an en-dash (like this –)
-... will become an ellipsis (like this …)
-<< will become a left guillemet (like this «) – an optional following space will become a non-breakable space
->> will become a right guillemet (like this ») – an optional leading space will become a non-breakable space
 ```
 --- will become an em-dash (like this —)
 -- will become an en-dash (like this –)
 ... will become an ellipsis (like this …)
 << will become a left guillemet (like this «) – an optional following space will become a non-breakable space
 >> will become a right guillemet (like this ») – an optional leading space will become a non-breakable space
+&ldquo; opening and closign double quotes &rdquo;
+```
+--- will become an em-dash (like this —)
+
+-- will become an en-dash (like this –)
+
+... will become an ellipsis (like this …)
+
+&laquo; will become a left guillemet (like this «) – an optional following space will become a non-breakable space
+
+&raquo; &#8221; become a right guillemet (like this ») – an optional leading space will become a non-breakable space
+
+&ldquo;opening and closign double quotes&rdquo;
+
 
 ## Footnotes
 ```markdown
