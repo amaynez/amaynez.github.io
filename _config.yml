@@ -36,6 +36,7 @@ paginate_path: /page:num/
 
 # Build settings
 markdown: kramdown
+mathjax: true
 
 sass:
   style: compact
