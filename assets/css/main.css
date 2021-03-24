@@ -184,6 +184,29 @@ h4.nav__title {
 	text-decoration: none
 }
 
+.toc__menu{
+        font-size:.64em;}
+
+.toc__menu a{
+    display:block;
+    padding:0.25rem 0.75rem;
+    color:#646769;
+    font-weight:bold;
+    line-height:1.2;
+    border-bottom:1px solid #f2f3f3;
+    text-decoration: none}
+.toc__menu a:hover{
+    color:#696764;
+    opacity:.6;
+    text-decoration: none}
+.toc__menu li ul>li a{
+    padding-left:1.30rem;
+    font-weight:normal}
+.toc__menu li ul li ul>li a{padding-left:1.60rem;font-weight:lighter}
+.toc__menu li ul li ul li ul>li a{padding-left:1.90rem;font-weight:300}
+.toc__menu li ul li ul li ul li ul>li a{padding-left:2.20rem;font-weight:200}
+.toc__menu li ul li ul li ul li ul li ul>li a{padding-left:2.50rem;font-weight:100}
+
 @media (min-width: 64em){
     .toc__menu{
         font-size:.6875em;}
@@ -199,7 +222,7 @@ h4.nav__title {
     .toc__menu a:hover{
         color:#3e3e40;
         opacity:.6;
-        text-decoration: underline}
+        text-decoration: none}
     .toc__menu li ul>li a{
         padding-left:1.25rem;
         font-weight:normal}
