@@ -13,9 +13,11 @@ mathjax: yes
 If you have worked on any GitHub repository or have your own blog, chances are you have seen a README.md file, this is the markdown file where you can describe your repo. Markdown is easy to learn. It is helpful in writing questions on forums like StackOverflow,
 useful in commenting on Pull Request in Github, and of course publish your blog posts. It is a quick way to generated formatted text.
 
-This post in particular deals with the differences found in Kramdown, the default markdown parser for Jekyll, so if you are thinking of setting up a blog, or already have one, this might be usefull for you.
+This post in particular deals with the differences found in Kramdown, the default markdown parser for Jekyll, so if you are thinking of setting up a blog, or already have one, this might be useful for you.
 
 The kramdown syntax is based on the Markdown syntax and has been enhanced with features that are found in other Markdown implementations like Maruku, PHP Markdown Extra and Pandoc. However, it strives to provide a strict syntax with definite rules and therefore isn’t completely compatible with Markdown. Nonetheless, most Markdown documents should work fine when parsed with kramdown. All places where the kramdown syntax differs from the Markdown syntax are highlighted.
+
+As of today, I cannot still get Jekyll to parse all the kramdown specifications, but so far what is below is working fine:
 
 * * *
 ## Specifying a Header ID
@@ -39,7 +41,17 @@ Hello        {#id}
 * * *
 
 ## Emphasis
+```markdown
+**This is bold text**
 
+__This is bold text__
+
+*This is italic text*
+
+_This is italic text_
+
+~~Strikethrough~~
+```
 **This is bold text**
 
 __This is bold text__
@@ -52,7 +64,12 @@ _This is italic text_
 
 
 ## Blockquotes
+```markdown
+> Blockquotes can also be nested...
+>> ...by using additional greater-than signs right next to each other...
+> > > ...or with spaces between arrows.
 
+```
 
 > Blockquotes can also be nested...
 >> ...by using additional greater-than signs right next to each other...
@@ -62,7 +79,15 @@ _This is italic text_
 ## Lists
 
 Unordered
-
+```markdown
++ Create a list by starting a line with `+`, `-`, or `*`
++ Sub-lists are made by indenting 2 spaces:
+  - Marker character change forces new list start:
+    * Ac tristique libero volutpat at
+    + Facilisis in pretium nisl aliquet
+    - Nulla volutpat aliquam velit
++ Very easy!
+```
 + Create a list by starting a line with `+`, `-`, or `*`
 + Sub-lists are made by indenting 2 spaces:
   - Marker character change forces new list start:
@@ -72,7 +97,15 @@ Unordered
 + Very easy!
 
 Ordered
+```markdown
+1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+3. Integer molestie lorem at massa
 
+
+1. You can use sequential numbers...
+1. ...or keep all the numbers as `1.`
+```
 1. Lorem ipsum dolor sit amet
 2. Consectetur adipiscing elit
 3. Integer molestie lorem at massa
@@ -82,7 +115,10 @@ Ordered
 1. ...or keep all the numbers as `1.`
 
 Start numbering with offset:
-
+```markdown
+57. foo
+1. bar
+```
 57. foo
 1. bar
 
@@ -96,16 +132,20 @@ This is super helpful when posting any code snippet
     const fn = () => alert("some fn");
     ```
 
-
-
+```js
+const fn = () => alert("some fn");
+```
 
     ```css
     .hide {
         display:none
     }
     ```
-
-
+```css
+.hide {
+    display:none
+}
+```
     Also can show code difference
 
 
@@ -115,7 +155,11 @@ This is super helpful when posting any code snippet
     + let counter = 0
     ```
 
-
+```diff
+var x = 10;
+- const counter = 0;
++ let counter = 0
+```
 
 Inline `code`
 
@@ -128,12 +172,21 @@ Indented code
 
 
 Block code "fences"
+        
+        ```
+        Sample text here...
+        ```
 
 ```
 Sample text here...
 ```
 
 Syntax highlighting
+
+        ``` js
+        var foo = function (bar) {
+          return bar++;
+        };
 
 ``` js
 var foo = function (bar) {
@@ -329,7 +382,7 @@ definition term
 ... will become an ellipsis (like this …)
 << will become a left guillemet (like this «) – an optional following space will become a non-breakable space
 >> will become a right guillemet (like this ») – an optional leading space will become a non-breakable space
-&ldquo; opening and closign double quotes &rdquo;
+&ldquo; opening and closing double quotes &rdquo;
 ```
 --- will become an em-dash (like this —)
 
@@ -341,7 +394,7 @@ definition term
 
 &raquo; &#8221; become a right guillemet (like this ») – an optional leading space will become a non-breakable space
 
-&ldquo;opening and closign double quotes&rdquo;
+&ldquo;opening and closing double quotes&rdquo;
 
 
 ## Footnotes
