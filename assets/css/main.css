@@ -1172,11 +1172,12 @@ a {
 }
 
 blockquote {
-  border-left: 3px solid #311e3e;
-  padding-left: 18px;
-  margin-left: 21px;
-  font-style: italic;
-  color: #311e3e;
+    border-left: 6px solid #999999;
+    padding-left: 18px;
+    margin-left: 21px;
+    font-style: italic;
+    color: #999999;
+    background: #efefef;
 }
 
 pre {
