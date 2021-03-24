@@ -123,7 +123,7 @@ I increased to 200 neurons each hidden layer. In spite of this great improvement
 *I can still beat the network most of the time! (I am playing with the red X)*</center>
 
 <center><img src='/assets/img/Loss_function_and_Illegal_moves10.png' width="540">
-100,000 more episodes, 620,000 epochs with batches of 64 moves each</center><br>
+<br>100,000 more episodes, 620,000 epochs with batches of 64 moves each</center><br>
 <center><b>Wins: 82.25%</b> Losses: 13.28% Ties: 4.46%</center><br>
 
 **Finally we crossed the 80% mark!** This is quite an achievement, it seems that the change in network topology is working, although it also looks like the loss function is stagnating at around 0.15.
