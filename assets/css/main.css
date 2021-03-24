@@ -39,11 +39,6 @@ a.comments-trigger {
     cursor: pointer;
 }
 
-.comments .comments-trigger i {
-    font-size: 24px;
-    margin-right: 10px;
-}
-
 .article-comments {
     display: none;
 }
