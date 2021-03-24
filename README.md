@@ -1,4 +1,4 @@
-#Modified Jekyll theme
+# Modified Jekyll theme
 [original](https://github.com/artemsheludko/adam-blog)
 
 ### Additional features in this mod:
