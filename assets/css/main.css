@@ -11,18 +11,19 @@
     margin-bottom: 10px;
     line-height: 20px;
     font-size: 12px;
+    text-decoration: none;
     color: #999999 !important;
     border: 2px solid transparent;
     background: #efefef;
     border-radius: 15px;
     padding: 3px 15px;
     font-weight: normal;
-    display: block;}
+    display: block}
 .tags li a:hover {
     background: transparent;
-    border: 2px solid #311e3e;
-    color: #311e3e !important;
-}
+    border: 2px solid #87314e;
+    color: #87314e !important;}
+
 /* = = = = = = = = = = Comments Styles = = = = = = = = = = */
 
 #disqus_thread.show {display:block}
