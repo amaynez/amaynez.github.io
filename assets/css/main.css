@@ -1773,7 +1773,7 @@ pre code {
   -webkit-transition: all .5s;
   transition: all .5s;
 }
-
+.recent-item-box{display:inline}
 .recent-item-box:hover .recent-item::after{
   background: rgba(0, 0, 0, 0);
 }
