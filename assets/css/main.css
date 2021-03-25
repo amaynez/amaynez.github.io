@@ -1574,6 +1574,7 @@ pre code {
   position: absolute;
   left: 5%;
   bottom: 5%;
+  background-color: hsl(0 0% 0% / 40%)
 }
 
 .post-card .post-card-body .post-card-title-and-meta {
