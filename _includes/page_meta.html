@@ -1,7 +1,7 @@
 {% assign document = post | default: page %}
 {% if document.read_time or document.show_date %}
   <span class = "{{ include.type }}">
-  {% unless include.type == "post-card-meta" %}
+  {% unless include.type == "post-card-meta" or include.type == "recent-item-meta" %}
     <p class="page_meta">
   {% endunless %}
   {% if include.type == "post-card-meta" or include.type == "recent-item-meta" %}
@@ -29,7 +29,7 @@
       {% endif %}
     </span>
   {% endif %}
-  {% unless include.type == "post-card-meta" %}
+  {% unless include.type == "post-card-meta" or include.type == "recent-item-meta" %}
     </p>
   {% endunless %}
   </span>
