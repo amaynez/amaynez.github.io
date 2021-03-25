@@ -1732,14 +1732,13 @@ pre code {
 .page-footer .page-share a:hover {
   opacity: .8;
 }
-
 .recent-box {
   margin-top: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #d9d9d9;
 }
 
-.recent-box .recent-title {
+.recent-title {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   color: #311e3e;
@@ -1747,7 +1746,7 @@ pre code {
   margin: 0 0 30px;
 }
 
-.recent-box .recent-list .recent-item {
+.recent-item {
   position: relative;
   display: inline-block;
   width: 24%;
@@ -1758,16 +1757,28 @@ pre code {
   transition: all .3s;
 }
 
-.recent-box .recent-list .recent-item span {
+.recent-item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 1);
+  mix-blend-mode: color;
+}
+
+.recent-item-box:hover .recent-item::after{
+  background: rgba(0, 0, 0, 0);
+}
+
+.recent-item span {
   position: absolute;
   font-size: 12px;
   left: 2.5%;
   bottom: 10%;
   color: #fff;
-}
-
-.recent-box .recent-list .recent-item:hover {
-  opacity: 0.8;
 }
 
 .newsletter {
