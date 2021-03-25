@@ -1573,12 +1573,12 @@ pre code {
   bottom: 5%;
 }
 
-.post-card .post-card-body .post-card-link-and-meta .post-card-title .post-card-link {
+.post-card .post-card-body .post-card-title-and-meta .post-card-link {
   text-decoration: none;
   display: block;
 }
 
-.post-card .post-card-body .post-card-link-and-meta .post-card-title {
+.post-card .post-card-body .post-card-title-and-meta {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
