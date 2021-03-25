@@ -2,11 +2,11 @@
 
 /* = = = = = = = post's read time and date = = = = = = = */
 
-.page__meta-sep {
+.page_meta-sep {
   padding:1em
 }
 
-.page__meta {
+.page_meta {
     justify-content: center;
     display: flex;
     color: #999999;
