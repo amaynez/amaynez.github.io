@@ -4,6 +4,9 @@
   {% unless include.type == "post-card-meta" %}
     <p class="page_meta">
   {% endunless %}
+  {% if include.type == "post-card-meta" %}
+    <span class="meta-sep"></span>
+  {% endif %}
   {% if document.show_date and document.date %}
     {% assign date = document.date %}
     <span class="page_meta-date">
