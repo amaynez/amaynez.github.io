@@ -1581,6 +1581,18 @@ pre code {
   padding-left: 5px;
   width: 95%
 }
+.post-card-tags{
+    font-size: 10px;
+    line-height: 1
+}
+.tag {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+.tag:hover {
+  text-decoration: underline;
+}
 .post-card-title-and-meta {
   margin:0
 }
@@ -1593,15 +1605,6 @@ pre code {
 }
 .post-card-link:hover {
   opacity: .75;
-}
-.tag {
-  text-decoration: none;
-  font-size: 10px;
-  text-transform: uppercase;
-  color: #fff;
-}
-.tag:hover {
-  text-decoration: underline;
 }
 
 /* = = = = = = = = = = Pagination Styles = = = = = = = = = = */
