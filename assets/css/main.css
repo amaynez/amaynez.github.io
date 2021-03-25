@@ -1949,6 +1949,7 @@ pre code {
 .blog-tags table.tags-table {
     border-spacing: 0 1em;
     border-collapse: separate;
+    border: 0
 }
 
 .blog-tags td.tag-row {
