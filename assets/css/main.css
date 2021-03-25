@@ -4,7 +4,12 @@
 
 .post-card-meta{
   font-size:10px;
-  color: #fff;
+  white-space:nowrap;
+  display: block
+}
+
+.recent-item-meta{
+  font-size:8px;
   white-space:nowrap;
   display: block
 }
