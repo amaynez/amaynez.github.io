@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+/* = = = = = = = post read time and date = = = = = = = */
+.page__meta {
+    justify-content: center;
+    display: flex;
+    color: hsl(276deg 15% 50%);
+}
+
 /* = = = = = = = = = = icon style buttons= = = = = = = */
 .icon {
   text-align: center;
