@@ -11,7 +11,6 @@ author: Armando Maynez
 github: amaynez/TicTacToe/
 toc: sticky # use yes for inline TOC or sticky for sticky TOC, leave empty or erase for no TOC
 ---
-<br>
 <center><img style="float: left;margin-right: 1em;" src='/assets/img/posts/Game_Screen.png' width="310" height="300"></center>
 
 After many years of a corporate career (17) diverging from computer science, I have now decided to learn Machine Learning and in the process return to coding (something I have always loved!).
