@@ -1,7 +1,6 @@
 ---
 layout: post
-title: >
-    Markdown, the language of blogs
+title: Markdown, the language of blogs
 date: 2021-01-20
 description: A simple cheat sheet for markdown and kramdown.
 img: /posts/Markdown.png
