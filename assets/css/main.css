@@ -2149,7 +2149,7 @@ pre code {
   .post-card-box li:last-child {
     margin-bottom: 0;
   }
-  .recent-box .recent-list .recent-item {
+  .recent-box .recent-list .recent-item-img {
     position: relative;
     display: inline-block;
     width: 49%;
@@ -2157,7 +2157,7 @@ pre code {
     margin-left: 0.5%;
     margin-bottom: 0.5%;
   }
-  .recent-box .recent-list .recent-item span {
+  .recent-box .recent-list .recent-item-img span {
     position: absolute;
     font-size: 12px;
     left: 2.5%;
@@ -2210,7 +2210,7 @@ pre code {
   .page-image {
     height: 380px;
   }
-  .recent-box .recent-list .recent-item {
+  .recent-box .recent-list .recent-item-img {
     position: relative;
     display: inline-block;
     width: 99%;
@@ -2218,7 +2218,7 @@ pre code {
     margin-left: 0.5%;
     margin-bottom: 0.5%;
   }
-  .recent-box .recent-list .recent-item span {
+  .recent-box .recent-list .recent-item-img span {
     position: absolute;
     font-size: 12px;
     left: 2.5%;
