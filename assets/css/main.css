@@ -8,12 +8,15 @@
 }
 
 .icon img{
-  transition: opacity 1s;
-  opacity: 0.4;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+    -webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+    transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+    opacity: 0.25;
 }
 
 .icon img:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
 /* = = = = = = = = = = Comments Styles = = = = = = = = = = */
 
