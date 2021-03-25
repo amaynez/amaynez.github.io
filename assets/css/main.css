@@ -2,8 +2,13 @@
 
 /* = = = = = = = post's read time and date = = = = = = = */
 
+.post-card-meta{
+  font-size:10px;
+  color: #fff;
+}
+
 .page_meta-sep {
-  padding:1em
+  padding:5px
 }
 
 .page_meta {
