@@ -1745,7 +1745,10 @@ pre code {
   text-align: center;
   margin: 0 0 30px;
 }
-
+.recent-item{display:inline}
+.recent-item:hover .recent-item-img::after{
+  background: rgba(0, 0, 0, 0);
+}
 .recent-item-img {
   position: relative;
   display: inline-block;
@@ -1772,10 +1775,6 @@ pre code {
   mix-blend-mode: color;
   -webkit-transition: all .5s;
   transition: all .5s;
-}
-.recent-item-box{display:inline}
-.recent-item-box:hover .recent-item-img::after{
-  background: rgba(0, 0, 0, 0);
 }
 
 .recent-item-title {
@@ -2157,7 +2156,7 @@ pre code {
     margin-left: 0.5%;
     margin-bottom: 0.5%;
   }
-  .recent-box .recent-list .recent-item-img span {
+  .recent-box .recent-list .recent-item-title {
     position: absolute;
     font-size: 12px;
     left: 2.5%;
@@ -2218,7 +2217,7 @@ pre code {
     margin-left: 0.5%;
     margin-bottom: 0.5%;
   }
-  .recent-box .recent-list .recent-item-img span {
+  .recent-box .recent-list .recent-item-title {
     position: absolute;
     font-size: 12px;
     left: 2.5%;
