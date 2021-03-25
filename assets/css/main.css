@@ -276,6 +276,12 @@ ul.inline_toc{
 
 /* = = = = = = = = = = Tag Styles = = = = = = = = = = */
 
+.center-tags .tag-cloud ul.tags {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
 div.tag-cloud{
     margin-bottom: 1em;
 }
@@ -1503,7 +1509,7 @@ pre code {
 
 /* = = = = = = = = = = Post-Card Styles = = = = = = = = = = */
 .post-card-box {
-  margin: 100px 0 100px;
+  margin: 100px 0 15px;
   padding: 0;
 }
 
