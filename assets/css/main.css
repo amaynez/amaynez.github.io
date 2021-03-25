@@ -1781,7 +1781,7 @@ pre code {
   position: absolute;
   left: 2.5%;
   bottom: 2.5%;
-  width: 97.5%
+  width: 97.5%;
   font-size: 12px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
@@ -2161,6 +2161,7 @@ pre code {
     font-size: 12px;
     left: 2.5%;
     bottom: 2.5%;
+    width: 97.5%;
     color: #fff;
   }
 }
@@ -2222,6 +2223,7 @@ pre code {
     font-size: 12px;
     left: 2.5%;
     bottom: 2.5%;
+    width: 97.5%;
     color: #fff;
   }
   .newsletter .newsletter-box .subscribe-btn {
