@@ -8,14 +8,7 @@ permalink: /archive/
 
 <div class="archive">
   <h1 class="archive-title">Posts archive</h1>
-	<div class="tag-cloud">
-		<ul class="tags">
-			{% for item in (0..site.tags.size) %}{% unless forloop.last %}
-			{% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-			<li><a href="/tags/#{{ this_word | cgi_escape }}">{{ this_word }} <span>({{ site.tags[this_word].size }})</span></a></li>
-			{% endunless %}{% endfor %}
-		</ul>
-	</div>
+  	{% include tag_cloud.html %}
 	<table class="archive-table" cellspacing="0">
 	{% for post in site.posts %}
 		<tr class="archive-row">
