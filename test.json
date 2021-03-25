@@ -1,0 +1,67 @@
+[
+  
+    {
+      "title"       : "Starting the adventure",
+      "category"    : "",
+      "tags"        : "general_blogging, thoughts, life",
+      "url"         : "/starting-the-adventure/",
+      "date"        : "2021-03-24 00:00:00 +0000",
+      "description" : "Midlife career change: a disaster or an opportunity?
+"
+    } ,
+  
+    {
+      "title"       : "Deep Q Learning for Tic Tac Toe",
+      "category"    : "",
+      "tags"        : "Machine Learning, Artificial Intelligence, Reinforcement Learning, Coding, Python",
+      "url"         : "/deep-q-learning-tic-tac-toe/",
+      "date"        : "2021-03-18 21:14:20 +0000"
+      "description" : "Inspired by Deep Mind's astonishing feats of having their Alpha Go, Alpha Zero and Alpha Star programs learn (and be amazing at it) Go, Chess, Atari games and lately Starcraft; I set myself to the task of programming a neural network that will learn by itself how to play the ancient game of tic tac toe. How hard could it be?"
+    } ,
+  
+    {
+      "title"       : "Neural Network Optimization Methods and Algorithms",
+      "category"    : "",
+      "tags"        : "Coding, Machine Learning, Optimization, Deep Neural Networks",
+      "url"         : "/neural-network-optimization-methods/",
+      "date"        : "2021-03-12 19:32:20 +0000"
+      "description" : "Some neural network optimization algorithms mostly to implement momentum when doing back propagation."
+    } ,
+  
+    {
+      "title"       : "Machine Learning Library in Python from scratch",
+      "category"    : "",
+      "tags"        : "Machine Learning, Coding, Neural Networks, Python",
+      "url"         : "/ML-Library-from-scratch/",
+      "date"        : "2021-02-28 18:32:20 +0000"
+      "description" : "Single neuron perceptron that classifies elements learning quite quickly."
+    } ,
+  
+    {
+      "title"       : "Conway&#39;s Game of Life",
+      "category"    : "",
+      "tags"        : "Coding, Python",
+      "url"         : "/conways-game-of-life/",
+      "date"        : "2021-02-10 19:32:20 +0000"
+      "description" : "Taking on the challenge of picking up coding again through interesting small projects, this time it is the turn of Conway's Game of Life."
+    } ,
+  
+    {
+      "title"       : "Single Neuron Perceptron",
+      "category"    : "",
+      "tags"        : "Machine Learning, Coding, Neural Networks",
+      "url"         : "/single-neuron-perceptron/",
+      "date"        : "2021-01-25 19:32:20 +0000"
+      "description" : "Single neuron perceptron that classifies elements learning quite quickly."
+    } ,
+  
+    {
+      "title"       : "Markdown, the language of blogs",
+      "category"    : "",
+      "tags"        : "general_blogging",
+      "url"         : "/Markdown-the-language-of-blogs/",
+      "date"        : "2021-01-20 00:00:00 +0000"
+      "description" : "A simple cheat sheet for markdown and kramdown."
+    }
+  
+]
