@@ -12,9 +12,9 @@ layout: home-page
         <a href="{{site.baseurl}}/tags#{{tag}}" class="tag">|&#32;{{ tag }}</a>
         {% endfor %}
         <a href="{{post.url | prepend: site.baseurl}}" class="post-card-link">
-          <h3 class="post-card-title">{{post.title}}</h3>&nbsp;&nbsp;&nbsp;
-          {% include page_meta.html type=include.type %}
+          <h3 class="post-card-title">{{post.title}}</h3>
         </a>
+        {% include page_meta.html type="post-card" %}
       </div>
     </div>
   </li>
