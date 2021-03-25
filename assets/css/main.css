@@ -1948,6 +1948,8 @@ pre code {
 .blog-tags td.tag-row {
     vertical-align: top;
     padding-left: .65em;
+    background-color: transparent;
+    padding-top: 0
 }
 
 .blog-tags td.tag-word {
@@ -1958,6 +1960,9 @@ pre code {
     border-right-style: solid;
     border-right-color: #999999;
     font-weight: bold;
+    padding: 12px;
+    background-color: transparent;
+    padding-top: 0
 }
 
 .blog-tags td.tag-word a {
