@@ -1746,7 +1746,7 @@ pre code {
   margin: 0 0 30px;
 }
 
-.recent-item {
+.recent-item-img {
   position: relative;
   display: inline-block;
   width: 24%;
@@ -1760,7 +1760,7 @@ pre code {
   background-repeat: no-repeat;
 }
 
-.recent-item::after {
+.recent-item-img::after {
   content: "";
   display: block;
   position: absolute;
@@ -1774,7 +1774,7 @@ pre code {
   transition: all .5s;
 }
 .recent-item-box{display:inline}
-.recent-item-box:hover .recent-item::after{
+.recent-item-box:hover .recent-item-img::after{
   background: rgba(0, 0, 0, 0);
 }
 
