@@ -1573,12 +1573,12 @@ pre code {
   bottom: 5%;
 }
 
-.post-card .post-card-body .post-card-link {
+.post-card .post-card-body .post-card-link-and-meta .post-card-title .post-card-link {
   text-decoration: none;
   display: block;
 }
 
-.post-card .post-card-body .post-card-title {
+.post-card .post-card-body .post-card-link-and-meta .post-card-title {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -1587,7 +1587,7 @@ pre code {
   margin: 0 0 10px;
 }
 
-.post-card .post-card-body .post-card-title:hover {
+.post-card .post-card-body .post-card-link-and-meta .post-card-title:hover {
   opacity: .8;
 }
 
