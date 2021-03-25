@@ -1570,9 +1570,10 @@ pre code {
   -webkit-transition: all .5s;
   transition: all .5s;
 }
-.post-card-image:hover::after{
+.post-card:hover .post-card-image::after{
   background: rgba(0, 0, 0, 0);
 }
+
 .post-card-body {
   position: absolute;
   left: 5%;
