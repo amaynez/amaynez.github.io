@@ -1780,7 +1780,7 @@ pre code {
 .recent-item-title {
   position: absolute;
   left: 2.5%;
-  bottom: 10%;
+  bottom: 2.5%;
   width: 97.5%
   font-size: 12px;
   font-family: 'Lato', sans-serif;
@@ -2160,7 +2160,7 @@ pre code {
     position: absolute;
     font-size: 12px;
     left: 2.5%;
-    bottom: 10%;
+    bottom: 2.5%;
     color: #fff;
   }
 }
@@ -2221,7 +2221,7 @@ pre code {
     position: absolute;
     font-size: 12px;
     left: 2.5%;
-    bottom: 10%;
+    bottom: 2.5%;
     color: #fff;
   }
   .newsletter .newsletter-box .subscribe-btn {
