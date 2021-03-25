@@ -1,13 +1,13 @@
 @charset "utf-8";
 
-/* = = = = = = = post's read time and date = = = = = = = */
+/* = = = = post's read time and date (meta data) = = = = */
 
 .post-card-meta{
   font-size:10px;
   color: #fff;
 }
 
-.page_meta-sep {
+.meta-sep {
   padding:5px
 }
 
@@ -1573,22 +1573,20 @@ pre code {
   bottom: 5%;
 }
 
-.post-card .post-card-body .post-card-title-and-meta .post-card-link {
-  text-decoration: none;
-  display: block;
+.post-card .post-card-body .post-card-title-and-meta {
+  margin:0
 }
 
-.post-card .post-card-body .post-card-title-and-meta {
+.post-card .post-card-body .post-card-title-and-meta .post-card-link {
+  text-decoration: none;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 18px;
   color: #fff;
-  margin: 0 0 10px;
 }
 
-.post-card .post-card-body .post-card-link-and-meta .post-card-title:hover {
-  opacity: .8;
+.post-card .post-card-body .post-card-title-and-meta .post-card-link:hover {
+  opacity: .75;
 }
 
 .post-card .post-card-body .tag {
