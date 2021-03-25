@@ -1,0 +1,14 @@
+---
+layout: default
+---
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign tag_words = site_tags | split:',' | sort %}
+<div class="flex-container">
+  {% include header.html %}
+  <div class="content wrapper">
+    {{ content }}
+  {% include search.html %}
+  {% include pagination.html %}
+  </div> <!-- End Wrapper -->
+  {% include footer.html %}
+</div>
