@@ -18,7 +18,8 @@
     border-radius: 15px;
     padding: 3px 15px;
     font-weight: normal;
-    display: block}
+    display: block
+    text-transform: lowercase}
 .tags li a:hover {
     background: transparent;
     border: 2px solid #87314e;
