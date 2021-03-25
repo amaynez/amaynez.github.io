@@ -298,6 +298,7 @@ div.tag-cloud{
 table.archive-table {
   border-spacing:0;
   border-collapse: collapse;
+  border: 0
 }
 
 tr.archive-row {
@@ -307,18 +308,23 @@ tr.archive-row {
 
 td.archive-date {
     font-style: italic;
-    color: #999999;
+    color: #696764;
     font-size: 13px;
     text-align: right;
     padding-right: 0.65em;
     border-right-width: 1px;
     border-right-style: solid;
     border-right-color: #696764;
+    background: transparent;
+    padding-top: 0
+
 }
 
 td.archive-post {
     text-align: left;
     padding-left: 0.65em;
+    background: transparent;
+    padding-top: 0
 }
 
 /* = = = = = = = = = = Github Link Button = = = = = = = = = = */
