@@ -4,7 +4,7 @@
 .page__meta {
     justify-content: center;
     display: flex;
-    color: hsl(276deg 15% 50%);
+    color: #999999;
 }
 
 /* = = = = = = = = = = icon style buttons= = = = = = = */
