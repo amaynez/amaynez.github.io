@@ -5,10 +5,13 @@
 .post-card-meta{
   font-size:10px;
   color: #fff;
+  white-space:nowrap
 }
 
-.meta-sep {
-  padding:5px
+.meta-sep::before {
+    content: "\07C";
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .page_meta {
