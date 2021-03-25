@@ -1,5 +1,6 @@
 ---
 layout: post
+read_time: true
 title:  Single Neuron Perceptron
 date:   2021-01-25 13:32:20 -0600
 description: Single neuron perceptron that classifies elements learning quite quickly.

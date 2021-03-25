@@ -1,5 +1,6 @@
 ---
 layout: post
+read_time: true
 title:  Machine Learning Library in Python from scratch
 date:   2021-02-28 12:32:20 -0600
 description: Single neuron perceptron that classifies elements learning quite quickly.
