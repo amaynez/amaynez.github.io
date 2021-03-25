@@ -1755,6 +1755,9 @@ pre code {
   margin-bottom: 0.5%;
   -webkit-transition: all .3s;
   transition: all .3s;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .recent-item::after {
@@ -1767,6 +1770,8 @@ pre code {
   bottom: 0;
   background: rgba(0, 0, 0, 1);
   mix-blend-mode: color;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .recent-item-box:hover .recent-item::after{
@@ -1778,6 +1783,10 @@ pre code {
   font-size: 12px;
   left: 2.5%;
   bottom: 10%;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
   color: #fff;
 }
 
