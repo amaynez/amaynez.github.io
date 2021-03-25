@@ -13,7 +13,7 @@ layout: home-page
         {% endfor %}
         <a href="{{post.url | prepend: site.baseurl}}" class="post-card-link">
           <h3 class="post-card-title">{{post.title}}</h3>&nbsp;&nbsp;&nbsp;
-          {% include page__meta.html type=include.type %}
+          {% include page_meta.html type=include.type %}
         </a>
       </div>
     </div>
