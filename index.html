@@ -1,6 +1,8 @@
 ---
 layout: home-page
 ---
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign tag_words = site_tags | split:',' | sort %}
 <ol class="post-card-box clearfix">
   {% for post in paginator.posts %}
   <li>
@@ -17,4 +19,6 @@ layout: home-page
   </li>
   {% endfor %}
 </ol>
-{% include tag_cloud.html %}
+<div class="tag_cloud_wrapper">
+  {% include tag_cloud.html %}
+</div>
