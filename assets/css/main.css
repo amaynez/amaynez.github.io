@@ -8,6 +8,11 @@
   white-space:nowrap
 }
 
+.meta-pre {
+    padding-left: 5px;
+    padding-right: 5px
+}
+
 .meta-sep::before {
     content: "\07C";
     padding-left: 5px;
