@@ -4,7 +4,7 @@
   {% unless include.type == "post-card-meta" %}
     <p class="page_meta">
   {% endunless %}
-  {% if include.type == "post-card-meta" %}
+  {% if include.type == "post-card-meta" or include.type == "recent-item-meta" %}
     <span class="meta-pre"></span>
   {% endif %}
   {% if document.show_date and document.date %}
