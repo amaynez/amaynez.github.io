@@ -1578,9 +1578,8 @@ pre code {
   left: 5%;
   bottom: 5%;
   background-color: hsl(0 0% 0% / 40%);
-}
-.post-card-body {
-  width: 95%;
+  padding-left: 5px;
+  width: 95%
 }
 .post-card-title-and-meta {
   margin:0
