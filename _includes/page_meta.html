@@ -1,6 +1,6 @@
 {% assign document = post | default: page %}
 {% if document.read_time or document.show_date %}
-  <span class=include.type>
+  <span class = "{{ include.type }}">
   {% unless include.type == "post-card-meta" %}
     <p class="page_meta">
   {% endunless %}
