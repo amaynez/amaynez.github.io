@@ -1567,8 +1567,8 @@ pre code {
   background: rgba(0, 0, 0, 1);
   z-index: 10;
   mix-blend-mode: color;
-  -webkit-transition: all .1s;
-  transition: all 1s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 .post-card-image:hover::after{
   background: rgba(0, 0, 0, 0);
