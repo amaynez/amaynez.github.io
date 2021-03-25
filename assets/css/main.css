@@ -1,32 +1,18 @@
 @charset "utf-8";
-.tags {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
+
+/* = = = = = = = = = = icon style buttons= = = = = = = */
+.icon {
+  text-align: center;
 }
-.tags li a {
-    margin-right: 10px;
-    margin-bottom: 10px;
-    line-height: 20px;
-    font-size: 12px;
-    text-decoration: none;
-    color: #999999 !important;
-    border: 2px solid transparent;
-    background: #efefef;
-    border-radius: 15px;
-    padding: 3px 15px;
-    font-weight: normal;
-    display: block;
-    text-transform: lowercase}
 
-.tags li a:hover {
-    background: transparent;
-    border: 2px solid #87314e;
-    color: #87314e !important;
-    text-decoration: none}
+.icon img{
+  transition: opacity 1s;
+  opacity: 0.4;
+}
 
+.icon img:hover {
+  opacity: 0.8;
+}
 /* = = = = = = = = = = Comments Styles = = = = = = = = = = */
 
 .hide {display:none}
@@ -283,10 +269,42 @@ ul.inline_toc{
     list-style: outside none none !important;
 }
 
-/* = = = = = = = = = = Archive Page Styles = = = = = = = = = = */
+/* = = = = = = = = = = Tag Styles = = = = = = = = = = */
+
 div.tag-cloud{
     margin-bottom: 1em;
 }
+.tags {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tags li a {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #999999 !important;
+    border: 2px solid transparent;
+    background: #efefef;
+    border-radius: 15px;
+    padding: 3px 15px;
+    font-weight: normal;
+    display: block;
+    text-transform: lowercase}
+
+.tags li a:hover {
+    background: transparent;
+    border: 2px solid #87314e;
+    color: #87314e !important;
+    text-decoration: none}
+
+
+/* = = = = = = = = = = Archive Page Styles = = = = = = = = = = */
+
 
 .archive a {
     text-decoration: none;
