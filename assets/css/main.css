@@ -1,6 +1,11 @@
 @charset "utf-8";
 
-/* = = = = = = = post read time and date = = = = = = = */
+/* = = = = = = = post's read time and date = = = = = = = */
+
+.page__meta-sep {
+  padding:1em
+}
+
 .page__meta {
     justify-content: center;
     display: flex;
