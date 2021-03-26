@@ -1,21 +1,21 @@
 # Modified Jekyll theme
 [original](https://github.com/artemsheludko/adam-blog)
 
-### Additional features in this mod:
+### Additional features or changes in this mod:
 - automatic [sitemap.xml](http://amaynez.github.io/sitemap.xml)
 - automatic [archive page](http://amaynez.github.io/archive/)
 - changed the styling of the [tags page](http://amaynez.github.io/tags/)
 - included linkedin and reddit in the share post icons
 - included linkedin icon in the contact info
-- added a Table of Contents for the posts page (can be both sticky + collapsable or static + fixed and it is optional per post)
+- added a sticky or fixed Table of Contents for the posts page (optional per post)
 - added MathJax support (optional per post)
 - added view on github link button for posts (optional per post)
-- _in progress_ add sidebar with tags and share links (share links appear on hover of the share icon)
-- _future plans_ add gallery posibility (like ghost)
-- _future plans_ check highlight color
-- _future plans_ add read time
-- _future plans_ add meta tags to post pages
-- _future plans_ fix facebook link so it opens up in the app when in mobile
+- read time per post automatically calculated and included in all relevant pages
+- SEO meta tags included
+- added a tag cloud to the main page
+- added a 'back to top' button to the post pages.
+- added a comments 'courtain' that masks the disqus interface until the user clicks on it
+- post images in home page appear black and white and colorize upon hovering in them
 
 # The original Adam Blog is a minimal clear theme for Jekyll
 
