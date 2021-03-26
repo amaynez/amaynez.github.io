@@ -266,44 +266,6 @@ h4.nav__title {
 @media (min-width: 80em){.splash .sidebar__right{margin-right:0}}
 @media (min-width: 80em){.wide .sidebar__right{width:initial;margin-right:initial}}
 
-/* = = = = = = = = = = Inline TOC Styles = = = = = = = = = = */
-#toc_container {
-    background: #efefef none repeat scroll 0 0;
-    border: 1px solid #aaa;
-    display: table;
-    font-size: 90%;
-    padding: 5px 20px;
-    width: auto;
-    margin: auto;
-    margin-bottom: 1em;
-}
-
-ul.toc_list{
-    padding-inline-start: 0px;
-}
-
-ul.inline_toc{
-    padding-inline-start: 0px;
-}
-
-.toc_container a {
-    text-decoration: none;
-}
-
-.toc_container a:hover {
-    text-decoration: underline;
-    color: #87314e
-}
-
-.toc_title {
-    font-weight: 700;
-    text-align: center;
-}
-
-#toc_container li, #toc_container ul, #toc_container ul li{
-    list-style: outside none none !important;
-}
-
 /* = = = = = = = = = = Tag Styles = = = = = = = = = = */
 
 .center-tags .tag-cloud ul.tags {
