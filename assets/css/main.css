@@ -2059,7 +2059,7 @@ pre code {
 }
 
 .post-list a {
-  display: inline-block;
+  display: block;
   color: #87314e;
   text-decoration: none;
   text-transform: uppercase;
