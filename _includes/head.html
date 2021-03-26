@@ -26,15 +26,14 @@
 	<!-- Mailchimp linking -->
 	<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/8ece198b3eb260e6838461a60/d20d9fb9aad962399025da52e.js");</script>
 	{% if page.mathjax %}
-		<script>
-			window.MathJax = {
-			  tex: {
-				inlineMath: [["$", "$"], ["\\(", "\\)"]],
-				processEscapes: true
-			  }
-			};
-		</script>
-		<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js" id="MathJax-script"></script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.3/MathJax.js?config=TeX-MML-AM_CHTML">
+            MathJax.Hub.Config({
+                tex2jax: {
+                    inlineMath: [["$", "$"], ["\\(", "\\)"]],
+                    processEscapes: true
+                }
+            });
+        </script>
 	{% endif %}
 	{% if page.toc == "sticky" %}
 		<script src="https://cdn.jsdelivr.net/gh/cferdinandi/gumshoe@5.1.1/dist/gumshoe.polyfills.min.js"></script>
