@@ -16,8 +16,8 @@
 	<meta property="article:published_time" content="{{ page.date }}" />
 	<meta property="article:modified_time" content="{{ page.date }}" />
 	<meta property="article:section" content="Article Section" />
-	<meta property="article:tag" content="{{% post.tags %}}" />
-	<meta property="fb:admins" content="{{% site.fbadmin %}}" />
+	<meta property="article:tag" content="{{ post.tags }}" />
+	<meta property="fb:admins" content="{{ site.fbadmin }}" />
 
 	<link rel="shortcut icon" href="{{ 'assets/img/favicon/favicon.png' | prepend: site.baseurl }}" type="image/png">
 	<link rel="apple-touch-icon" href="{{ 'assets/img/favicon/favicon.png' | prepend: site.baseurl}}">
