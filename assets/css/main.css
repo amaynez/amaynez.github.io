@@ -347,15 +347,6 @@ div.tag-cloud{
 /* = = = = = = = = = = Archive Page Styles = = = = = = = = = = */
 
 
-.archive a {
-    text-decoration: none;
-    line-height: 1em;
-}
-
-.archive a:hover {
-    text-decoration: underline;
-}
-
 table.archive-table {
   border-spacing:0;
   border-collapse: collapse;
@@ -2072,7 +2063,7 @@ pre code {
   color: #87314e;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 12px
 }
 
 .post-list a:hover {
