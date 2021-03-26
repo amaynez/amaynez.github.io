@@ -2023,20 +2023,20 @@ pre code {
 
 /* = = = = = = = = = = Tags Styles = = = = = = = = = = */
 
-.blog-tags table.tags-table {
+table.tags-table {
     border-spacing: 0 1em;
     border-collapse: separate;
     border: 0
 }
 
-.blog-tags td.tag-row {
+td.tag-row {
     vertical-align: top;
     padding-left: .65em;
     background-color: transparent;
     padding-top: 0
 }
 
-.blog-tags td.tag-word {
+td.tag-word {
     vertical-align: top;
     text-align: right;
     padding-right: 0.65em;
@@ -2049,9 +2049,10 @@ pre code {
     padding-top: 0
 }
 
-.blog-tags td.tag-word a {
+td.tag-word a {
     font-size: 15px;
     color: #3e3e40;
+    text-transform: lowercase
 }
 
 .post-list {
