@@ -2063,11 +2063,11 @@ pre code {
     color: #3e3e40;
 }
 
-.tag-list {
+.post-list {
     margin-bottom: 0.75em;
 }
 
-.tag-list a {
+.post-list a {
   display: inline-block;
   color: #87314e;
   text-decoration: none;
@@ -2075,12 +2075,12 @@ pre code {
   font-size: 12px;
 }
 
-.tag-list a:hover {
+.post-list a:hover {
   text-decoration: underline;
   opacity: .8;
 }
 
-.tag-list small {
+.post-list small {
   color: #311e3e;
 }
 
