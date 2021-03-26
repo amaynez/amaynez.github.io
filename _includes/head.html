@@ -5,6 +5,25 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+	<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}"
+      },
+      "headline": "{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}",
+      "image": [ "{{ site.url }}/assets/img{{ page.img }}" ],
+      "datePublished": "{{ page.date }}",
+      "dateModified": "{{ page.date }}",
+      "author": {
+        "@type": "Person",
+        "name": "{{ site.author }}"
+      }
+  	}
+    </script>
+
 	<!-- Open Graph data -->
 	<meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
 	<meta property="og:type" content="article"/>
@@ -23,7 +42,7 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/favicon72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicon/favicon114.png">
 
-	<!-- Schema.org markup for Google+ -->
+	<!-- Schema.org markup for Google -->
 	<meta itemprop="name" content="{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}">
 	<meta itemprop="description" content="{{ page.description }}">
 	<meta itemprop="image" content="{{ site.url }}/assets/img{{ page.img }}">
