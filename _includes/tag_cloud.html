@@ -1,9 +1,14 @@
 <div class="tag-cloud">
     <ul class="tags">
-        <!--  cycles through tag list and creates header row of all tags used in site with accompanying per-tag counts...-->
-        {% for item in (0..site.tags.size) %}{% unless forloop.last %}
-        {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
-          <li><a href="{{ site.url }}/tags#{{ this_word | cgi_escape }}" class="tag">{{ this_word }} <span>({{ site.tags[this_word].size }})</span></a></li>
-        {% endunless %}{% endfor %}
+        {% if include.context == "post" %}
+            {% for tag in page.tags %}
+                <li><a href="{{ site.url }}/tags#{{ tag | cgi_escape }}" class="tag">{{ tag }}</a></li>
+            {% endfor %}
+        {% else %}
+            {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+                {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+                <li><a href="{{ site.url }}/tags#{{ this_word | cgi_escape }}" class="tag">{{ this_word }} <span>({{ site.tags[this_word].size }})</span></a></li>
+            {% endunless %}{% endfor %}
+        {% end if %}
     </ul>
 </div>
