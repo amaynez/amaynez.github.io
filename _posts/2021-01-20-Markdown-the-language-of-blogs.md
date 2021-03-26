@@ -252,7 +252,6 @@ The above example table is rather time-consuming to create without the help of a
 ## Math Blocks
 The following kramdown fragment
 ```markdown
-$$
 \begin{aligned}
   & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
   = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
@@ -267,11 +266,9 @@ $$
       y_n
     \end{array} \right)
 \end{aligned}
-$$
 ```
 renders (using Javascript library MathJax) as:
 
-$$
 \begin{aligned}
   & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
   = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
@@ -286,7 +283,6 @@ $$
       y_n
     \end{array} \right)
 \end{aligned}
-$$
 
 ## Images
 
