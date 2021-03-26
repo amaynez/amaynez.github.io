@@ -13,6 +13,6 @@
                 {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
                 <li><a href="{{ site.url }}/tags#{{ this_word | cgi_escape }}" class="tag">{{ this_word }} <span>({{ site.tags[this_word].size }})</span></a></li>
             {% endunless %}{% endfor %}
-        {% end if %}
+        {% endif %}
     </ul>
 </div>
