@@ -355,7 +355,6 @@ table.archive-table {
 
 tr.archive-row {
     height: 3em;
-    vertical-align: text-top;
 }
 
 td.archive-date {
@@ -364,19 +363,19 @@ td.archive-date {
     font-size: 13px;
     text-align: right;
     padding-right: 0.65em;
-    border-right-width: 1px;
-    border-right-style: solid;
-    border-right-color: #696764;
     background: transparent;
-    padding-top: 0
-
+    padding-top: 0;
+    line-height: 1.2
 }
 
 td.archive-post {
     text-align: left;
     padding-left: 0.65em;
     background: transparent;
-    padding-top: 0
+    padding-top: 0;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: #696764
 }
 
 /* = = = = = = = = = = Github Link Button = = = = = = = = = = */
