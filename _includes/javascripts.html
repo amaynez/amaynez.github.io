@@ -45,3 +45,16 @@ function toggle_comments(){
 </script>
 
 <script src="{{site.baseurl}}/assets/js/main.js"></script>
+
+{% if page.toc == "sticky" %}
+  <script>
+      var spy = new Gumshoe("ul#toc__menu.toc__menu a", {
+                              navClass:"active",
+                              contentClass:"active",
+                              nested:0,
+                              nestedClass:"active",
+                              offset:20,
+                              reflow:1,
+                              events:1});
+  </script>
+{% endif %}
