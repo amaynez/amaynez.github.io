@@ -49,7 +49,7 @@ category_archive:
 
 
 sass:
-  style: compress
+  style: compressed
 
 plugins:
   - jekyll-paginate
