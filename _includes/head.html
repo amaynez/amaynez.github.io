@@ -7,7 +7,7 @@
 
 	<meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
 	<meta property="og:type" content="article"/>
-	<meta property="og:title" content="{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}"/>
+	<meta property="og:title" content="{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}"/>
 	<meta property="og:description" content="{{% page.description %}}"/>
 	<meta property="og:image" content="{{ '/assets/img/' | prepend: site.url | append : post.img }}"/>
 
