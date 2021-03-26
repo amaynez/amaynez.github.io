@@ -1578,14 +1578,14 @@ pre code {
 }
 
 .post-card:hover .post-card-body{
-  background-color: hsl(0 0% 0% / 80%);
+  background-color: hsl(0 0% 0% / 75%);
 }
 
 .post-card-body {
   position: absolute;
   left: 5%;
   bottom: 5%;
-  background-color: hsl(0 0% 0% / 40%);
+  background-color: hsl(0 0% 0% / 60%);
   padding-left: 5px;
   width: 95%
 }
@@ -1757,7 +1757,7 @@ pre code {
   background: rgba(0, 0, 0, 0);
 }
 .recent-item:hover .recent-item-title{
-  background-color: hsl(0 0% 0% / 80%);
+  background-color: hsl(0 0% 0% / 75%);
 }
 .recent-item-img {
   position: relative;
@@ -1798,7 +1798,7 @@ pre code {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
-  background-color: hsl(0 0% 0% / 40%);
+  background-color: hsl(0 0% 0% / 60%);
   padding-left: 5px;
 }
 
