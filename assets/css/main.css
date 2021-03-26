@@ -93,11 +93,9 @@
     width: 80px;
 }
 .tags {
-    list-style-type: none;
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
-    text-align: center;
 }
 a.tag.post {
     font-size: .5em;
@@ -107,9 +105,17 @@ a.tag.post {
     white-space: pre-wrap;
 }
 .share-options {
-text-align:center
+    text-align: center;
+    width: 20px;
+    margin: auto;
+    cursor: pointer;
 }
-
+.share-icons a {
+    color: #999999;
+}
+.share-icons a:hover {
+    color: #696764
+}
 
 /* = = = = = = = = = = Right Sidebar TOC Styles = = = = = = = = = = */
 
