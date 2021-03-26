@@ -81,14 +81,10 @@
     outline: 0;
     display: block;
     padding: 30px;
-    transition: all 0.5s;
     transition-timing-function: cubic-bezier(0.2,1,0.3,1);
     text-decoration: none;
     cursor: pointer;
     transition: all 0.5s;
-    transition-timing-function: cubic-bezier(0.2,1,0.3,1);
-    text-decoration: none;
-    cursor: pointer;
 }
 
 /* = = = = = = = = = = Right Sidebar TOC Styles = = = = = = = = = = */
@@ -309,17 +305,17 @@ div.tag-cloud{
 /* = = = = = = = = = = Archive Page Styles = = = = = = = = = = */
 
 
-table.archive-table {
+.archive-table {
   border-spacing:0;
   border-collapse: collapse;
   border: 0
 }
 
-tr.archive-row {
+.archive-row {
     height: 3em;
 }
 
-td.archive-date {
+.archive-date {
     font-style: italic;
     color: #696764;
     font-size: 13px;
@@ -331,7 +327,7 @@ td.archive-date {
     display: block
 }
 
-td.archive-post {
+.archive-post {
     text-align: left;
     padding-left: 0.65em;
     background: transparent;
@@ -1531,14 +1527,14 @@ pre code {
 }
 
 .post-card:hover .post-card-body{
-  background-color: hsl(0 0% 0% / 75%);
+  background-color: #000000bf;
 }
 
 .post-card-body {
   position: absolute;
   left: 5%;
   bottom: 5%;
-  background-color: hsl(0 0% 0% / 60%);
+  background-color: #00000099;
   padding-left: 5px;
   width: 95%
 }
@@ -1711,7 +1707,7 @@ pre code {
   background: rgba(0, 0, 0, 0);
 }
 .recent-item:hover .recent-item-title{
-  background-color: hsl(0 0% 0% / 75%);
+  background-color: #000000bf
 }
 .recent-item-img {
   position: relative;
@@ -1735,7 +1731,7 @@ pre code {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 1);
+  background: #000000
   mix-blend-mode: color;
   -webkit-transition: all .5s;
   transition: all .5s;
@@ -1752,7 +1748,7 @@ pre code {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
-  background-color: hsl(0 0% 0% / 60%);
+  background-color: #00000099
   padding-left: 5px;
 }
 
@@ -1985,20 +1981,20 @@ pre code {
 
 /* = = = = = = = = = = Tags Styles = = = = = = = = = = */
 
-table.tags-table {
+.tags-table {
     border-spacing: 0 1em;
     border-collapse: separate;
     border: 0
 }
 
-td.tag-row {
+.tag-row {
     vertical-align: top;
     padding-left: .65em;
     background-color: transparent;
     padding-top: 0
 }
 
-td.tag-word {
+.tag-word {
     vertical-align: top;
     text-align: right;
     padding-right: 0.65em;
@@ -2011,7 +2007,7 @@ td.tag-word {
     padding-top: 0
 }
 
-td.tag-word a {
+.tag-word a {
     font-size: 15px;
     color: #3e3e40;
     text-transform: lowercase
