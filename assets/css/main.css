@@ -2063,7 +2063,7 @@ pre code {
     color: #3e3e40;
 }
 
-.blog-tags .tag-list span a {
+.tag-list a {
   display: inline-block;
   color: #87314e;
   text-decoration: none;
@@ -2071,12 +2071,12 @@ pre code {
   font-size: 12px;
 }
 
-.blog-tags .tag-list span a:hover {
+.tag-list a:hover {
   text-decoration: underline;
   opacity: .8;
 }
 
-.blog-tags .tag-list small {
+.tag-list small {
   color: #311e3e;
 }
 
