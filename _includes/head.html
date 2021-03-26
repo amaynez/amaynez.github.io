@@ -1,4 +1,4 @@
-{% assign words = document.content | strip_html | number_of_words %}
+{% assign words = page.content | strip_html | number_of_words %}
 <head>
 	<meta charset="utf-8">
 	<title>{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}</title>
