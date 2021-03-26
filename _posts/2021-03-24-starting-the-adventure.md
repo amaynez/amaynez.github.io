@@ -2,8 +2,8 @@
 layout: post
 read_time: true
 show_date: true
-title:  "Starting the adventure"
-date:   2021-03-24
+title: "Starting the adventure"
+date: 2021-03-24
 img: /posts/starting_adventure.jpg
 tags: [general blogging, thoughts, life]
 author: Armando Maynez
