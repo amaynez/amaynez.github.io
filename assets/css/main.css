@@ -2063,6 +2063,10 @@ pre code {
     color: #3e3e40;
 }
 
+.tag-list {
+    margin-bottom: 0.75em;
+}
+
 .tag-list a {
   display: inline-block;
   color: #87314e;
