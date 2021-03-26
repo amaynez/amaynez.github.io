@@ -1577,6 +1577,10 @@ pre code {
   background: rgba(0, 0, 0, 0);
 }
 
+.post-card:hover .post-card-body{
+  background-color: hsl(0 0% 0% / 80%);
+}
+
 .post-card-body {
   position: absolute;
   left: 5%;
@@ -1741,7 +1745,6 @@ pre code {
   padding-bottom: 30px;
   border-bottom: 1px solid #d9d9d9;
 }
-
 .recent-title {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
@@ -1752,6 +1755,9 @@ pre code {
 .recent-item{display:inline}
 .recent-item:hover .recent-item-img::after{
   background: rgba(0, 0, 0, 0);
+}
+.recent-item:hover .recent-item-title{
+  background-color: hsl(0 0% 0% / 80%);
 }
 .recent-item-img {
   position: relative;
