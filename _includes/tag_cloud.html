@@ -2,7 +2,7 @@
     <ul class="tags">
         {% if include.context == "post" %}
             {% for tag in page.tags %}
-                <li><a href="{{ site.url }}/tags#{{ tag | cgi_escape }}" class="tag">{{ tag }}</a></li>
+                <li><a href="{{ site.url }}/tags#{{ tag | cgi_escape }}" class="tag post">{{ tag }}</a></li>
             {% endfor %}
         {% else %}
             {% for item in (0..site.tags.size) %}{% unless forloop.last %}

@@ -7,13 +7,11 @@ permalink: /tags/
 <section class="blog-tags">
   <h1>Posts by tag</h1>
   {% include tag_cloud.html %}
-<!--cycles through tag list and creates subheader for each tag name...-->
   <table class="tags-table" cellspacing="0">
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
     {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
   <tr>
     <td class="tag-word"><a id="{{ this_word | cgi_escape }}">{{ this_word }}</a></td>
-<!--  lists all posts corresponding to specific tag...-->
     <td class="tag-row">
     {% for post in site.tags[this_word] %}{% if post.title != null %}
       <div class="post-list">
