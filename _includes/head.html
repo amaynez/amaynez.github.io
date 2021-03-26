@@ -1,3 +1,4 @@
+{% assign words = document.content | strip_html | number_of_words %}
 <head>
 	<meta charset="utf-8">
 	<title>{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}</title>
@@ -14,7 +15,10 @@
         "@id": "{{ site.url }}"
       },
       "headline": "{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}",
-      "image": [ "{{ site.url }}/assets/img{{ page.img }}" ],
+      "abstract": "{{ page.description }}",
+		"keywords": "{{ page.tags }}",
+		"wordcount": "{{ words }}",
+		"image": [ "{{ site.url }}/assets/img{{ page.img }}" ],
       "datePublished": "{{ page.date }}",
       "dateModified": "{{ page.date }}",
       "author": {
