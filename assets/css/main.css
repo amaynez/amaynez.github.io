@@ -365,7 +365,8 @@ td.archive-date {
     padding-right: 0.65em;
     background: transparent;
     padding-top: 0;
-    line-height: 1.2
+    line-height: 1.2;
+    display: block
 }
 
 td.archive-post {
