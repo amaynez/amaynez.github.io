@@ -8,7 +8,7 @@
 	<meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
 	<meta property="og:type" content="article"/>
 	<meta property="og:title" content="{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}"/>
-	<meta property="og:description" content="{{% page.description %}}"/>
+	<meta property="og:description" content="{{ page.description }}"/>
 	<meta property="og:image" content="{{ '/assets/img/' | prepend: site.url | append: post.img }}"/>
 
 	<link rel="shortcut icon" href="{{ 'assets/img/favicon/favicon.png' | prepend: site.baseurl }}" type="image/png">
