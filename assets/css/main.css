@@ -192,7 +192,7 @@ ul.tags.post.side {
     padding:3px
 }
 
-.active, .tic-item:hover{
+.active, .toc-item:hover{
     background-color: #3e3e40
 }
 
