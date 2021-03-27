@@ -1,9 +1,7 @@
 {% capture tocWorkspace %}
     {% comment %}
-        Version 1.1.0
-          https://github.com/allejo/jekyll-toc
-
-        "...like all things liquid - where there's a will, and ~36 hours to spare, there's usually a/some way" ~jaybe
+        Version 1.1.1
+            forked and modified from version 1.1.0 at https://github.com/allejo/jekyll-toc
 
         Usage:
             {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=3 %}
@@ -42,6 +40,7 @@
 
     {% assign firstHeader = true %}
     {% assign currLevel = 0 %}
+    {% assign currStyleLevel = 1 %}
     {% assign lastLevel = 0 %}
 
     {% capture listModifier %}{% if orderedList %}ol{% else %}ul{% endif %}{% endcapture %}
@@ -79,12 +78,12 @@
         {% assign header = _workspace[0] | replace: _hAttrToStrip, '' %}
 
         {% if include.item_class and include.item_class != blank %}
-            {% capture listItemClass %} class="{{ include.item_class | replace: '%level%', forloop.index | split: '.' | join: ' ' }}"{% endcapture %}
+            {% capture listItemClass %} class="{{ include.item_class | replace: '%level%', currStyleLevel | split: '.' | join: ' ' }}"{% endcapture %}
         {% endif %}
 
         {% if include.submenu_class and include.submenu_class != blank %}
-            {% assign subMenuLevel = currLevel | minus: 1 %}
-            {% capture subMenuClass %} class="{{ include.submenu_class | replace: '%level%', forloop.index | split: '.' | join: ' ' }}"{% endcapture %}
+            {% assign subMenuLevel = currStyleLevel | minus: 1 %}
+            {% capture subMenuClass %} class="{{ include.submenu_class | replace: '%level%', subMenuLevel | split: '.' | join: ' ' }}"{% endcapture %}
         {% endif %}
 
         {% capture anchorBody %}{% if include.sanitize %}{{ header | strip_html }}{% else %}{{ header }}{% endif %}{% endcapture %}
@@ -105,9 +104,10 @@
 
         {% if currLevel > lastLevel %}
             {% capture jekyll_toc %}{{ jekyll_toc }}<{{ listModifier }}{{ subMenuClass }}>{% endcapture %}
+            {% assign currStyleLevel = currStyleLevel | plus: 1 %}
         {% elsif currLevel < lastLevel %}
             {% assign repeatCount = lastLevel | minus: currLevel %}
-
+            {% assign currStyleLevel = currStyleLevel | minus: 1 %}
             {% for i in (1..repeatCount) %}
                 {% capture jekyll_toc %}{{ jekyll_toc }}</li></{{ listModifier }}>{% endcapture %}
             {% endfor %}
