@@ -1,9 +1,9 @@
 <aside class="toc">
   <nav class="toc-nav">
-    <div class="toc-tittle">
-      <a class="toc-tittle" onclick="toggle_show('toc_content', 'toc_button', 'fa-angle-double-right', 'fa-angle-double-down')">
-        <p style="text-align:left; float:left;">on this post</p>
-        <p style="text-align:right;"><i class="fa fa-angle-double-right" id="toc_button" aria-hidden="true"></i></p>
+    <div class="toc-title">
+      <a class="toc-title" onclick="toggle_show('toc_content', 'toc_button', 'fa-angle-double-right', 'fa-angle-double-down')">
+        <div style="text-align:left; float:left;">on this post</div>
+        <div style="text-align:right;"><i class="fa fa-angle-double-right" id="toc_button" aria-hidden="true"></i></div>
       </a>
     </div>
     {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc_content" id="toc_content" skip_no_ids=true %}
