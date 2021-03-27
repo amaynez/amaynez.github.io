@@ -32,11 +32,39 @@ function toggle_show(id_to_show, id_icon, hidden_icon, shown_icon) {
   }
 }
 
-var coll = document.getElementsByClassName("toc-item");
+var coll = document.getElementsByClassName("toc-item-1");
 var i;
 
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.lastElementChild;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+
+var coll2 = document.getElementsByClassName("toc-item-2");
+
+for (i = 0; i < coll2.length; i++) {
+  coll2[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.lastElementChild;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+
+var coll3 = document.getElementsByClassName("toc-item-3");
+
+for (i = 0; i < coll2.length; i++) {
+  coll3[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.lastElementChild;
     if (content.style.maxHeight){
