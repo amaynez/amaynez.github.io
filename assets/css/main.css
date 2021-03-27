@@ -115,12 +115,13 @@ a.tag.post {
 }
 .share-icons {
     letter-spacing: 1.5em;
+    transition: all 0.5s
 }
 .share-icons.show{
     display:block
 }
 .share-icons a {
-    color: #999999;
+    color: #ccc
 }
 .share-icons a:hover {
     color: #696764
