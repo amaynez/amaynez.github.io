@@ -166,11 +166,8 @@ ul.tags.post.side {
     font-size: .9em;
     padding: 5px;
     display: block;
-    cursor: pointer
 }
-
 .toc-content{
-    display:none;
     list-style:none;
     font-size:.9em;
     margin-top: 3px;
@@ -178,22 +175,23 @@ ul.tags.post.side {
     padding-inline-start: 0px;
     transition: all 0.2s ease-out
 }
-
-.toc-content.show{display:block}
-
 .toc-sign{
   float:left;
   width:15px;
   text-align:center;
   font-weight:700;
   cursor: pointer;
-  background-color: hsl(340 47% 75% / 1);
-  color:#fff
+  background-color: #efefef;
+  color:#777
 }
 
 .toc-sign:hover{
     background-color: #87314e;
     color:#fff
+}
+
+.active div {
+  background-color: #e4e0e0;
 }
 
 .toc-content a {
@@ -216,7 +214,8 @@ ul.tags.post.side {
     font-weight:200;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out
+    transition: max-height 0.2s ease-out;
+    /* display: block; */
 }
 
 .toc-submenu-1 a{

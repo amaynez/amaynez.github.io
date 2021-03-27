@@ -16,21 +16,6 @@
 </script>
 
 <script>
-function toggle_show(id_to_show, id_icon, hidden_icon, shown_icon) {
-  document.getElementById(id_icon).classList.toggle(hidden_icon);
-  document.getElementById(id_icon).classList.toggle(shown_icon);
-    if (document.getElementById(id_to_show).classList.contains('show')) {
-        document.getElementById(id_to_show).style.maxHeight = 0;
-        document.getElementById(id_to_show).addEventListener('transitionend', function(e) {
-            document.getElementById(id_to_show).classList.remove('show');
-        }, {capture: false, once: true, passive: false});
-    } else {
-    document.getElementById(id_to_show).classList.add('show');
-    setTimeout(function () {
-      document.getElementById(id_to_show).style.maxHeight = document.getElementById(id_to_show).scrollHeight + "px";
-    }, 10);
-  }
-}
 
 var coll = document.getElementsByClassName("toc-item-1");
 var i;
