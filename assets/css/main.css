@@ -88,24 +88,6 @@
 }
 /* = = = = = = = = = = Sidebar Styles = = = = = = = = = = */
 
-@media (min-width: 64em){
-    .sidebar {
-        position: sticky;
-        top: 2em;
-        width: 80px
-    }
-    .share-options {
-        width: 20px;
-        margin: auto
-    }
-    .share-icons {
-        display:none
-    }
-    .share-button {
-        display:block
-    }
-}
-
 .sidebar{
     position:relative
 }
@@ -142,6 +124,24 @@ a.tag.post {
 }
 .share-icons a:hover {
     color: #696764
+}
+
+@media (min-width: 64em){
+    .sidebar {
+        position: sticky;
+        top: 2em;
+        width: 80px
+    }
+    .share-options {
+        width: 20px;
+        margin: auto
+    }
+    .share-icons {
+        display:none
+    }
+    .share-button {
+        display:block
+    }
 }
 
 /* = = = = = = = = = = Right Sidebar TOC Styles = = = = = = = = = = */
