@@ -36,15 +36,13 @@ function toggle_comments(){
     document.getElementById('disqus_thread').classList.toggle('show')
 }
 
-function share_mouse_over(){
-  console.log("share_mouse_enter");
+function share_mouse_enter(){
   document.getElementById('sidebar-icons').classList.add('show');
   setTimeout(function () {
       document.getElementById('sidebar-icons').style.opacity = 1;
   }, 10);
 }
-function share_mouse_out(){
-  console.log("share_mouse_out");
+function share_mouse_leave(){
   document.getElementById('sidebar-icons').style.opacity = 0;
   document.getElementById('sidebar-icons').addEventListener('transitionend', function(e) {
     document.getElementById('sidebar-icons').classList.remove('show');
