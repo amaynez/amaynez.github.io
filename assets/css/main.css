@@ -109,7 +109,9 @@
 .sidebar{
     position:relative
 }
-
+ul.tags.post {
+    justify-content: center;
+}
 .tags {
     margin: 0;
     padding: 0;
@@ -128,6 +130,9 @@ a.tag.post {
 }
 .share-button {
     display:none
+}
+.share-icons {
+    letter-spacing: 1.5em;
 }
 .share-icons.show{
     display:block
