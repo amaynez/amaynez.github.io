@@ -35,7 +35,7 @@ function toggle_comments(){
     document.getElementById('comment-curtain').classList.toggle('hide')
     document.getElementById('disqus_thread').classList.toggle('show')
 }
-$(".share-hover").on("mouseover", function() {
+document.getElementById('sidebar-hover').on("mouseover", function() {
   document.getElementById('sidebar-icons').classList.add('show');
   setTimeout(function () {
       document.getElementById('sidebar-icons').style.opacity = 1;
