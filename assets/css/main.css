@@ -111,10 +111,6 @@ a.tag.post.side {
     transition: all 0.5s
 }
 
-.share-icons.side.show{
-  display:block
-}
-
 .share-icons a {
     color: #ccc
 }
@@ -151,6 +147,9 @@ ul.tags.post.side {
     }
     .share-icons.side{
         display:none
+    }
+    .share-icons.side.show{
+        display:block
     }
 }
 
