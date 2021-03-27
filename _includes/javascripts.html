@@ -37,7 +37,10 @@ var i;
 
 for (i = 0; i < coll.length; i++) {
   if (coll[i].childElementCount > 1) {
-    coll[i].firstElementChild.textContent = '+ ' + coll[i].firstElementChild.textContent;
+    sign = document.createElement('div');
+    sign.className = "toc-sign";
+    sign.textContent = "+"
+    coll[i].insertBefore(sign, coll[i].childNodes[0]);
     coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var content = this.lastElementChild;
