@@ -49,7 +49,7 @@ $(".share-hover").on("mouseover", function() {
   }, 10);
 }).on("mouseleave", function() {
     $(".share-icons").css( "opacity", "0");
-    $(".share-icons").addEventListener('transitionend', function(e) {
+    document.getElementById('share-icons').addEventListener('transitionend', function(e) {
       $(".share-icons").removeClass("show");
     }, {capture: false, once: true, passive: false});
 });
