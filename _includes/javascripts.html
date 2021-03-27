@@ -43,15 +43,7 @@ function toggle_comments(){
     document.getElementById('disqus_thread').classList.toggle('show')
 }
 var timer;
-$(".share-button").on("mouseover", function() {
-  clearTimeout(timer);
-  show_icons();
-}).on("mouseleave", function() {
-  timer = setTimeout(
-    hide_icons
-  , 1000);
-});
-$(".share-icons").on("mouseover", function() {
+$(".share-hover").on("mouseover", function() {
   clearTimeout(timer);
   show_icons();
 }).on("mouseleave", function() {

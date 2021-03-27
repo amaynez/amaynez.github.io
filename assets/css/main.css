@@ -132,6 +132,9 @@ a.tag.post {
         top: 2em;
         width: 80px
     }
+    ul.tags.post {
+        display: block
+    }
     .share-options {
         width: 20px;
         margin: auto
