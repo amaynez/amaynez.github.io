@@ -1,13 +1,11 @@
 <aside class="toc">
   <nav class="toc-nav">
-    <a class="toc-tittle" onclick="toggle_show('toc_content', 'toc_button', 'fa-angle-double-right', 'fa-angle-double-down')">
-      <p style="text-align:left; float:left;">
-        on this post
-      </p>
-      <p style="text-align:right;">
-        <i class="fa fa-angle-double-right" id="toc_button" aria-hidden="true"></i>
-      </p>
-    </a>
+    <div class="toc-tittle">
+      <a class="toc-tittle" onclick="toggle_show('toc_content', 'toc_button', 'fa-angle-double-right', 'fa-angle-double-down')">
+        <p style="text-align:left; float:left;">on this post</p>
+        <p style="text-align:right;"><i class="fa fa-angle-double-right" id="toc_button" aria-hidden="true"></i></p>
+      </a>
+    </div>
     {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc_content" id="toc_content" skip_no_ids=true %}
   </nav>
- </aside>
+</aside>
