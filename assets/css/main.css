@@ -125,6 +125,11 @@ a.tag.post.side {
     margin-left: -125px;
     float: left;
 }
+
+.sidebar.inline{
+  border-bottom: 1px solid #efefef;
+}
+
 ul.tags.post.side {
     display: block;
 }
@@ -1586,7 +1591,7 @@ pre code {
 .recent-box {
   margin-top: 30px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid #efefef
 }
 .recent-title {
   font-family: 'Lato', sans-serif;
@@ -1749,7 +1754,7 @@ pre code {
           align-items: center;
   margin-top: 30px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid #efefef;
 }
 
 .author-box .author-img {
