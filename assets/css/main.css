@@ -87,11 +87,29 @@
     transition: all 0.5s;
 }
 /* = = = = = = = = = = Sidebar Styles = = = = = = = = = = */
-.sidebar {
-    position: sticky;
-    top: 2em;
-    width: 80px;
+
+@media (min-width: 64em){
+    .sidebar {
+        position: sticky;
+        top: 2em;
+        width: 80px
+    }
+    .share-options {
+        width: 20px;
+        margin: auto
+    }
+    .share-icons {
+        display:none
+    }
+    .share-button {
+        display:show
+    }
 }
+
+.sidebar{
+    position:relative
+}
+
 .tags {
     margin: 0;
     padding: 0;
@@ -106,16 +124,14 @@ a.tag.post {
 }
 .share-options {
     text-align: center;
-    width: 20px;
-    margin: auto;
     cursor: pointer;
 }
-.share-icons {
+.share-button {
     display:none
-    }
+}
 .share-icons.show{
     display:block
-    }
+}
 .share-icons a {
     color: #999999;
 }
