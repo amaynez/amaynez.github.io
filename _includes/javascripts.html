@@ -42,21 +42,17 @@ function toggle_comments(){
     document.getElementById('comment-curtain').classList.toggle('hide')
     document.getElementById('disqus_thread').classList.toggle('show')
 }
-var timer;
 $(".share-hover").on("mouseover", function() {
-  clearTimeout(timer);
-  show_icons();
-}).on("mouseleave", function() {
-  timer = setTimeout(
-    hide_icons
-  , 1000);
-});
-function show_icons() {
   $(".share-icons").addClass("show");
-}
-function hide_icons() {
-  $(".share-icons").removeClass("show");
-}
+  setTimeout(function () {
+      $(".share-icons").style.opacity = 1;
+  }, 10);
+}).on("mouseleave", function() {
+    $(".share-icons").style.opacity = 0;
+    $(".share-icons").addEventListener('transitionend', function(e) {
+      $(".share-icons").removeClass("show");
+    }, {capture: false, once: true, passive: false});
+});
 </script>
 
 <script src="{{site.baseurl}}/assets/js/main.js"></script>
