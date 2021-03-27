@@ -102,7 +102,7 @@ a.tag.post {
     text-align:center
 }
 a.tag.post.side {
-    font-size: .5em;
+    font-size: .65em;
 }
 .share-options {
     text-align: center;
@@ -126,7 +126,7 @@ a.tag.post.side {
     color: #696764
 }
 
-@media (min-width: 62em){
+@media (min-width: 64em){
     .sidebar.side {
         display:block
     }
@@ -134,11 +134,11 @@ a.tag.post.side {
       display:none
     }
     .sidebar.side {
-        position: sticky;
-        top: 2em;
-        width: 80px;
-        margin-left: -110px;
-        float: left;
+    position: sticky;
+    top: 2em;
+    width: 100px;
+    margin-left: -125px;
+    float: left;
     }
     ul.tags.post.side {
         display: block
