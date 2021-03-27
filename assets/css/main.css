@@ -168,6 +168,9 @@ ul.tags.post.side {
     list-style: none;
     font-size:.8em
 }
+.toc_content {
+    font-weight:600
+}
 .toc_content a {
     text-decoration:none;
     color:#777
@@ -177,7 +180,8 @@ ul.tags.post.side {
 }
 .toc_content ul {
     padding-inline-start: 10px;
-    font-size: 95%
+    font-size: 95%;
+    font-weight:500
 }
 .toc_content ul ul {
     padding-inline-start: 20px;
