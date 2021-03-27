@@ -195,6 +195,7 @@ ul.tags.post.side {
 .toc-item {
     background-color: #696764;
     color: #fff;
+    padding:3px
 }
 
 .toc-content.show{display:block}
