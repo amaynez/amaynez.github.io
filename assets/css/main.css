@@ -111,10 +111,10 @@ a.tag.post {
     cursor: pointer;
 }
 .share-icons {
-    display:hidden
+    display:none
     }
 .share-icons.show{
-    display:show
+    display:block
     }
 .share-icons a {
     color: #999999;
