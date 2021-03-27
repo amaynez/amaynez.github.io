@@ -110,6 +110,12 @@ a.tag.post {
     margin: auto;
     cursor: pointer;
 }
+.share-icons {
+    display:hidden
+    }
+.share-icons.show{
+    display:show
+    }
 .share-icons a {
     color: #999999;
 }
