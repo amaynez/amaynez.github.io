@@ -1,5 +1,5 @@
 <div class="share-options {{ include.class }}">
-    <div class="share-hover" id="{{ include.id }}-hover">
+    <div class="share-hover" onmouseover="share_hover()" onmouseout="share_mouse_out()">
         <span class="share-button {{ include.class }}"><i class="fa fa-share-alt"></i></span>
         <div class="share-icons {{ include.class }}" id="{{ include.id }}-icons">
             <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true" onClick="return popup('https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}')"></i></a>
