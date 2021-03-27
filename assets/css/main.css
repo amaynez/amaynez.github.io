@@ -178,11 +178,6 @@ ul.tags.post.side {
     transition: all 0.2s ease-out
 }
 
-.toc_item{
-    list-style: none;
-    font-size:.8em;
-}
-
 .toc-submenu{
     padding-inline-start: 0px;
     list-style:none;
@@ -194,18 +189,21 @@ ul.tags.post.side {
 
 .toc-item {
     background-color: #696764;
-    color: #fff;
     padding:3px
+}
+
+.active, .tic-item:hover{
+    background-color: #3e3e40
 }
 
 .toc-content.show{display:block}
 
 .toc-a {
     text-decoration:none;
-    color:#777
+    color:#fff
 }
 .toc-a:hover {
-    color:#87314e
+    color:#999999
 }
 /* = = = = = = = = = = Tag Styles = = = = = = = = = = */
 
