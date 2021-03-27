@@ -35,20 +35,18 @@ function toggle_comments(){
     document.getElementById('comment-curtain').classList.toggle('hide')
     document.getElementById('disqus_thread').classList.toggle('show')
 }
-
-function share_mouse_enter(){
+$(".share-hover").on("mouseover", function() {
   document.getElementById('sidebar-icons').classList.add('show');
   setTimeout(function () {
       document.getElementById('sidebar-icons').style.opacity = 1;
   }, 10);
-}
-function share_mouse_leave(){
+}).on("mouseleave", function() {
   document.getElementById('sidebar-icons').style.opacity = 0;
   document.getElementById('sidebar-icons').addEventListener('transitionend', function(e) {
     document.getElementById('sidebar-icons').classList.remove('show');
   }, {capture: false, once: true, passive: false});
   document.getElementById('sidebar-icons').style.opacity = 1;
-}
+});
 </script>
 
 <script src="{{site.baseurl}}/assets/js/main.js"></script>
