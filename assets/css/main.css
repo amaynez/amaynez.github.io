@@ -232,12 +232,12 @@ ul.tags.post.side {
 
 .toc-content.show{display:block}
 
-.toc-a {
+.toc-content a {
     text-decoration:none;
     padding:5px;
     color:#fff
 }
-.toc-a:hover {
+.toc-content a:hover {
     color:#999999
 }
 /* = = = = = = = = = = Tag Styles = = = = = = = = = = */
