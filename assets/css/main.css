@@ -200,6 +200,7 @@ ul.tags.post.side {
 
 .toc-a {
     text-decoration:none;
+    padding:5px;
     color:#fff
 }
 .toc-a:hover {
