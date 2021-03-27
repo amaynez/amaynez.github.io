@@ -378,7 +378,8 @@ span.github-btn {
     display: flex;
     justify-content: center;
     margin: auto;
-    margin-bottom: 1.75em;
+    margin-bottom: 1em;
+    margin-top: 1em
 }
 
 .github-btn {
@@ -412,7 +413,6 @@ span.github-btn {
 
 .gh-btn {
     will-change: transform;
-    background-color:#311e3e;
     background-image:linear-gradient(to bottom, #fcfcfc 0, #eee 100%);
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#eeeeee', GradientType=0);
     background-repeat:no-repeat;

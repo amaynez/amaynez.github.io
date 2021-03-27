@@ -5,7 +5,6 @@ layout: default
   {% include header.html %}
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     {% include schema-meta.html %}
-    {% include sidebar.html context="post" %}
     <div class="page-image">
       <div class="cover-image" style="background: url({{"/assets/img/" | prepend: site.baseurl | append : page.img}}) center no-repeat; background-size: cover;"></div>
     </div>
@@ -19,6 +18,7 @@ layout: default
         {% include github-button.html %}
         {{page.content | markdownify}}
         {% include github-button.html %}
+        {% include sidebar.html context="post" %}
         {% include author-box.html %}
         {% include recent-post.html %}
         {% include newsletter.html %}
