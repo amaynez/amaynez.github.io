@@ -16,13 +16,6 @@
 </script>
 
 <script>
-function popup(url){
-    w=window.open(url, 'PopUp','height=300,width=650,screenX=400,screenY=350');
-    if (window.focus) {
-        newwindow.focus()
-        }
-    return false;
-    }
 function toggle_show(id_to_show, id_icon, hidden_icon, shown_icon) {
   document.getElementById(id_icon).classList.toggle(hidden_icon);
   document.getElementById(id_icon).classList.toggle(shown_icon);
