@@ -169,13 +169,13 @@ ul.tags.post.side {
 }
 
 .toc-content{
-  display:none;
-  list-style:none;
-  font-weight:600;
-  font-size:.9em;
-  margin-top: 3px;
-  padding: 0 10px 0 10px;
-  transition: all 0.5s
+    display:none;
+    list-style:none;
+    font-weight:600;
+    font-size:.9em;
+    margin-top: 3px;
+    padding: 0 10px 0 10px;
+    transition: all 0.2s ease-out
 }
 
 .toc_item{
@@ -184,9 +184,12 @@ ul.tags.post.side {
 }
 
 .toc-submenu{
-      padding-inline-start: 0px;
-      list-style:none;
-      font-weight:200
+    padding-inline-start: 0px;
+    list-style:none;
+    font-weight:200;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out
 }
 
 .toc-item {
