@@ -179,12 +179,40 @@ ul.tags.post.side {
     transition: all 0.2s ease-out
 }
 
-.toc-submenu {
+.toc-submenu-1 {
     padding-inline-start: 0px;
     list-style:none;
     font-weight:200;
     max-height: 0;
     overflow: hidden;
+    transition: max-height 0.2s ease-out
+}
+
+.toc-submenu-2 {
+    padding-inline-start: 0px;
+    list-style:none;
+    font-weight:200;
+    transition: max-height 0.2s ease-out
+}
+
+.toc-submenu-3 {
+    padding-inline-start: 0px;
+    list-style:none;
+    font-weight:200;
+    transition: max-height 0.2s ease-out
+}
+
+.toc-submenu-4 {
+    padding-inline-start: 0px;
+    list-style:none;
+    font-weight:200;
+    transition: max-height 0.2s ease-out
+}
+
+.toc-submenu-5 {
+    padding-inline-start: 0px;
+    list-style:none;
+    font-weight:200;
     transition: max-height 0.2s ease-out
 }
 
