@@ -107,10 +107,14 @@ a.tag.post.side {
     display:none
 }
 .share-icons {
-    display: block;
     letter-spacing: 1.5em;
     transition: all 0.5s
 }
+
+.share-icons.side.show{
+  display:block
+}
+
 .share-icons a {
     color: #ccc
 }
@@ -132,9 +136,7 @@ ul.tags.post.side {
     width: 20px;
     margin: auto
 }
-.share-icons.show{
-  display:block
-}
+
 
 @media (min-width: 64em){
     .sidebar.side {
@@ -146,6 +148,9 @@ ul.tags.post.side {
     .share-button.side {
         display:block;
         color:#311e3e;
+    }
+    .share-icons.side{
+        display:none
     }
 }
 
