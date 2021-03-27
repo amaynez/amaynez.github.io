@@ -178,7 +178,7 @@ ul.tags.post.side {
     transition: all 0.2s ease-out
 }
 
-.toc-submenu{
+.toc-submenu-1{
     padding-inline-start: 0px;
     list-style:none;
     font-weight:200;
@@ -187,12 +187,17 @@ ul.tags.post.side {
     transition: max-height 0.2s ease-out
 }
 
-.toc-item {
+.toc-item-1 {
     background-color: #696764;
     padding:3px
 }
 
-.active, .toc-item:hover{
+.toc-item-2 {
+    background-color: #999999;
+    padding:3px
+}
+
+.active, .toc-item-1:hover{
     background-color: #3e3e40
 }
 
