@@ -107,7 +107,7 @@
             {% assign currStyleLevel = currStyleLevel | plus: 1 %}
         {% elsif currLevel < lastLevel %}
             {% assign repeatCount = lastLevel | minus: currLevel %}
-            {% assign currStyleLevel = currStyleLevel | minus: 1 %}
+            {% assign currStyleLevel = currStyleLevel | minus: repeatCount %}
             {% for i in (1..repeatCount) %}
                 {% capture jekyll_toc %}{{ jekyll_toc }}</li></{{ listModifier }}>{% endcapture %}
             {% endfor %}
