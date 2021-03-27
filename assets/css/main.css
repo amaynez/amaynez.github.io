@@ -195,19 +195,15 @@ ul.tags.post.side {
     font-weight:500
 }
 .toc_content ul ul {
-    padding-inline-start: 20px;
     font-size: 90%
 }
 .toc_content ul ul ul {
-    padding-inline-start: 30px;
     font-size: 85%
 }
 .toc_content ul ul ul ul ul {
-    padding-inline-start: 40px;
     font-size: 80%
 }
 .toc_content ul ul ul ul ul ul {
-    padding-inline-start: 50px;
     font-size: 75%
 }
 /* = = = = = = = = = = Tag Styles = = = = = = = = = = */
