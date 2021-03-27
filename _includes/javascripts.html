@@ -51,6 +51,14 @@ $(".share-button").on("mouseover", function() {
     hide_icons
   , 1000);
 });
+$(".share-icons").on("mouseover", function() {
+  clearTimeout(timer);
+  show_icons();
+}).on("mouseleave", function() {
+  timer = setTimeout(
+    hide_icons
+  , 1000);
+});
 function show_icons() {
   $(".share-icons").addClass("show");
 }
