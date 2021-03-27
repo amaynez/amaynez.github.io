@@ -31,6 +31,22 @@ function toggle_show(id_to_show, id_icon, hidden_icon, shown_icon) {
     }, 10);
   }
 }
+
+var coll = document.getElementsByClassName("toc-item");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.lastElementChild;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+
 function toggle_comments(){
     document.getElementById('comment-curtain').classList.toggle('hide')
     document.getElementById('disqus_thread').classList.toggle('show')
