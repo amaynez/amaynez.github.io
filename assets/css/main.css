@@ -175,33 +175,26 @@ ul.tags.post.side {
 .toc_content a:hover {
     color:#87314e
 }
-
 .toc_content ul {
     padding-inline-start: 10px;
     font-size: 95%
 }
-
 .toc_content ul ul {
     padding-inline-start: 20px;
     font-size: 90%
 }
-
 .toc_content ul ul ul {
     padding-inline-start: 30px;
     font-size: 85%
 }
-
 .toc_content ul ul ul ul ul {
     padding-inline-start: 40px;
     font-size: 80%
 }
-
 .toc_content ul ul ul ul ul ul {
     padding-inline-start: 50px;
     font-size: 75%
 }
-
-
 /* = = = = = = = = = = Tag Styles = = = = = = = = = = */
 
 .center-tags .tag-cloud ul.tags {
