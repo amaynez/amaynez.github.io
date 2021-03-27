@@ -125,6 +125,9 @@ a.tag.post.side {
 }
 
 @media (min-width: 60em){
+    .sidebar.inline{
+      display:none
+    }
     .sidebar.side {
         position: sticky;
         top: 2em;
