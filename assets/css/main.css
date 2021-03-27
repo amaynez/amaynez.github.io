@@ -188,6 +188,10 @@ ul.tags.post.side {
     transition: max-height 0.2s ease-out
 }
 
+.toc-submenu-1 a{
+    color: #ccc
+    }
+
 .toc-submenu-2 {
     padding-inline-start: 0px;
     list-style:none;

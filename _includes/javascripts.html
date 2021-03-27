@@ -37,13 +37,17 @@ var i;
 
 for (i = 0; i < coll.length; i++) {
   if (coll[i].childElementCount > 1) {
+    coll[i].firstElementChild.textContent = '+ ' + coll[i].firstElementChild.textContent;
     coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
+        var title = this.firstElementChild.textContent;
         var content = this.lastElementChild;
         if (content.style.maxHeight){
           content.style.maxHeight = null;
+          title = title.replace('- ','+ ');
         } else {
           content.style.maxHeight = content.scrollHeight + "px";
+          title = title.replace('+ ','- ');
         }
     });
   }
