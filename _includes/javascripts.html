@@ -43,15 +43,16 @@ function toggle_comments(){
     document.getElementById('disqus_thread').classList.toggle('show')
 }
 $(".share-hover").on("mouseover", function() {
-  $(".share-icons").addClass("show");
+  document.getElementById('sidebar-icons').classList.add('show');
   setTimeout(function () {
-      $(".share-icons").css( "opacity", "1");
+      document.getElementById('sidebar-icons').style.opacity = 1;
   }, 10);
 }).on("mouseleave", function() {
-    $(".share-icons").css( "opacity", "0");
-    document.getElementById('share-icons').addEventListener('transitionend', function(e) {
-      $(".share-icons").removeClass("show");
+    document.getElementById('sidebar-icons').style.opacity = 0;
+    document.getElementById('sidebar-icons').addEventListener('transitionend', function(e) {
+      document.getElementById('sidebar-icons').classList.remove('show');
     }, {capture: false, once: true, passive: false});
+    document.getElementById('sidebar-icons').style.opacity = 1;
 });
 </script>
 

@@ -88,24 +88,20 @@
 }
 /* = = = = = = = = = = Sidebar Styles = = = = = = = = = = */
 
-.sidebar{
-    position:relative
-}
 ul.tags.post {
     justify-content: center;
 }
-.tags {
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
-}
 a.tag.post {
-    font-size: .5em;
     margin: 5px;
     padding: 3px;
     line-height: 1;
     white-space: pre-wrap;
+    text-align:center
 }
+a.tag.post.side {
+    font-size: .5em;
+}
+
 .share-options {
     text-align: center;
     cursor: pointer;
@@ -114,6 +110,7 @@ a.tag.post {
     display:none
 }
 .share-icons {
+    display: block;
     letter-spacing: 1.5em;
     transition: all 0.5s
 }
@@ -127,23 +124,25 @@ a.tag.post {
     color: #696764
 }
 
-@media (min-width: 64em){
-    .sidebar {
+@media (min-width: 60em){
+    .sidebar.side {
         position: sticky;
         top: 2em;
-        width: 80px
+        width: 80px;
+        margin-left: -100px;
+        float: left;
     }
-    ul.tags.post {
+    ul.tags.post.side {
         display: block
     }
-    .share-options {
+    .share-options.side {
         width: 20px;
         margin: auto
     }
-    .share-icons {
+    .share-icons.side {
         display:none
     }
-    .share-button {
+    .share-button.side {
         display:block
     }
 }
