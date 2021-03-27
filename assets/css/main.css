@@ -91,13 +91,13 @@ ul.tags.post {
     justify-content: center;
 }
 a.tag.post {
-    padding: 3px 0px 3px 0px;
     line-height: 1;
     white-space: pre-wrap;
     text-align:center;
 }
 a.tag.post.side {
     font-size: .65em;
+    padding: 3px 0px 3px 0px;
 }
 .share-options {
     text-align: center;
