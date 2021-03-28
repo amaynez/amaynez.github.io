@@ -26,6 +26,7 @@ mailchimp: "https://github.us1.list-manage.com/subscribe/post?u=8ece198b3eb260e6
 
 # Disqus
 discus_identifier: amaynez-github-io # Add your discus identifier
+comments_curtain: yes # configures whether to show directly the disqus interface or a nicer looking curtain to click
 
 # Tracker
 analytics: G-R8SZS2YBZK
@@ -47,7 +48,6 @@ category_archive:
   type: liquid
   path: /categories/
 
-
 sass:
   style: compressed
 
@@ -58,17 +58,3 @@ plugins:
 
 include: [_pages]
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock", "package-lock.json", "assets/css/sass/"]
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true

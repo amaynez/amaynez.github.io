@@ -40,6 +40,10 @@ for (i = 0; i < coll.length; i++) {
   }
 }
 
+if (document.getElementById('comment-curtain') == null){
+  document.getElementById('disqus_thread').classList.toggle('show')
+}
+
 function toggle_comments(){
     document.getElementById('comment-curtain').classList.toggle('hide')
     document.getElementById('disqus_thread').classList.toggle('show')
