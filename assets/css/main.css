@@ -7,7 +7,7 @@
 --grey1: #546c78;
 --grey2: #879dab;
 --grey3: #c2d0d6;
---grey4: #e7ecee;
+--grey4: #D5DEE2;
 --grey5: #EFF2F3;
 }
 
@@ -196,7 +196,7 @@ ul.tags.post.side {
 }
 
 .toc-item-1 {
-    background-color: var(--grey4);
+    background-color: var(--grey5);
     padding:3px
 }
 
@@ -210,7 +210,7 @@ toc-item-1.active div {
   text-align:center;
   font-weight:700;
   cursor: pointer;
-  background-color: var(--grey4);
+  background-color: var(--grey5);
   color:var(--grey1)
 }
 
@@ -234,7 +234,7 @@ toc-item-1.active div {
     }
 
 .toc-item-2 {
-    background-color: var(--grey3);
+    background-color: var(--grey4);
     padding:3px
 }
 
