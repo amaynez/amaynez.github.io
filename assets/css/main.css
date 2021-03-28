@@ -144,6 +144,11 @@ svg.side {
 .share-icons a:hover {
     color: var(--grey1);
 }
+.twitter:hover{color:#1DA1F2}
+.facebook:hover{color:#4267B2}
+.reddit:hover{color:#ff4500}
+.linkedin:hover{color:#0072b1}
+.mail:hover{color:#fcba03}
 .sidebar.inline{
   border-bottom: 1px solid var(--grey4);
 }
