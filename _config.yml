@@ -40,6 +40,8 @@ words_per_minute: 200
 # Build settings
 markdown: kramdown
 mathjax: true
+highlighter: rouge
+highlight_theme: default
 
 # Outputting
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
