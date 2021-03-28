@@ -13,6 +13,7 @@ toc: sticky # use yes for inline TOC or sticky for sticky TOC, leave empty or er
 ---
 <center><img style="float: left;margin-right: 1em;" src='/assets/img/posts/Game_Screen.png' width="310" height="300"></center>
 
+## Background
 After many years of a corporate career (17) diverging from computer science, I have now decided to learn Machine Learning and in the process return to coding (something I have always loved!).
 
 To fully grasp the essence of ML I decided to start by [coding a ML library myself](https://amaynez.github.io/ML-Library-from-scratch/), so I can fully understand the inner workings, linear algebra and calculus involved in Stochastic Gradient Descent. And on top learn Python (I used to code in C++ 20 years ago).
@@ -33,7 +34,7 @@ Now, for the fun part, training the network, I followed Deep Mind's own DQN reco
 <ul><li>The network will be an approximation for the Q value function or Bellman equation, meaning that the network will be trained to predict the "value" of each move available in a given game state.</li><li>A replay experience memory was implemented. This meant that the neural network will not be trained after each move. Each move will be recorded in a special "memory" alongside with the state of the board and the reward it received for taking such an action (move).</li><li>After the memory is sizable enough, batches of random experiences sampled from the replay memory are used for every training round</li><li>A secondary neural network (identical to the main one) is used to calculate part of the Q value function (Bellman equation), in particular the future Q values. And then it is updated with the main network's weights every <em>n</em> games. This is done so that we are not chasing a moving target.</li></ul>
 
 
-## Neural Network Model
+## Designing the neural network
 
 <center><img src='/assets/img/posts/Neural_Network_Topology.png' width="540"></center><br>
 
@@ -41,8 +42,8 @@ The Neural Network chosen takes 9 inputs (the current state of the game) and out
 
 I started out with two hidden layers of 36 neurons each, all fully connected and activated via ReLu. The output layer was initially activated using sigmoid to ensure that we get a nice value between 0 and 1 that represents the QValue of a given state action pair.
 
-## Training the model
-### Model 1
+## The many models...
+### Model 1 - the first try
 
 At first the model was trained by playing vs. a "perfect" AI, meaning a [hard coded algorithm](https://github.com/amaynez/TicTacToe/blob/b429e5637fe5f61e997f04c01422ad0342565640/entities/Game.py#L43) that never looses and that will win if it is given the chance. After several thousand training rounds, I noticed that the Neural Network was not learning much; so I switched to training vs. a completely random player, so that it will also learn how to win. After training vs. the random player, the Neural Network seems to have made progress and is steadily diminishing the loss function over time.
 
@@ -110,7 +111,7 @@ c.LR_STEP_SIZE = the number of epochs each cycle lasts
 
 After **24 hours!**, my computer was able to run 1,000,000 episodes (games played), which represented 7.5 million training epochs of batches of 64 plays (480 million plays learned), the learning rate did decreased (a bit), but is clearly still in a plateau; interestingly, the lower boundary of the loss function plot seems to continue to decrease as the upper bound and the moving average remains constant. This led me to believe that I might have hit a local minimum.
 <a name='Model3'></a>
-### Model 3 - New Network Topology
+### Model 3 - new network topology
 
 After all the failures I figured I had to rethink the topology of the network and play around with combinations of different networks and learning rates.
 
@@ -148,7 +149,7 @@ It is quite interesting to learn how the many parameters (hyper-parameters as mo
 
 And so far the most effective change has been the network topology, but being so close but not quite there yet to my goal of 90% win rate vs. a random player, I will still try to optimize further.
 <a name='Model4'></a>
-### Model 4 - Implementing momentum
+### Model 4 - implementing momentum
 
 I [reached out to the reddit community](https://www.reddit.com/r/MachineLearning/comments/lzvrwp/p_help_with_a_reinforcement_learning_project/) and a kind soul pointed out that maybe what I need is to apply momentum to the optimization algorithm. So I did some research and ended up deciding to implement various optimization methods to experiment with:
 
@@ -162,7 +163,7 @@ I [reached out to the reddit community](https://www.reddit.com/r/MachineLearning
 
 So far, I have not been able to get better results with Model 4, I have tried all the momentum optimization algorithms with little to no success.
 <a name='Model5'></a>
-### Model 5 - Implementing One Hot encoding and changing topology (again)
+### Model 5 - implementing one-hot encoding and changing topology (again)
 I came across an [interesting project in Github](https://github.com/AxiomaticUncertainty/Deep-Q-Learning-for-Tic-Tac-Toe/blob/master/tic_tac_toe.py) that deals exactly with Deep Q Learning, and I noticed that he used "one-hot" encoding for the input as opposed to directly entering the values of the player into the 9 input slots. So I decided to give it a try and at the same time change my topology to match his:
 
 <center><img src='/assets/img/posts/Neural_Network_Topology3.png' width="540"></center>
@@ -217,7 +218,7 @@ history = self.PolicyNetwork.fit(np.asarray(states_to_train),
 
 With Tensorflow implemented, the first thing I noticed, was that I had an error in the calculation of the loss, although this only affected reporting and didn't change a thing on the training of the network, so the results kept being the same, **the loss function was still stagnating! My code was not the issue.**
 <a name='Model7'></a>
-### Model 7 - New training schedule
+### Model 7 - changing the training schedule
 Next I tried to change the way the network was training as per [u/elBarto015](https://www.reddit.com/user/elBarto015) [advised me on reddit](https://www.reddit.com/r/reinforcementlearning/comments/lzzjar/i_created_an_ai_for_super_hexagon_based_on/gqc8ka6?utm_source=share&utm_medium=web2x&context=3).
 
 The way I was training initially was:
