@@ -295,7 +295,7 @@ div.tag-cloud{
     text-decoration: none;
     color: var(--grey1) !important;
     border: 2px solid transparent;
-    background: var(--grey4);
+    background: var(--grey5);
     border-radius: 15px;
     padding: 3px 15px;
     font-weight: normal;
