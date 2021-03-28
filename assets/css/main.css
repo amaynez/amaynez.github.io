@@ -258,9 +258,13 @@ ul.tags.post.side {
     border-top-style: solid;
     border-top-width: 1px;
 }
-
-.active{background-color:var(--grey3)}
-
+.active{
+    background-color:var(--grey3)
+}
+.underline{
+  text-decoration: underline;
+  text-decoration-color: var(--grey4)
+}
 @media (min-width: 1200px) {
     .toc {
         position: sticky;
