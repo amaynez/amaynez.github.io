@@ -252,13 +252,20 @@ ul.tags.post.side {
     list-style:none;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 1200px) {
     .toc {
         position: sticky;
         top: 2em;
-        width: 100px;
-        margin-right: -125px;
+        width: 180px;
+        margin-right: -210px;
         float: right;
+    }
+    .toc-content{
+        max-height: calc(100vh - 7em);
+        overflow: scroll;
+        border-bottom-color: var(--blue);
+        border-bottom-style: solid;
+        background-color: var(--grey5);
     }
 }
 
