@@ -141,9 +141,6 @@ svg.side {
     margin: 0 2% 10px 2%;
     font-size: 1.3em
 }
-.share-icons a:hover {
-    color: var(--grey1);
-}
 .twitter:hover{color:#1DA1F2}
 .facebook:hover{color:#4267B2}
 .reddit:hover{color:#ff4500}
