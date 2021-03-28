@@ -220,7 +220,7 @@ ul.tags.post.side {
   font-weight:700;
   cursor: pointer;
   background-color: var(--grey5);
-  color:var(--grey1)
+  color:var(--grey2)
 }
 
 .toc-sign:hover{
