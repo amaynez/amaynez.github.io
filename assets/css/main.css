@@ -184,24 +184,6 @@ ul.tags.post.side {
     padding-inline-start: 0px;
     transition: all 0.2s ease-out
 }
-.toc-sign{
-  float:left;
-  width:15px;
-  text-align:center;
-  font-weight:700;
-  cursor: pointer;
-  background-color: var(--grey4);
-  color:var(--grey1)
-}
-
-.toc-sign:hover{
-    background-color: var(--blue);
-    color:white
-}
-
-.active div {
-  background-color: var(--grey4);
-}
 
 .toc-content a {
     text-decoration:none;
@@ -215,6 +197,25 @@ ul.tags.post.side {
 .toc-item-1 {
     background-color: var(--grey4);
     padding:3px
+}
+
+toc-item-1.active div {
+  background-color: var(--grey4);
+}
+
+.toc-sign{
+  float:left;
+  width:15px;
+  text-align:center;
+  font-weight:700;
+  cursor: pointer;
+  background-color: var(--grey4);
+  color:var(--grey1)
+}
+
+.toc-sign:hover{
+    background-color: var(--blue);
+    color:white
 }
 
 .toc-submenu-1 {
@@ -232,7 +233,7 @@ ul.tags.post.side {
     }
 
 .toc-item-2 {
-    background-color: var(--grey4);
+    background-color: var(--grey3);
     padding:3px
 }
 
