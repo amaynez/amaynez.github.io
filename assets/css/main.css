@@ -100,6 +100,9 @@
     transition: all 0.5s;
 }
 /* = = = = = = = = = = Sidebar Styles = = = = = = = = = = */
+.sidebar.side .tag-cloud{
+  display:none;
+}
 ul.tags.post {
     justify-content: center;
 }
@@ -121,25 +124,12 @@ a.tag.post.side {
     margin-right: 3px;
     color:var(--purple);
 }
+svg.side {
+    vertical-align: middle;
+}
 .share-button.hover {
     border-bottom-style: solid;
     border-bottom-color: var(--grey3);
-}
-.share-button::before{
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 51%;
-    right: 51%;
-    bottom: 0;
-    background: #2098D1;
-    height: 4px;
-    -webkit-transition-property: left, right;
-    transition-property: left, right;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-timing-function: ease-out;
-    transition-timing-function: ease-out;
 }
 .share-icons {
     transition: all 0.5s;
@@ -154,17 +144,9 @@ a.tag.post.side {
 .share-icons a:hover {
     color: var(--grey1);
 }
-.sidebar.side {
-
-}
-.sidebar.side .tag-cloud{
-  display:none;
-}
-
 .sidebar.inline{
   border-bottom: 1px solid var(--grey4);
 }
-
 .separator {
     display: none;
     background-color:var(--grey4);
@@ -172,7 +154,6 @@ a.tag.post.side {
     height:1px;
     margin-top: 2em
 }
-
 @media (min-width: 64em){
     .sidebar.side {
       display:block;
@@ -182,29 +163,34 @@ a.tag.post.side {
       margin-left: -125px;
       float: left;
     }
-    .share-options.side {
-    width: 20px;
-    margin: auto
-    }
-    .sidebar.inline{
-      display:none
-    }
     .sidebar.side .tag-cloud{
       display:block;
     }
     ul.tags.post.side {
-    display: block;
+        display: block;
     }
-    .separator{
-    display: block
+    .share-options.side {
+        width: 20px;
+        margin: auto
     }
     .share-icons.side{
-        display:none
+        display:none;
     }
     .share-icons.side.show{
-        display:block
+        display:block;
     }
-
+    .share-icons.side.transparent{
+        opacity:0
+    }
+    .share-icons.side.opaque{
+        opacity:1
+        }
+    .sidebar.inline{
+        display:none
+    }
+    .separator{
+        display: block
+    }
 }
 /* = = = = = = = = = = Right Sidebar TOC Styles = = = = = = = = = = */
 .toc{
