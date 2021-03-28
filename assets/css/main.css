@@ -124,7 +124,7 @@ a.tag.post.side {
     color: var(--grey3)
 }
 .share-icons a:hover {
-    color: #var(--grey1);
+    color: var(--grey1);
 }
 .sidebar.side {
     display:none;
@@ -169,7 +169,7 @@ ul.tags.post.side {
 
 /* = = = = = = = = = = Right Sidebar TOC Styles = = = = = = = = = = */
 .toc-title {
-    background-color: var(--red);
+    background-color: var(--blue);
     color: white;
     font-weight: bold;
     font-size: .9em;
@@ -195,7 +195,7 @@ ul.tags.post.side {
 }
 
 .toc-sign:hover{
-    background-color: var(--red);
+    background-color: var(--blue);
     color:white
 }
 
@@ -1874,7 +1874,7 @@ pre code {
 }
 
 .author-box .author-desc li a:hover {
-  opacity: .8;
+  opacity: .5;
 }
 
 /* = = = = = = = = = = About Page Styles = = = = = = = = = = */
