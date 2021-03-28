@@ -1647,6 +1647,10 @@ pre code {
   opacity: .5;
 }
 
+.contact-icons {
+    display: inline-block
+}
+
 /* = = = = = = = = = = About Page Styles = = = = = = = = = = */
 .small-wrapper {
   width: 700px;
@@ -1994,7 +1998,6 @@ pre code {
     margin: 0 0 15px;
   }
 }
-
 @media print{
     [hidden]{display:none}
     *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
