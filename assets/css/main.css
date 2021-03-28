@@ -148,7 +148,8 @@ a.tag.post.side {
 }
 .share-icons a {
     color: var(--grey3);
-    margin: 0 2% 10px 2%
+    margin: 0 2% 10px 2%;
+    font-size: 1.3em
 }
 .share-icons a:hover {
     color: var(--grey1);
@@ -1629,7 +1630,7 @@ pre code {
 
 .author-box .author-desc li a {
   font-size: 18px;
-  color: var(--grey1);
+  color: var(--purple);
 }
 
 .author-box .author-desc li a:hover {
