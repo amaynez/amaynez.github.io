@@ -11,6 +11,8 @@
 --grey5: #EFF2F3;
 }
 
+.fa{margin:auto}
+
 /* = = = = post's read time and date (meta data) = = = = */
 .post-card-meta{
   font-size:10px;
@@ -114,15 +116,39 @@ a.tag.post.side {
     cursor: pointer;
 }
 .share-button {
-    display:none
+    display: flex;
+    margin: auto;
+    width: 35%;
+    color:var(--purple);
+    padding-bottom: 3px;
+}
+.share-button.hover {
+    border-bottom-style: solid;
+    border-bottom-color: var(--grey3);
+}
+.share-button::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #2098D1;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
 }
 .share-icons {
     letter-spacing: 1.5em;
     transition: all 0.5s
 }
-
 .share-icons a {
-    color: var(--grey3)
+    color: var(--grey3);
+    margin: 0 2% 10px 2%
 }
 .share-icons a:hover {
     color: var(--grey1);
@@ -155,10 +181,6 @@ ul.tags.post.side {
     }
     .sidebar.inline{
       display:none
-    }
-    .share-button.side {
-        display:block;
-        color:var(--purple);
     }
     .share-icons.side{
         display:none
