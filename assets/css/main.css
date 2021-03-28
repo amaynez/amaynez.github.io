@@ -563,7 +563,7 @@ a {
   /* 1 */
     -webkit-text-decoration-skip: objects;
   /* 2 */
-    -webkit-transition: all 2s;
+    -webkit-transition: all 1s;
     transition: all 1s;
     -webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
     transition-timing-function: cubic-bezier(0.2,1,0.3,1);
@@ -936,14 +936,14 @@ img {
 }
 
 a {
-    color: var(--red);
+    color: var(--blue);
     font-weight: 600;
     font-size: .8em;
     text-decoration: none;
 }
 
 a:hover{
-    color:var(--grey2)
+    color:var(--red)
 }
 
 table {
