@@ -41,6 +41,7 @@
     justify-content: center;
     display: flex;
     color: var(--grey2);
+    font-size: .9em;
 }
 /* = = = = = = = = = = icon style buttons= = = = = = = */
 .icon {
@@ -154,24 +155,14 @@ a.tag.post.side {
     color: var(--grey1);
 }
 .sidebar.side {
-    display:none;
-    position: sticky;
-    top: 2em;
-    width: 100px;
-    margin-left: -125px;
-    float: left;
+
+}
+.sidebar.side .tag-cloud{
+  display:none;
 }
 
 .sidebar.inline{
   border-bottom: 1px solid var(--grey4);
-}
-
-ul.tags.post.side {
-    display: block;
-}
-.share-options.side {
-    width: 20px;
-    margin: auto
 }
 
 .separator {
@@ -184,10 +175,25 @@ ul.tags.post.side {
 
 @media (min-width: 64em){
     .sidebar.side {
-      display:block
+      display:block;
+      position: sticky;
+      top: 2em;
+      width: 100px;
+      margin-left: -125px;
+      float: left;
+    }
+    .share-options.side {
+    width: 20px;
+    margin: auto
     }
     .sidebar.inline{
       display:none
+    }
+    .sidebar.side .tag-cloud{
+      display:block;
+    }
+    ul.tags.post.side {
+    display: block;
     }
     .separator{
     display: block
@@ -198,8 +204,8 @@ ul.tags.post.side {
     .share-icons.side.show{
         display:block
     }
-}
 
+}
 /* = = = = = = = = = = Right Sidebar TOC Styles = = = = = = = = = = */
 .toc{
   margin:auto;
