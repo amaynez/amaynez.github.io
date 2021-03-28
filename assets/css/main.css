@@ -429,6 +429,7 @@ span.github-btn {
     }
 
 /* = = = = = = = = = = Code = = = = = = = = = = */
+/* = = = = = = = = = = Code = = = = = = = = = = */
 .highlight {
   background-color: var(--grey5);
   -webkit-border-radius: 3px;
@@ -437,11 +438,11 @@ span.github-btn {
 }
 
 .highlighter-rouge {
-  color: var(--red);
+  color: var(--blue);
   font-weight: 300;
   border: none;
   -webkit-border-radius: 3px;
-          border-radius: 3px;
+  border-radius: 3px;
   padding: 0.1rem 0.5rem;
 }
 
@@ -461,12 +462,12 @@ span.github-btn {
 
 /* Error */
 .highlight .k {
-  color: #069;
+  color: #f00;
 }
 
 /* Keyword */
 .highlight .o {
-  color: #555;
+  color: #007cff;
 }
 
 /* Operator */
@@ -482,7 +483,7 @@ span.github-btn {
 
 /* Comment.Preproc */
 .highlight .c1 {
-  color: 9fb1bc;
+  color: #9fb1bc;
 }
 
 /* Comment.Single */
@@ -575,7 +576,7 @@ span.github-btn {
 
 /* Literal.Number */
 .highlight .s {
-  color: #d44950;
+  color: #0ea049;
 }
 
 /* Literal.String */
@@ -585,7 +586,7 @@ span.github-btn {
 
 /* Name.Attribute */
 .highlight .nb {
-  color: #366;
+  color: #8211d6;
 }
 
 /* Name.Builtin */
@@ -668,6 +669,10 @@ span.github-btn {
   color: #f60;
 }
 
+.n {
+    color: #e36209;
+}
+
 /* Literal.Number.Oct */
 .highlight .sb {
   color: #c30;
@@ -726,7 +731,7 @@ span.github-btn {
 
 /* Literal.String.Symbol */
 .highlight .bp {
-  color: #366;
+  color: var(--blue);
 }
 
 /* Name.Builtin.Pseudo */
