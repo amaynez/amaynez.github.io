@@ -55,10 +55,10 @@ $(".share-hover").on("mouseover", function() {
       document.getElementById('sidebar-icons').classList.remove('transparent');
   }, 10);
 }).on("mouseleave", function() {
-  document.getElementById('sidebar-icons').style.opacity = 0;
+  document.getElementById('sidebar-icons').classList.add('transparent');
+  document.getElementById('sidebar-icons').classList.remove('opaque');
   document.getElementById('sidebar-icons').addEventListener('transitionend', function(e) {
-    document.getElementById('sidebar-icons').classList.add('transparent');
-    document.getElementById('sidebar-icons').classList.remove('opaque');
+    document.getElementById('sidebar-icons').classList.remove('show');
   }, {capture: false, once: true, passive: false});
 });
 </script>
