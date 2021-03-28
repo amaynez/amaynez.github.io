@@ -171,7 +171,8 @@ a.tag.post.side {
     .share-options.side {
         width: 20px;
         margin: auto;
-        cursor: pointer
+        cursor: pointer;
+        margin-left: 33px;
     }
     .share-icons.side{
         display:none;
