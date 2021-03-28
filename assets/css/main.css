@@ -117,11 +117,8 @@ a.tag.post.side {
     margin-bottom:2em
 }
 .share-button {
-    display: flex;
-    margin: auto;
-    width: 35%;
+    margin-right: 3px;
     color:var(--purple);
-    padding-bottom: 3px;
 }
 .share-button.hover {
     border-bottom-style: solid;
@@ -144,7 +141,9 @@ a.tag.post.side {
     transition-timing-function: ease-out;
 }
 .share-icons {
-    transition: all 0.5s
+    transition: all 0.5s;
+    display: inline;
+    vertical-align: middle;
 }
 .share-icons a {
     color: var(--grey3);
