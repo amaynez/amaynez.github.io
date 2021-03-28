@@ -114,6 +114,7 @@ a.tag.post.side {
 .share-options {
     text-align: center;
     cursor: pointer;
+    margin-bottom:2em
 }
 .share-button {
     display: flex;
