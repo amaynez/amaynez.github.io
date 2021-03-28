@@ -171,12 +171,10 @@ svg.side {
     ul.tags.post.side {
         display: block;
     }
-    .share-options{
-        cursor: pointer;
-    }
     .share-options.side {
         width: 20px;
-        margin: auto
+        margin: auto;
+        cursor: pointer
     }
     .share-icons.side{
         display:none;
