@@ -60,9 +60,9 @@ $(".share-hover").on("mouseover", function() {
 
 <script src="{{site.baseurl}}/assets/js/main.js"></script>
 
-{% if page.toc == "sticky" %}
+{% if page.toc %}
   <script>
-      var spy = new Gumshoe("ul#toc__menu.toc__menu a", {
+      var spy = new Gumshoe("#toc-content a", {
                               navClass:"active",
                               contentClass:"active",
                               nested:0,
