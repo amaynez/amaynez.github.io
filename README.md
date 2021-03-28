@@ -7,15 +7,17 @@
 - changed the styling of the [tags page](http://amaynez.github.io/tags/)
 - included linkedin and reddit in the share post icons
 - included linkedin icon in the contact info
-- added a sticky or fixed Table of Contents for the posts page (optional per post)
+- added an automatic Table of Contents, it is configurable per post (on / off) and it displays as a sticky sidebar (when the screen is wide enough) or inline after the post's title and metadata
+  moved the post tag cloud and share options into a sticky sidebar when the screen resolution permits
 - added MathJax support (optional per post)
 - added view on github link button for posts (optional per post)
 - read time per post automatically calculated and included in all relevant pages
 - SEO meta tags included
-- added a tag cloud to the main page
+- added a tag cloud to the main page (after the post card styled latest posts)
 - added a 'back to top' button to the post pages.
-- added a comments 'courtain' that masks the disqus interface until the user clicks on it
+- added a comments 'courtain' that masks the disqus interface until the user clicks on it (configurable in _config.yml)
 - post images in home page appear black and white and colorize upon hovering in them
+- ensured overall consistency on colors and established a color palette
 
 # The original Adam Blog is a minimal clear theme for Jekyll
 
