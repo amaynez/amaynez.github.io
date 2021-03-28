@@ -1615,40 +1615,39 @@ pre code {
           border-radius: 100%;
 }
 
-.author-box .author-desc h2 {
+.author-desc h2 {
   margin: 0 0 10px;
 }
 
-.author-box .author-desc p {
+.author-desc p {
   margin: 0 0 10px;
 }
 
-.author-box .author-desc ul {
+.contact-icons {
+    display: inline-block
+}
+.contact-icons ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.author-box .author-desc li {
+.contact-icons li {
   display: inline-block;
   margin-left: 10px;
 }
 
-.author-box .author-desc li:first-child {
+.contact-icons li:first-child {
   margin-left: 0;
 }
 
-.author-box .author-desc li a {
+.contact-icons li a {
   font-size: 18px;
   color: var(--purple);
 }
 
-.author-box .author-desc li a:hover {
+.contact-icons li a:hover {
   opacity: .5;
-}
-
-.contact-icons {
-    display: inline-block
 }
 
 /* = = = = = = = = = = About Page Styles = = = = = = = = = = */
