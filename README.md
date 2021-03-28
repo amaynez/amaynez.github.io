@@ -18,6 +18,7 @@
 - added a comments 'courtain' that masks the disqus interface until the user clicks on it (configurable in _config.yml)
 - post images in home page appear black and white and colorize upon hovering in them
 - ensured overall consistency on colors and established a color palette
+- added several pygments themes for code syntax highlight configurable from the _config.yml file.
 
 # The original Adam Blog is a minimal clear theme for Jekyll
 
