@@ -259,6 +259,8 @@ ul.tags.post.side {
     border-top-width: 1px;
 }
 
+.active{background-color:var(--grey3)}
+
 @media (min-width: 1200px) {
     .toc {
         position: sticky;
