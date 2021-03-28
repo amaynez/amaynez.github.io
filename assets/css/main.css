@@ -240,11 +240,14 @@ ul.tags.post.side {
     color: var(--grey1)
     }
 
-.toc-item-2 {
+.toc-item-2, .toc-item-3, toc-item-4, .toc-item-5, .toc-item-6 {
     background-color: var(--grey4);
     padding:3px;
     text-indent: -25px;
     padding-left: 25px;
+    border-bottom-color: var(--grey5);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
 }
 
 .toc-submenu-2, .toc-submenu-3, .toc-submenu-4, .toc-submenu-5 {
