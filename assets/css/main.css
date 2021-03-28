@@ -169,6 +169,11 @@ ul.tags.post.side {
 }
 
 /* = = = = = = = = = = Right Sidebar TOC Styles = = = = = = = = = = */
+.toc{
+  margin:auto;
+  max-width: 480px;
+}
+
 .toc-title {
     background-color: var(--blue);
     color: white;
@@ -183,7 +188,7 @@ ul.tags.post.side {
     margin-top: 3px;
     margin:0;
     padding-inline-start: 0px;
-    transition: all 0.2s ease-out
+    transition: all 0.2s ease-out;
 }
 
 .toc-content a {
@@ -197,10 +202,12 @@ ul.tags.post.side {
 
 .toc-item-1 {
     background-color: var(--grey5);
-    padding:3px
+    padding: 3px;
+    /* text-indent: -25px; */
+    /* padding-left: 25px; */
 }
 
-toc-item-1.active div {
+.toc-item-1.active div {
   background-color: var(--grey4);
 }
 
@@ -215,7 +222,7 @@ toc-item-1.active div {
 }
 
 .toc-sign:hover{
-    background-color: var(--blue);
+    background-color: var(--grey2);
     color:white
 }
 
@@ -235,7 +242,9 @@ toc-item-1.active div {
 
 .toc-item-2 {
     background-color: var(--grey4);
-    padding:3px
+    padding:3px;
+    text-indent: -25px;
+    padding-left: 25px;
 }
 
 .toc-submenu-2, .toc-submenu-3, .toc-submenu-4, .toc-submenu-5 {
