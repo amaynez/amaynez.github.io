@@ -124,9 +124,6 @@ a.tag.post.side {
     margin-right: 3px;
     color:var(--purple);
 }
-svg.side {
-    vertical-align: middle;
-}
 .share-button.hover {
     border-bottom-style: solid;
     border-bottom-color: var(--grey3);
@@ -982,6 +979,10 @@ pre code {
   border: 0;
   padding-right: 0;
   padding-left: 0;
+}
+
+svg {
+    vertical-align: middle;
 }
 
 .flex-container {
