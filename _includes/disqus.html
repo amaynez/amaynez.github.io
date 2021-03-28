@@ -1,7 +1,7 @@
 {% if site.discus_identifier %}
   <section class="comment-area">
     <div class="comment-wrapper">
-        {% if site.comments_curtain %}
+        {% if site.comments_curtain == 'yes' or site.comments_curtain == 'Yes' or site.comments_curtain == 'YES' %}
             <div class="row" id="comment-curtain">
                 <div class="col-lg-8 col-sm-10 mr-auto ml-auto">
                     <h3>Comments</h3>
