@@ -1607,6 +1607,10 @@ pre code {
   border-bottom: 1px solid var(--grey4);
 }
 
+.narrow-column{
+    display:inline-block;
+    width:fit;
+}
 .author-box .author-img {
   width: 120px;
   height: 120px;
