@@ -1994,7 +1994,9 @@ pre code {
     margin: 0 0 15px;
   }
 }
-
+.contact-icon {
+    color: var(--grey2)
+}
 @media print{
     [hidden]{display:none}
     *{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
