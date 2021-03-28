@@ -198,6 +198,7 @@ ul.tags.post.side {
     padding:5px;
     color:var(--grey1);
     font-size:0.9em;
+    font-weight:500
 }
 .toc-content a:hover {
     color:var(--grey2)
