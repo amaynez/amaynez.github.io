@@ -202,9 +202,7 @@ ul.tags.post.side {
 
 .toc-item-1 {
     background-color: var(--grey5);
-    padding: 3px;
-    /* text-indent: -25px; */
-    /* padding-left: 25px; */
+    padding: 3px 0 0 0;
 }
 
 .toc-item-1.active div {
