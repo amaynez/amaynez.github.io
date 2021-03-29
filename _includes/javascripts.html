@@ -1,8 +1,7 @@
 <!-- JS -->
 <script src="{{site.baseurl}}/assets/js/jquery-3.2.1.min.js"></script>
-
 <script src="{{site.baseurl}}/assets/js/jekyll-search.js"></script>
-
+<script src="{{site.baseurl}}/assets/js/main.js"></script>
 <script>
   SimpleJekyllSearch({
     searchInput: document.getElementById('search-input'),
@@ -13,9 +12,38 @@
     fuzzy: false,
     exclude: ['Welcome']
   });
-</script>
 
-<script>
+{% if page.layout == "post" %}
+if (document.getElementById('comment-curtain') == null){
+  document.getElementById('disqus_thread').classList.toggle('show')
+}
+function toggle_comments(){
+    document.getElementById('comment-curtain').classList.toggle('hide')
+    document.getElementById('disqus_thread').classList.toggle('show')
+}
+$(".share-hover").on("mouseover", function() {
+  document.getElementById('sidebar-icons').classList.add('show');
+  setTimeout(function () {
+      document.getElementById('sidebar-icons').classList.add('opaque');
+      document.getElementById('sidebar-icons').classList.remove('transparent');
+  }, 10);
+}).on("mouseleave", function() {
+  document.getElementById('sidebar-icons').classList.add('transparent');
+  document.getElementById('sidebar-icons').classList.remove('opaque');
+  document.getElementById('sidebar-icons').addEventListener('transitionend', function(e) {
+    document.getElementById('sidebar-icons').classList.remove('show');
+  }, {capture: false, once: true, passive: false});
+});
+{% endif %}
+{% if page.toc %}
+var spy = new Gumshoe("#toc-content a", {
+                        navClass:"active",
+                        contentClass:"underline",
+                        nested:0,
+                        nestedClass:"active",
+                        offset:20,
+                        reflow:1,
+                        events:1});
 
 var coll = document.getElementsByClassName("toc-item-1");
 var i;
@@ -39,41 +67,5 @@ for (i = 0; i < coll.length; i++) {
     });
   }
 }
-
-if (document.getElementById('comment-curtain') == null){
-  document.getElementById('disqus_thread').classList.toggle('show')
-}
-
-function toggle_comments(){
-    document.getElementById('comment-curtain').classList.toggle('hide')
-    document.getElementById('disqus_thread').classList.toggle('show')
-}
-$(".share-hover").on("mouseover", function() {
-  document.getElementById('sidebar-icons').classList.add('show');
-  setTimeout(function () {
-      document.getElementById('sidebar-icons').classList.add('opaque');
-      document.getElementById('sidebar-icons').classList.remove('transparent');
-  }, 10);
-}).on("mouseleave", function() {
-  document.getElementById('sidebar-icons').classList.add('transparent');
-  document.getElementById('sidebar-icons').classList.remove('opaque');
-  document.getElementById('sidebar-icons').addEventListener('transitionend', function(e) {
-    document.getElementById('sidebar-icons').classList.remove('show');
-  }, {capture: false, once: true, passive: false});
-});
-</script>
-
-<script src="{{site.baseurl}}/assets/js/main.js"></script>
-
-{% if page.toc %}
-  <script>
-      var spy = new Gumshoe("#toc-content a", {
-                              navClass:"active",
-                              contentClass:"underline",
-                              nested:0,
-                              nestedClass:"active",
-                              offset:20,
-                              reflow:1,
-                              events:1});
-  </script>
 {% endif %}
+</script>
