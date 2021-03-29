@@ -933,7 +933,7 @@ a.tag.post.side {
 }
 .share-options {
     text-align: center;
-    cursor: pointer;
+    cursor: default;
     margin-bottom:2em
 }
 .share-button {
