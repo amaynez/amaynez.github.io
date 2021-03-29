@@ -44,7 +44,6 @@ span.github-btn {
     }
 
 .gh-btn:hover,.gh-btn:focus{
-    text-decoration:none;
     background-color:var(--grey3);
     background-image:linear-gradient(to bottom, #eee 0, #ddd 100%);
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#dddddd', GradientType=0);

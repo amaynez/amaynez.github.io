@@ -389,7 +389,43 @@ div.tag-cloud{
 }
 
 /* = = = = = = = = = = Github Link Button = = = = = = = = = = */
-
+.button-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+    background-image: url(/assets/img/github_icon.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+}
+.github-button {
+    margin: auto;
+    margin-top:1em;
+    margin-bottom:1em;
+    padding: 3px 10px 3px 10px;
+    will-change: transform;
+    background-image:linear-gradient(to bottom, #fcfcfc 0, #eee 100%);
+    font-size: 13px;
+    border:1px solid #eee;
+    border-radius: 8px;
+    transition: all 0.3s ease-out;
+}
+.github-button a{
+        color: var(--text);
+}
+.center-container {
+    display: flex;
+}
+.github-button:hover,.github-button:focus{
+    background-image:linear-gradient(to bottom, #eee 0, #ddd 100%);
+    border:#ddd;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#dddddd', GradientType=0);
+    box-shadow: 0 0.5em 0.5em -0.4em #545454;
+    /* transform: translateY(-1px); */
+    color: var(--text);
+    cursor:pointer;
+    }
 /* = = = = = = = = = = Code = = = = = = = = = = */
 .highlighter-rouge {
   color: var(--blue);
