@@ -1197,22 +1197,25 @@ div.tag-cloud{
     border:1px solid #eee;
     border-radius: 8px;
     transition: all 0.3s ease-out;
+    height: 28px;
+    flex-flow: nowrap;
+    white-space: nowrap;
+    overflow-x: visible;
+    min-width: max-content;
 }
 .github-button a{
         color: var(--text);
-}
-.github-button a:hover {
-        color: var(--text);
+        white-space: nowrap;
 }
 .center-container {
     display: flex;
+    overflow-x: visible;
 }
 .github-button:hover,.github-button:focus{
-    background-image:linear-gradient(to bottom, #eee 0, #ddd 100%);
+    background-image:linear-gradient(to bottom, #fafafa 0, #ddd 100%);
     border:#ddd;
     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee', endColorstr='#dddddd', GradientType=0);
     box-shadow: 0 0.5em 0.5em -0.4em #545454;
-    /* transform: translateY(-1px); */
     color: var(--text);
     cursor:pointer;
     }
