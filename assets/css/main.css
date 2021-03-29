@@ -1201,6 +1201,9 @@ div.tag-cloud{
 .github-button a{
         color: var(--text);
 }
+.github-button a:hover {
+        color: var(--text);
+}
 .center-container {
     display: flex;
 }
