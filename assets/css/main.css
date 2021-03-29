@@ -604,6 +604,9 @@ svg {
   opacity: .8;
   color: var(--red);
 }
+
+
+
 .menu-icon-container {
   width: 25%;
   text-align: left;
@@ -611,6 +614,9 @@ svg {
 .search-icon-container {
   width: 25%;
   text-align: right;
+}
+svg.menu-icon-house {
+    width: 19px;
 }
 .menu-icon,
 .menu-icon-close,
@@ -820,9 +826,10 @@ svg {
   font-size: 16px;
 }
 
-
 /*- Font-awesome icons centered within their containers by default -*/
 .fa{margin:auto}
+
+
 
 /* = = = = post's read time and date (meta data) = = = = */
 .post-card-meta{
