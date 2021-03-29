@@ -947,13 +947,6 @@ a.tag.post.side {
     margin: 0 2% 10px 2%;
     font-size: 1.3em
 }
-.twitter:hover{color:#1DA1F2}
-.facebook:hover{color:#4267B2}
-.reddit:hover{color:#ff4500}
-.linkedin:hover{color:#0072b1}
-.email:hover{color:#fcba03}
-.bandcamp:hover{color:#629aa9}
-
 .github:hover{color:#333}
 .sidebar.inline{
   border-bottom: 1px solid var(--grey4);
@@ -1716,6 +1709,13 @@ div.tag-cloud{
             transform: translateY(0);
   }
 }
+/* = = = Social Share Icon Colors = = = */
+.twitter:hover{color:#1DA1F2}
+.facebook:hover{color:#4267B2}
+.reddit:hover{color:#ff4500}
+.linkedin:hover{color:#0072b1}
+.email:hover{color:#fcba03}
+.bandcamp:hover{color:#629aa9}
 
 /* = = = = = = = = = = Media = = = = = = = = = = */
 /* Small Devices, Tablets */
