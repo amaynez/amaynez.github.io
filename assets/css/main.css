@@ -442,8 +442,8 @@ img {
 }
 a {
     color: var(--blue);
-    font-weight: 500;
-    font-size: .8em;
+    font-weight: 700;
+    font-size: .9em;
     text-decoration: none;
 }
 a:hover{
@@ -764,6 +764,7 @@ svg {
 }
 .tag:hover {
   text-decoration: underline;
+  color: var(--grey4);
 }
 .post-card-title-and-meta {
   margin:0;
@@ -778,6 +779,7 @@ svg {
 }
 .post-card-link:hover {
   opacity: .75;
+  color: var(--grey4);
 }
 
 /* = = = = = = = = = = Pagination  = = = = = = = = = = */
@@ -1029,7 +1031,7 @@ a.tag.post.side {
     padding:5px;
     color:var(--grey1);
     font-size:0.9em;
-    font-weight:500
+    font-weight:700
 }
 .toc-content a:hover {
     color:var(--grey2)
