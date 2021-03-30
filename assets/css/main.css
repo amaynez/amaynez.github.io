@@ -816,8 +816,8 @@ svg.menu-icon-house {
 /* = = = = = = = = = = Footer  = = = = = = = = = = */
 .main-footer {
   padding: 15px 0;
-  background-color: var(--grey5);
-  box-shadow: 0 5px 5px -6px var(--grey2) inset;
+  background-color: var(--grey1);
+  box-shadow: 0 5px 5px -6px var(--text) inset;
 }
 .footer-wrapper {
     display: grid;
@@ -829,15 +829,13 @@ svg.menu-icon-house {
     justify-self: center;
 }
 .logo-symbol a {
-    color:var(--grey3);
-}
-.logo-symbol a:hover {
-    color:var(--grey2)
+    color: var(--grey2);
 }
 .main-footer .copyright {
   text-align: center;
-  color: var(--purple);
+  color: var(--grey2);
   font-size: 16px;
+  font-weight: 300;
 }
 .footer-nav {
     display: grid;
@@ -850,11 +848,10 @@ svg.menu-icon-house {
     margin: auto
 }
 .footer-nav a {
-    color: var(--purple);
+    color: var(--grey4);
 }
-
-.footer-nav a:hover {
-    opacity: 0.65
+.footer-wrapper a:hover {
+    opacity: 0.6
 }
 
 
