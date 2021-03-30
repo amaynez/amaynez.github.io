@@ -837,6 +837,7 @@ svg.menu-icon-house {
 
 .logo-link:hover{
     transform:scale(1.2)
+    color: var(--grey2);
 }
 
 .copyright {
