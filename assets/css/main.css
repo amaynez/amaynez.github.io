@@ -13,6 +13,12 @@
 --grey5:    #EFF2F3;
 --font1:    'Inter';    /* body text            */
 --font2:    'Jost';     /* headers and titles   */
+--font1-light:      100;
+--font1-regular:    300;
+--font1-bold:       600;
+--font2-light:      300;
+--font2-regular:    400;
+--font2-bold:       700;
 }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -444,7 +450,7 @@ img {
 }
 a {
     color: var(--blue);
-    font-weight: 700;
+    font-weight: var(--font1-bold);
     font-size: .9em;
     text-decoration: none;
 }
@@ -570,7 +576,7 @@ svg {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 27px;
-  font-weight: 300;
+  font-weight: var(--font2-light);
   color: var(--purple);
 }
 .main-nav {
@@ -781,7 +787,7 @@ svg.menu-icon-house {
 .post-card-link {
   text-decoration: none;
   font-family: var(--font2), sans-serif;
-  font-weight: 700;
+  font-weight: var(--font2-bold);
   text-transform: uppercase;
   color: white;
 }
@@ -839,7 +845,7 @@ svg.menu-icon-house {
   text-align: center;
   color: var(--grey2);
   font-size: 0.9em;
-  font-weight: 300;
+  font-weight: var(--font1-light);
 }
 .footer-nav {
   display: flex;
@@ -1068,7 +1074,7 @@ a.tag.post.side {
 .toc-title {
     background-color: var(--blue);
     color: white;
-    font-weight: bold;
+    font-weight: var(--font1-bold);
     font-size: .9em;
     padding: 5px;
     display: block;
@@ -1087,7 +1093,7 @@ a.tag.post.side {
     padding:5px;
     color:var(--grey1);
     font-size:0.9em;
-    font-weight:700
+    font-weight:var(--font1-bold)
 }
 .toc-content a:hover {
     color:var(--grey2)
@@ -1103,7 +1109,7 @@ a.tag.post.side {
   float:left;
   width:15px;
   text-align:center;
-  font-weight:700;
+  font-weight:var(--font1-bold);
   cursor: pointer;
   background-color: var(--grey5);
   color:var(--grey2)
@@ -1280,7 +1286,7 @@ div.tag-cloud{
 /* = = = = = = = = = = Code = = = = = = = = = = */
 .highlighter-rouge {
   color: var(--blue);
-  font-weight: 300;
+  font-weight: var(--font1-light);
   border: none;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -1334,7 +1340,7 @@ div.tag-cloud{
   text-align: center;
   font-size: 14px;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: var(--font1-light);
 }
 
 .page-footer {
@@ -1428,7 +1434,7 @@ div.tag-cloud{
   width: 97.5%;
   font-size: 12px;
   font-family: var(--font2), sans-serif;
-  font-weight: 700;
+  font-weight: var(--font2-bold);
   text-decoration: none;
   text-transform: uppercase;
   color: white;
@@ -1639,7 +1645,7 @@ div.tag-cloud{
 
 .about-header .subtitle {
   color: var(--purple);
-  font-weight: 300;
+  font-weight: var(--font1-light);
   margin: 0;
 }
 
@@ -1698,7 +1704,7 @@ div.tag-cloud{
     border-right-width: 1px;
     border-right-style: solid;
     border-right-color: var(--grey2);
-    font-weight: bold;
+    font-weight: var(--font1-bold);
     padding: 12px;
     background-color: transparent;
     padding-top: 0
