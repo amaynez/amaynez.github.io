@@ -561,7 +561,7 @@ svg {
           align-items: center;
 }
 .main-header .logo {
-  width: 75%;
+  width: 80%;
   text-align: center;
 }
 .main-header .logo a {
@@ -1782,6 +1782,9 @@ div.tag-cloud{
 /* = = = = = = = = = = Media = = = = = = = = = = */
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .main-header .logo {
+  width: 90%;
+}
   .main-header .logo a {
     font-size: 24px;
   }
@@ -1828,6 +1831,9 @@ div.tag-cloud{
   .header-page .page-date {
     font-size: 14px;
   }
+  .main-header .logo {
+  width: 100%;
+}
   .main-header .logo a {
     font-size: 21px;
   }
