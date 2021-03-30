@@ -825,16 +825,12 @@ svg.menu-icon-house {
     align-items:center
 }
 .logo-symbol {
-    height: 55px;
-    justify-self: center;
-}
-.logo-symbol a {
     color: var(--grey2);
 }
-.main-footer .copyright {
+.copyright {
   text-align: center;
   color: var(--grey2);
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 300;
 }
 .footer-nav {
@@ -853,8 +849,15 @@ svg.menu-icon-house {
 .footer-wrapper a:hover {
     opacity: 0.6
 }
-
-
+@media (max-width:640px){
+  .main-footer {
+    padding: 3px
+  }
+    .footer-nav {display:none}
+    .copyright {
+      font-size: .85rem
+    }
+}
 /*- Font-awesome icons centered within their containers by default -*/
 .fa{margin:auto}
 
