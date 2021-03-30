@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/* Main Color palette */
+/* Main Color palette and fonts */
 :root {
 --red:      #87314e;
 --purple:   #4e3e51;
@@ -11,6 +11,8 @@
 --grey3:    #c2d0d6;
 --grey4:    #D5DEE2;
 --grey5:    #EFF2F3;
+--font1:    'Inter' /* body text */
+--font2:    'Josefin Sans' /* headers and titles */
 }
 
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
@@ -424,7 +426,7 @@ html {
   line-height: 1.5;
 }
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: var(--font1), sans-serif;
   color: var(--grey1);
   margin: 0;
   background-color: white;
@@ -433,7 +435,7 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato', sans-serif;
+  font-family: var(--font2), sans-serif;
   color: var(--purple);
 }
 img {
@@ -540,7 +542,7 @@ svg {
 }
 /* = = = = = = = = = = Header = = = = = = = = = = */
 .main-header {
-  font-family: 'Lato', sans-serif;
+  font-family: var(--font2), sans-serif;
   padding: 15px 0;
   background-color: white;
   -webkit-box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.3);
@@ -778,7 +780,7 @@ svg.menu-icon-house {
 }
 .post-card-link {
   text-decoration: none;
-  font-family: 'Lato', sans-serif;
+  font-family: var(--font2), sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: white;
@@ -1320,7 +1322,7 @@ div.tag-cloud{
 }
 
 .header-page h1 {
-  font-family: 'Lato', sans-serif;
+  font-family: var(--font2), sans-serif;
   font-weight: 400;
   font-size: 36px;
   text-align: center;
@@ -1378,7 +1380,7 @@ div.tag-cloud{
   border-bottom: 1px solid var(--grey4)
 }
 .recent-title {
-  font-family: 'Lato', sans-serif;
+  font-family: var(--font2), sans-serif;
   font-weight: 400;
   color: var(--purple);
   text-align: center;
@@ -1425,7 +1427,7 @@ div.tag-cloud{
   bottom: 2.5%;
   width: 97.5%;
   font-size: 12px;
-  font-family: 'Lato', sans-serif;
+  font-family: var(--font2), sans-serif;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
