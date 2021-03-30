@@ -836,7 +836,7 @@ svg.menu-icon-house {
 .copyright {
   text-align: center;
   color: var(--grey2);
-  font-size: 1em;
+  font-size: 0.9em;
   font-weight: 300;
 }
 .footer-nav {
@@ -1735,9 +1735,9 @@ div.tag-cloud{
 .page-content,
 .about-container,
 .post-card-box,
-.tags-table,
+.blog-tags,
 .github-button,
-.archive-table,
+.archive,
 .toc,
 .sidebar,
 .icon,
@@ -1752,9 +1752,9 @@ div.tag-cloud{
 
 .main-header,
 .page-image,
-.tags-table,
+.blog-tags,
 .github-button,
-.archive-table,
+.archive,
 .toc,
 .sidebar,
 .icon,
