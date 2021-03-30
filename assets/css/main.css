@@ -604,7 +604,7 @@ svg {
   padding: 15px 0;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: var(--font2-regular);
   font-size: 18px;
   color: var(--blue);
 }
@@ -1329,7 +1329,7 @@ div.tag-cloud{
 
 .header-page h1 {
   font-family: var(--font2), sans-serif;
-  font-weight: 400;
+  font-weight: var(--font2-regular);
   font-size: 36px;
   text-align: center;
   margin: 0 0 10px;
@@ -1385,13 +1385,7 @@ div.tag-cloud{
   padding-bottom: 30px;
   border-bottom: 1px solid var(--grey4)
 }
-.recent-title {
-  font-family: var(--font2), sans-serif;
-  font-weight: 400;
-  color: var(--purple);
-  text-align: center;
-  margin: 0 0 30px;
-}
+
 .recent-item{display:inline}
 .recent-item:hover .recent-item-img::after{
   background: rgba(0, 0, 0, 0);
@@ -1450,8 +1444,10 @@ div.tag-cloud{
   border-bottom: 1px solid var(--grey4);
 }
 
-.newsletter .newsletter-title {
-  font-weight: 400;
+.page-subtitle {
+  font-weight: var(--font2-regular);
+  text-align: center;
+  margin: 0 0 30px;
 }
 
 .newsletter .form-container {
