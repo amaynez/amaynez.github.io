@@ -827,19 +827,12 @@ svg.menu-icon-house {
     max-width: 45px;
     max-height: 45px;
 }
-
 .logo-link {
     display:block;
     color: var(--grey2);
     -webkit-transition: all 350ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
     transition: all 350ms cubic-bezier(0.13, 0.43, 0.54, 1.82);}
 }
-
-.logo-link:hover{
-    transform:scale(1.2)
-    color: var(--grey2);
-}
-
 .copyright {
   text-align: center;
   color: var(--grey2);
@@ -861,6 +854,10 @@ svg.menu-icon-house {
 }
 .footer-wrapper a:hover {
     opacity: 0.6
+}
+.logo-symbol a:hover {
+    transform: scale(1.1);
+    color: var(--grey2);
 }
 @media (max-width:640px){
   .footer-wrapper {
