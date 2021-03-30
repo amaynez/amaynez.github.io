@@ -841,6 +841,7 @@ svg.menu-icon-house {
 .footer-nav div {
     vertical-align: middle;
     display: flex;
+    margin: auto
 }
 .footer-nav a {
     color: var(--purple);
