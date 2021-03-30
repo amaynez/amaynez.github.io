@@ -825,6 +825,8 @@ svg.menu-icon-house {
 }
 .logo-symbol {
     color: var(--grey2);
+    max-width: 45px;
+    max-height: 45px;
 }
 .copyright {
   text-align: center;
