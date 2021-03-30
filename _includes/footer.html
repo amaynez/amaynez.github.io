@@ -1,9 +1,11 @@
 <footer class="main-footer">
     <div class="footer-wrapper">
         <div class="logo-symbol">
-            <svg class="logo-symbol">
-                <use xlink:href='{{site.logo-icon}}#MVM-symbol'></use>
-            </svg>
+            <a class="logo-link" href="{{ site.baseurl }}/">
+                <svg class="logo-symbol">
+                    <use xlink:href='{{site.logo-icon}}#MVM-symbol'></use>
+                </svg>
+            </a>
         </div>
         <div class="copyright">
           <p>{{site.time | date: '%Y'}} &copy; {{site.author}}</p>
