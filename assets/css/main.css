@@ -819,12 +819,28 @@ svg.menu-icon-house {
   background-color: var(--grey5);
   box-shadow: 0 5px 5px -6px var(--grey2) inset;
 }
-
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    /* vertical-align: middle; */
+}
+.logo-symbol {
+    height: 55px;
+    justify-self: center;
+}
 .main-footer .copyright {
   text-align: center;
   color: var(--purple);
   font-size: 16px;
 }
+.footer-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.footer-nav li {
+    list-style: none;
+}
+
 
 /*- Font-awesome icons centered within their containers by default -*/
 .fa{margin:auto}
