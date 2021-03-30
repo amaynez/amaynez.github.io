@@ -1062,7 +1062,7 @@ a.tag.post.side {
     }
 }
 /* = = = = = = = = = = Right Sidebar TOC  = = = = = = = = = = */
-.toc{
+.toc {
   margin:auto;
   max-width: 480px;
 }
@@ -1737,7 +1737,14 @@ div.tag-cloud{
 .page-image,
 .page-content,
 .about-container,
-.post-card-box {
+.post-card-box,
+.tags-table,
+.github-button,
+.archive-table,
+.toc,
+.sidebar,
+.icon,
+.page_meta {
   -webkit-animation-duration: 0.7s;
           animation-duration: 0.7s;
   -webkit-animation-fill-mode: both;
@@ -1747,7 +1754,14 @@ div.tag-cloud{
 }
 
 .main-header,
-.page-image {
+.page-image,
+.tags-table,
+.github-button,
+.archive-table,
+.toc,
+.sidebar,
+.icon,
+.page_meta {
   -webkit-animation-delay: 0.5s;
           animation-delay: 0.5s;
 }
