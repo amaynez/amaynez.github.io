@@ -598,11 +598,11 @@ svg {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 18px;
-  color: var(--purple);
+  color: var(--blue);
 }
 .main-nav ul li a:hover {
   opacity: .8;
-  color: var(--red);
+  color: var(--purple);
 }
 
 
@@ -624,7 +624,7 @@ svg.menu-icon-house {
 .search-icon-close {
   cursor: pointer;
   font-size: 18px;
-  color: var(--purple);
+  color: var(--blue);
   -webkit-transition: all .4s;
   transition: all .4s;
   padding: 10px;
