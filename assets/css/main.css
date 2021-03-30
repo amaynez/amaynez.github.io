@@ -842,6 +842,13 @@ svg.menu-icon-house {
     vertical-align: middle;
     display: flex;
 }
+.footer-nav a {
+    color: var(--purple);
+}
+
+.footer-nav a:hover {
+    opacity: 0.75
+}
 
 
 /*- Font-awesome icons centered within their containers by default -*/
