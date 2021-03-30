@@ -906,15 +906,17 @@ svg.menu-icon-house {
   text-align: center;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+  max-height: 30px;
 }
-.icon img{
+.icon a{
+    display:block;
     -webkit-transition: opacity 1s;
     transition: opacity 1s;
     -webkit-transition-timing-function: cubic-bezier(0.2,1,0.3,1);
     transition-timing-function: cubic-bezier(0.2,1,0.3,1);
     opacity: 0.25;
 }
-.icon img:hover {
+.icon a:hover {
   opacity: 1;
 }
 /* = = = = = = = = = = Post's comments = = = = = = = = = = */
