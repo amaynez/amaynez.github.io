@@ -836,9 +836,11 @@ svg.menu-icon-house {
 .footer-nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
 }
-.footer-nav li {
-    list-style: none;
+.footer-nav div {
+    vertical-align: middle;
+    display: flex;
 }
 
 
