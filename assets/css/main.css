@@ -822,11 +822,17 @@ svg.menu-icon-house {
 .footer-wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    /* vertical-align: middle; */
+    align-items:center
 }
 .logo-symbol {
     height: 55px;
     justify-self: center;
+}
+.logo-symbol a {
+    color:var(--grey3);
+}
+.logo-symbol a:hover {
+    color:var(--grey2)
 }
 .main-footer .copyright {
   text-align: center;
@@ -848,7 +854,7 @@ svg.menu-icon-house {
 }
 
 .footer-nav a:hover {
-    opacity: 0.75
+    opacity: 0.65
 }
 
 
