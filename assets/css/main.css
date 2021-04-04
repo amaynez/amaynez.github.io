@@ -1365,7 +1365,7 @@ input, select, textarea {
 		padding-left: 0;
 	}
 
-		ul.contact-icons > li,ul.contact-icons > i {
+		ul.contact-icons > li, ul.contact-icons i {
 			margin: 1.25rem 0 0 0;
 			padding-left: 0;
 			cursor: pointer;
