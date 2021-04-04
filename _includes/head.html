@@ -1,0 +1,17 @@
+<head>
+	<meta charset="utf-8">
+	<title>{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}</title>
+	<meta name="description" content="{{ page.description }}">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	{% include SEO.html %}
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#311e3e">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#311e3e">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#311e3e">
+	<!-- Styles -->
+	<link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl }}">
+    <noscript><link rel="stylesheet" href="{{ '/assets/css/noscript.css' | prepend: site.baseurl }}" /></noscript>
+</head>
