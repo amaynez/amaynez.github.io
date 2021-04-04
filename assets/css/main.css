@@ -1368,7 +1368,6 @@ input, select, textarea {
 		ul.contact-icons > li, ul.contact-icons i {
 			margin: 1.25rem 0 0 0;
 			padding-left: 0;
-			cursor: pointer;
 		}
 
 			ul.contact-icons > li:before, ul.contact-icons i:before {
@@ -1384,6 +1383,7 @@ input, select, textarea {
 				margin-right: 1rem;
 				text-align: center;
 				vertical-align: middle;
+				cursor: pointer;
 			}
 
 				body.is-ie ul.contact-icons > li:before, body.is-ie ul.contact-icons i:before {
