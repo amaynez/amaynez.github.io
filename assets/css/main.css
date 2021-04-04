@@ -1364,7 +1364,7 @@ ul.contact-icons-inline {
     list-style: none;
     display: flex;
     opacity:0.75;
-    float:left
+    padding-left: 0;
 }
 
 .contact-icons-inline a {
@@ -1378,7 +1378,6 @@ ul.contact-icons-inline {
 
 ul.actions.right {
     justify-content: flex-end;
-    float: right;
 }
 
 
