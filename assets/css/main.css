@@ -1360,6 +1360,28 @@ input, select, textarea {
 
 /* Contact Icons */
 
+ul.contact-icons-inline {
+    list-style: none;
+    display: flex;
+    opacity:0.75;
+    float:left
+}
+
+.contact-icons-inline a {
+    /* text-decoration: none; */
+    border-bottom: none;
+    padding: 0 8px;
+}
+.contact-icons-inline i::before {
+    text-decoration: none;
+}
+
+ul.actions.right {
+    justify-content: flex-end;
+    float: right;
+}
+
+
 	ul.contact-icons {
 		list-style: none;
 		padding-left: 0;
