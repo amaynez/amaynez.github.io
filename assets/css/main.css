@@ -1365,12 +1365,12 @@ input, select, textarea {
 		padding-left: 0;
 	}
 
-		ul.contact-icons > li {
+		ul.contact-icons > li,ul.contact-icons > i {
 			margin: 1.25rem 0 0 0;
 			padding-left: 0;
 		}
 
-			ul.contact-icons > li:before {
+			ul.contact-icons > li:before, ul.contact-icons > i:before {
 				display: inline-block;
 				width: 2.25rem;
 				height: 2.25rem;
@@ -1385,7 +1385,7 @@ input, select, textarea {
 				vertical-align: middle;
 			}
 
-				body.is-ie ul.contact-icons > li:before {
+				body.is-ie ul.contact-icons > li:before, body.is-ie ul.contact-icons > i:before {
 					line-height: 2.125;
 				}
 
@@ -1393,19 +1393,19 @@ input, select, textarea {
 				border-bottom: 0;
 			}
 
-		ul.contact-icons.color1 > li:before {
+		ul.contact-icons.color1 > li:before, ul.contact-icons.color1 > i:before {
 			color: #726193;
 		}
 
-		ul.contact-icons.color2 > li:before {
+		ul.contact-icons.color2 > li:before, ul.contact-icons.color2 > i:before {
 			color: #e37b7c;
 		}
 
-		ul.contact-icons.color3 > li:before {
+		ul.contact-icons.color3 > li:before, ul.contact-icons.color3 > i:before {
 			color: #ffe4b4;
 		}
 
-		ul.contact-icons.color4 > li:before {
+		ul.contact-icons.color4 > li:before, ul.contact-icons.color4 > i:before {
 			color: #353865;
 		}
 
