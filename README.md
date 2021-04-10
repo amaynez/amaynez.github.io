@@ -4,30 +4,30 @@ This repository has the source code for [my personal site](https://amaynez.githu
 
 The port to jekyll includes the usual `_config.yml` stuff plus it also is SEO and google analytics ready:
 ```yaml
-title: Armando Maynez
-description: 'My personal site.'
+title: 			# site title
+description: 	# site description
 permalink: ':title/'
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://amaynez.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-images: "./images/"
+baseurl: "/" 	# the subpath of your site, e.g. /blog
+url:  			# the base hostname & protocol for your site, e.g. http://example.com
+images:  		# the path where your images are located within your site
 
 # Author settings
-author: "" # add your name
-author-pic: ""
-about-author: ""
+author: "" 			# add your name
+author-pic: "" 		# add your picture
+about-author: ""	# add a brief bio
 
 # Contact links
-email: # Add your Email address
-phone: # Add your Phone number
-website: # Add your website
-linkedin: # Add your Linkedin handle
-github: # Add your Github handle
-twitter: # Add your Twitter handle
-bandcamp: # Add your Bandcamp username
+email: 		# Add your Email address
+phone: 		# Add your Phone number
+website: 	# Add your website
+linkedin: 	# Add your Linkedin handle
+github: 	# Add your Github handle
+twitter: 	# Add your Twitter handle
+bandcamp: 	# Add your Bandcamp username
 
 # Tracker
 analytics:  # Add google analytics tag id
-fbadmin:  # Add your facebook admin id
+fbadmin:  	# Add your facebook admin id
 ```
 
 Here is the original documentation from the theme creator:
