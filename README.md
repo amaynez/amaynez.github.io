@@ -1,9 +1,43 @@
-Ethereal by HTML5 UP
+site now [mirrored](https://icy-flower-6749.on.fleek.co/) in [IPFS](https://github.com/ipfs/ipfs#quick-summary)!
+
+This repository has the source code for [my personal site](https://amaynez.github.io/), I ported a plain HTML theme (see below) to Jekyll, you can use this theme by just [forking this repository](https://github.com/amaynez/amaynez.github.io/fork/) and modifying it to your liking, it is a designed as a single page site, but I think it could be modified for a blog as well. Some parts of it that I did not use were only commented out in the source `index.html` file, so they can easily be reused by you. I made some modifications specifically for layout of contact icons and added the contact icons to the landing frame. You can see the [original template full here.](https://html5up.net/ethereal)
+
+The port to jekyll includes the usual `_config.yml` stuff plus it also is SEO and google analytics ready:
+```yaml
+title: Armando Maynez
+description: 'My personal site.'
+permalink: ':title/'
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://amaynez.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+images: "./images/"
+
+# Author settings
+author: "" # add your name
+author-pic: ""
+about-author: ""
+
+# Contact links
+email: # Add your Email address
+phone: # Add your Phone number
+website: # Add your website
+linkedin: # Add your Linkedin handle
+github: # Add your Github handle
+twitter: # Add your Twitter handle
+bandcamp: # Add your Bandcamp username
+
+# Tracker
+analytics:  # Add google analytics tag id
+fbadmin:  # Add your facebook admin id
+```
+
+Here is the original documentation from the theme creator:
+
+## Ethereal by HTML5 UP
 html5up.net | @ajlkn
+
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 
-
-This is Ethereal, my latest, greatest, and quite possibly most unique template for HTML5 UP.
+This is *Ethereal*, my latest, greatest, and quite possibly most unique template for HTML5 UP.
 Since releasing Parallelism 3-4 years ago (!!!), I've been dying to do another side-scrolling
 template with more in the way of flexibility/customization potential. The result is this template,
 Ethereal, which combines a robust side-scrolling framework of my own creation (with various
@@ -11,14 +45,8 @@ Ethereal, which combines a robust side-scrolling framework of my own creation (w
 look and feel, a lightbox gallery, tons of customization options, and, of course, full
 responsiveness. Hope you dig it :)
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
-
-(* = not included)
-
 AJ
 aj@lkn.io | @ajlkn
-
 
 Instructions:
 
@@ -369,9 +397,6 @@ Instructions:
 
 
 Credits:
-
-	Demo Images:
-		Unsplash (unsplash.com)
 
 	Icons:
 		Font Awesome (fontawesome.io)
