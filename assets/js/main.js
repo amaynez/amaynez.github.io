@@ -410,13 +410,13 @@
 					});
 				
 				$(window).scroll(function() {
-					if($(window).scrollLeft() == 0) {
+					if($(window).scrollLeft() < $left.width()) {
 						$left.addClass("hide");
-					} else if($(window).scrollLeft() > 100) {
+					} else if($(window).scrollLeft() > left.width()) {
 						$left.removeClass("hide");
-					} else if($(window).scrollLeft() > ($(window).innerWidth - 3)){
+					} else if($(window).scrollLeft() > ($(document).innerWidth() - $(window).innerWidth() - $(right).width())){
 						$right.addClass("hide");
-					} else if($(window).scrollLeft() < ($(window).innerWidth - 100)){
+					} else if($(window).scrollLeft() < ($(document).innerWidth() - $(window).innerWidth() - $(right).width())){
 						$right.removeClass("hide");
 					}
 				});
