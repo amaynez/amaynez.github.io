@@ -3611,7 +3611,16 @@ ul.actions.right {
 			cursor: -ms-grab;
 			cursor: grab;
 			z-index: 10100;
+			color: rgba(255, 255, 255, 0.25);
 		}
+
+			#wrapper > .scrollZone::after {
+				content:"";
+				position: fixed;
+				width: 6rem;
+				height: inherit;
+				background: rgba(0, 0, 0, 0.175);
+			}
 
 			#wrapper > .scrollZone.left {
 				left: 0;
