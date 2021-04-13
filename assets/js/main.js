@@ -338,7 +338,7 @@
 		if (settings.scrollZones.enabled)
 			(function() {
 
-				var	$left = $('<div class="scrollZone left"><svg width:"25px" height:"25px" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path transform="matrix(-1,0,0,-1,192,512)" fill="currentColor" d="M 187.8 264.5 L 41 412.5 c -4.7 4.7 -12.3 4.7 -17 0 L 4.2 392.7 c -4.7 -4.7 -4.7 -12.3 0 -17 L 122.7 256 L 4.2 136.3 c -4.7 -4.7 -4.7 -12.3 0 -17 L 24 99.5 c 4.7 -4.7 12.3 -4.7 17 0 l 146.8 148 c 4.7 4.7 4.7 12.3 0 17 z"></path></svg></div>'),
+				var	$left = $('<div class="scrollZone left hide"><svg width:"25px" height:"25px" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path transform="matrix(-1,0,0,-1,192,512)" fill="currentColor" d="M 187.8 264.5 L 41 412.5 c -4.7 4.7 -12.3 4.7 -17 0 L 4.2 392.7 c -4.7 -4.7 -4.7 -12.3 0 -17 L 122.7 256 L 4.2 136.3 c -4.7 -4.7 -4.7 -12.3 0 -17 L 24 99.5 c 4.7 -4.7 12.3 -4.7 17 0 l 146.8 148 c 4.7 4.7 4.7 12.3 0 17 z"></path></svg></div>'),
 					$right = $('<div class="scrollZone right"><svg width:"25px" height:"25px" aria-hidden="true" focusable="false" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 512"><path fill="currentColor" d="M187.8 264.5L41 412.5c-4.7 4.7-12.3 4.7-17 0L4.2 392.7c-4.7-4.7-4.7-12.3 0-17L122.7 256 4.2 136.3c-4.7-4.7-4.7-12.3 0-17L24 99.5c4.7-4.7 12.3-4.7 17 0l146.8 148c4.7 4.7 4.7 12.3 0 17z"></path></svg></div>'),
 					$zones = $left.add($right),
 					paused = false,
@@ -408,7 +408,18 @@
 							}, 500);
 
 					});
-
+				
+				$(window).scroll(function() {
+					if($(window).scrollLeft() == 0) {
+						$left.addClass("hide");
+					} else if($(window).scrollLeft() > 100) {
+						$left.removeClass("hide");
+					} else if($(window).scrollLeft() > ($(window).innerWidth - 3)){
+						$right.addClass("hide");
+					} else if($(window).scrollLeft() < ($(window).innerWidth - 100)){
+						$right.removeClass("hide");
+					}
+				});
 			})();
 
 	// Dragging.

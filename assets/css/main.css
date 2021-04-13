@@ -3610,17 +3610,20 @@ ul.actions.right {
 			cursor: -webkit-grab;
 			cursor: -ms-grab;
 			cursor: grab;
-			z-index: 10100;
-			color: rgba(255, 255, 255, 0.25);
+			z-index: 999;
+			color: rgba(255, 255, 255, 0.075);
+			background: rgba(0, 0, 0, 0.175);
+			display: flex;
+			-moz-transition: all 1s ease-out, -moz-transform 0.75s ease-out;
+			-webkit-transition: all 1s ease-out, -webkit-transform 0.75s ease-out;
+			-ms-transition: all 1s ease-out, -ms-transform 0.75s ease-out;
+			transition: all 1s ease-out, transform 0.75s ease-out;
 		}
 
-			#wrapper > .scrollZone::after {
-				content:"";
-				position: fixed;
-				width: 6rem;
-				height: inherit;
-				background: rgba(0, 0, 0, 0.175);
-			}
+		#wrapper > .scrollZone.hide {
+			background: none;
+			color: rgba(255,255,255,0);
+		}
 
 			#wrapper > .scrollZone.left {
 				left: 0;
