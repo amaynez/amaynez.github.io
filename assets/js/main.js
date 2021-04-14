@@ -409,17 +409,18 @@
 
 					});
 				
-				$(window).scroll(function() {
-					if($(window).scrollLeft() < $left.width()) {
+				function hideAndSeek(event){
+					if($(window).scrollLeft() < event.data.leftWidth) {
 						$left.addClass("hide");
-					} else if($(window).scrollLeft() > left.width()) {
+					} else if($(window).scrollLeft() > event.data.leftWidth) {
 						$left.removeClass("hide");
-					} else if($(window).scrollLeft() > ($(document).innerWidth() - $(window).innerWidth() - $(right).width())){
+					} else if($(window).scrollLeft() > ($(document).innerWidth() - $(window).innerWidth() - event.data.rightWidth)){
 						$right.addClass("hide");
-					} else if($(window).scrollLeft() < ($(document).innerWidth() - $(window).innerWidth() - $(right).width())){
+					} else if($(window).scrollLeft() < ($(document).innerWidth() - $(window).innerWidth() - event.data.rightWidth)){
 						$right.removeClass("hide");
 					}
-				});
+				}
+				$(window).scroll({leftWidth: $left.width(), rightWidth:$right.width()}, hideAndSeek);
 			})();
 
 	// Dragging.
