@@ -410,6 +410,7 @@
 					});
 				
 				function hideAndSeek(event){
+					console.log(event.data.leftWidth, event.data.rightWidth);
 					if($(window).scrollLeft() < event.data.leftWidth) {
 						$left.addClass("hide");
 					} else if($(window).scrollLeft() > event.data.leftWidth) {
