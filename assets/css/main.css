@@ -1726,6 +1726,12 @@ ul.actions.right {
 			opacity: 0.5;
 		}
 
+		@media screen and (max-width: 736px){
+			.button.icon.circle{
+				transform: rotate(90deg);
+			}
+		}
+
 /* Gallery */
 
 	@-moz-keyframes gallery-modal-spinner {
