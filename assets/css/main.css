@@ -3619,7 +3619,6 @@ ul.actions.right {
 			z-index: 999;
 			color: rgba(255, 255, 255, 0.05);
 			background: rgba(0, 0, 0, 0.2);
-			display: flex;
 			-moz-transition: all 1s ease-out, -moz-transform 0.75s ease-out;
 			-webkit-transition: all 1s ease-out, -webkit-transform 0.75s ease-out;
 			-ms-transition: all 1s ease-out, -ms-transform 0.75s ease-out;
