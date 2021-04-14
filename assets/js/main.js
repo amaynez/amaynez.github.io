@@ -410,10 +410,9 @@
 					});
 				
 				function hideAndSeek(event){
-					console.log(event.data.leftWidth, event.data.rightWidth);
 					if($(window).scrollLeft() < event.data.leftWidth) {
 						$left.addClass("hide");
-					} else if($(window).scrollLeft() > event.data.leftWidth) {
+					} else if($(window).scrollLeft() > event.data.leftWidth && $(window).scrollLeft() < $(window).innerWidth()) {
 						$left.removeClass("hide");
 					} else if($(window).scrollLeft() > ($(document).innerWidth() - $(window).innerWidth() - event.data.rightWidth)){
 						$right.addClass("hide");
