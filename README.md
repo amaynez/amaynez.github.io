@@ -1,6 +1,12 @@
 site now [mirrored](https://icy-flower-6749.on.fleek.co/) in [IPFS](https://github.com/ipfs/ipfs#quick-summary)!
 
-This repository has the source code for [my personal site](https://amaynez.github.io/), I ported a plain HTML theme (see below) to Jekyll, you can use this theme by just [forking this repository](https://github.com/amaynez/amaynez.github.io/fork/) and modifying it to your liking, it is a designed as a single page site, but I think it could be modified for a blog as well. Some parts of it that I did not use were only commented out in the source `index.html` file, so they can easily be reused by you. I made some modifications specifically for layout of contact icons and added the contact icons to the landing frame. You can see the [original template full here.](https://html5up.net/ethereal)
+This repository has the source code for [my personal site](https://amaynez.github.io/), I ported a plain HTML theme (see below) to Jekyll, you can use this theme by just [forking this repository](https://github.com/amaynez/amaynez.github.io/fork/) and modifying it to your liking, it is designed as a single page site with horizontal scrolling if the screen is wide enough, but I think it could be modified for a blog as well. Some parts of it that I did not use were commented out in the `index.html` file, so they can easily be reused. I made some modifications:
+- layout of contact icons
+- added the contact icons to the landing frame
+- added responsive transparent scrolling zones with an icon indicating the scroll direction on the left and right, that dissapear when the whole page has been scrolled.
+- the main icon indicating the scroll direction now rotates according to the orientation of the page (accounts for vertical scrolling in small screens)
+
+You can see the [original template here.](https://html5up.net/ethereal)
 
 The port to jekyll includes the usual `_config.yml` stuff plus it also is SEO and google analytics ready:
 ```yaml
